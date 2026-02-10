@@ -1098,7 +1098,7 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
 
 <!-- Tabela -->
 <div style="overflow-x:auto">
-  <table id="pref-table" style="width:100%;font-size:.82rem;border-collapse:collapse">
+  <table id="pref-table" style="width:100%;font-size:.72rem;border-collapse:collapse">
     <thead>
       <tr style="background:var(--md-primary-fg-color);color:#fff;cursor:pointer;user-select:none">
         <th data-sort="nome" style="padding:8px 6px;text-align:left;width:320px">Nome ↕</th>
@@ -1127,9 +1127,7 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
     if (polo === 'Autor e Réu (prazos diferentes)') return '<span style="background:#e65100;color:#fff;padding:2px 6px;border-radius:10px;font-size:.7rem;white-space:nowrap" title="Autor e Réu (prazos diferentes)">prazos ≠</span>';
     var colors = { 'Autor': '#1976d2', 'Réu': '#d32f2f', 'Ambos': '#7b1fa2' };
     var c = colors[polo] || '#666';
-    var labels = { 'Autor': '🔵', 'Réu': '🔴', 'Ambos': '🟣' };
-    var label = labels[polo] || polo;
-    return '<span style="background:' + c + ';color:#fff;padding:2px 6px;border-radius:10px;font-size:.7rem;white-space:nowrap">' + label + '</span>';
+    return '<span style="background:' + c + ';color:#fff;padding:2px 6px;border-radius:10px;font-size:.65rem;white-space:nowrap">' + polo + '</span>';
   }
 
   function highlight(text, term) {
