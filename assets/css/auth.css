@@ -1,0 +1,84 @@
+/* Auth overlay — proteção simples por senha */
+#auth-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+}
+
+#auth-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 36px 32px;
+  max-width: 380px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,.25);
+}
+
+[data-md-color-scheme="slate"] #auth-box {
+  background: #2e303e;
+  color: #ccc;
+}
+
+#auth-box h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+#auth-box p {
+  margin: 0 0 20px;
+  font-size: .9rem;
+  opacity: .7;
+}
+
+#auth-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color .2s;
+}
+
+#auth-input:focus {
+  border-color: #009688;
+}
+
+#auth-btn {
+  margin-top: 14px;
+  width: 100%;
+  padding: 10px;
+  background: #009688;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+#auth-btn:hover {
+  background: #00796b;
+}
+
+#auth-error {
+  color: #e53935;
+  font-size: .85rem;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Esconde o conteúdo real enquanto não autenticado */
+body.auth-locked .md-container,
+body.auth-locked .md-header,
+body.auth-locked .md-footer {
+  display: none !important;
+}
