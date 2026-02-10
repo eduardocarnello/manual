@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="assets/css/checklist.css">
     
+      <link rel="stylesheet" href="assets/css/rotina-diaria.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1137,9 +1139,35 @@
 <p>Bem-vindo ao manual de procedimentos da Secretaria do <strong>Juizado Especial Cível de Marília</strong>.</p>
 <p>Este guia foi criado para padronizar os procedimentos mais comuns realizados no sistema <strong><abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr></strong>, servindo como referência rápida para escreventes e servidores.</p>
 <hr />
+<div class="rotina-hero" id="rotina-diaria">
+<div class="rotina-header">
+<div class="rotina-title">📋 Rotina Diária</div>
+<div class="rotina-date"></div>
+</div>
+<p class="rotina-subtitle">Tarefas que devem ser cumpridas todos os dias — reseta automaticamente a cada novo dia</p>
+<ul class="rotina-items">
+<li><label><input type="checkbox"><span>Verificar intimações pendentes</span></label></li>
+<li><label><input type="checkbox"><span>Verificar petições sem análise</span></label></li>
+<li><label><input type="checkbox"><span>Verificar audiências do dia</span></label></li>
+<li><label><input type="checkbox"><span>Verificar processos com prazo vencendo</span></label></li>
+<li><label><input type="checkbox"><span>Verificar mandados devolvidos</span></label></li>
+<li><label><input type="checkbox"><span>Verificar cartas devolvidas</span></label></li>
+</ul>
+<div class="rotina-footer">
+<div class="rotina-progress">
+    <div class="rotina-progress-bar"><div class="rotina-progress-fill" style="width:0%"></div>
+</div>
+<div class="highlight"><pre><span></span><code>&lt;div class=&quot;rotina-progress-text&quot;&gt;0 / 6
+</code></pre></div>
+</div>
+<p></div>
+  <button class="rotina-reset" title="Resetar marcações">↺ Resetar</button>
+</div>
+</div></p>
+<hr />
 <h2 id="como-usar-este-manual">🚀 Como usar este manual<a class="headerlink" href="#como-usar-este-manual" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Use a <strong>barra de busca</strong> (canto superior) para encontrar qualquer procedimento — ou pressione <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-k">K</kbd></span></li>
+<li>Use a <strong>barra de busca</strong> (canto superior) para encontrar qualquer procedimento — ou pressione <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-k">K</kbd></span> (busca local, sem Google)</li>
 <li>Navegue pelas <strong>abas</strong> no topo para acessar cada seção</li>
 <li>Marque os <strong>checklists</strong> ✅ em cada procedimento — o progresso é salvo automaticamente</li>
 <li>Passe o mouse sobre termos como <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr> ou <abbr title="Juizado Especial Cível">JEC</abbr> para ver definições rápidas</li>
@@ -1251,6 +1279,8 @@
         <script src="assets/js/auth.js"></script>
       
         <script src="assets/js/checklist.js"></script>
+      
+        <script src="assets/js/rotina-diaria.js"></script>
       
     
   </body>

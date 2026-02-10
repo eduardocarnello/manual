@@ -1,0 +1,204 @@
+/* ============================================
+   Rotina Diária — Hero card na homepage
+   ============================================ */
+
+.rotina-hero {
+    background: linear-gradient(135deg, var(--md-primary-fg-color), #1a237e);
+    color: #fff;
+    border-radius: 14px;
+    padding: 28px 32px 24px;
+    margin: 0 0 32px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+[data-md-color-scheme="slate"] .rotina-hero {
+    background: linear-gradient(135deg, #283593, #1a237e);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Ícone decorativo de fundo */
+.rotina-hero::before {
+    content: "📋";
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-size: 4rem;
+    opacity: 0.12;
+    pointer-events: none;
+}
+
+/* Header com título e data */
+.rotina-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.rotina-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rotina-date {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.rotina-subtitle {
+    font-size: 0.82rem;
+    opacity: 0.7;
+    margin: 0 0 18px;
+}
+
+/* Lista de itens */
+.rotina-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 6px 24px;
+}
+
+.rotina-items li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+}
+
+.rotina-items label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: opacity 0.2s;
+    user-select: none;
+}
+
+.rotina-items input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    flex-shrink: 0;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.rotina-items input[type="checkbox"]:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.rotina-items input[type="checkbox"]:checked {
+    background: #4caf50;
+    border-color: #4caf50;
+}
+
+.rotina-items input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    animation: checkPop 0.3s ease;
+}
+
+/* Texto riscado quando marcado */
+.rotina-items input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    opacity: 0.55;
+}
+
+/* Barra de progresso inferior */
+.rotina-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rotina-progress {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rotina-progress-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.rotina-progress-fill {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 4px;
+    transition: width 0.4s ease;
+    min-width: 0;
+}
+
+.rotina-progress.complete .rotina-progress-fill {
+    background: #4caf50;
+}
+
+.rotina-progress-text {
+    font-size: 0.78rem;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0.9;
+}
+
+.rotina-reset {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 0.72rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.85);
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.rotina-reset:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .rotina-hero {
+        padding: 20px 18px 18px;
+    }
+
+    .rotina-items {
+        grid-template-columns: 1fr;
+    }
+
+    .rotina-title {
+        font-size: 1.1rem;
+    }
+}
