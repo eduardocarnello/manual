@@ -1079,8 +1079,12 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
     <option value="Autor">🔵 Autor</option>
     <option value="Réu">🔴 Réu</option>
     <option value="Ambos">🟣 Ambos</option>
-    <option value="Autor e Réu (prazos diferentes)">🔵🔴 Autor e Réu</option>
     <option value="_nenhum">◯ Sem intimação</option>
+  </select>
+  <select id="pref-tipo" style="padding:8px 10px;border:2px solid var(--md-default-fg-color--lightest);border-radius:8px;font-size:.85rem;background:var(--md-code-bg-color);color:var(--md-default-fg-color)">
+    <option value="">Todos os tipos</option>
+    <option value="_manual">⚠️ Manual</option>
+    <option value="_auto">🤖 Automático</option>
   </select>
   <select id="pref-classif" style="padding:8px 10px;border:2px solid var(--md-default-fg-color--lightest);border-radius:8px;font-size:.85rem;background:var(--md-code-bg-color);color:var(--md-default-fg-color)">
     <option value="">Todas as classificações</option>
@@ -1097,7 +1101,7 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
   <table id="pref-table" style="width:100%;font-size:.82rem;border-collapse:collapse">
     <thead>
       <tr style="background:var(--md-primary-fg-color);color:#fff;cursor:pointer;user-select:none">
-        <th data-sort="nome" style="padding:8px 6px;text-align:left;min-width:260px">Nome ↕</th>
+        <th data-sort="nome" style="padding:8px 6px;text-align:left;max-width:220px">Nome ↕</th>
         <th data-sort="modelo" style="padding:8px 6px;text-align:left">Modelo ↕</th>
         <th data-sort="evento" style="padding:8px 6px;text-align:left">Evento ↕</th>
         <th data-sort="poloSelecionado" style="padding:8px 6px;text-align:center;white-space:nowrap">Polo ↕</th>
@@ -1120,7 +1124,7 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
 
   function poloBadge(polo) {
     if (!polo) return '<span style="display:inline-block;width:16px;height:16px;border:2px solid #999;border-radius:50%" title="Sem intimação"></span>';
-    var colors = { 'Autor': '#1976d2', 'Réu': '#d32f2f', 'Ambos': '#7b1fa2', 'Autor e Réu (prazos diferentes)': '#e65100' };
+    var colors = { 'Autor': '#1976d2', 'Réu': '#d32f2f', 'Ambos': '#7b1fa2', 'Autor e Réu (prazos diferentes)': '#7b1fa2' };
     var c = colors[polo] || '#666';
     return '<span style="background:' + c + ';color:#fff;padding:2px 8px;border-radius:10px;font-size:.73rem;white-space:nowrap">' + polo + '</span>';
   }
@@ -1134,23 +1138,31 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
   function cleanLocalizador(loc) {
     if (!loc) return '';
     var sep = ' - ';
-    var idx = loc.indexOf(sep);
-    if (idx === -1) return loc;
-    var first = loc.substring(0, idx);
-    var rest = loc.substring(idx + sep.length);
-    // Remove [jec] suffix for comparison
-    var restClean = rest.replace(/\[jec\]$/i, '');
-    if (restClean === first) return first;
-    return loc;
+    // Try all possible split points to find where duplication starts
+    var pos = 0;
+    while (true) {
+      var idx = loc.indexOf(sep, pos);
+      if (idx === -1) break;
+      var first = loc.substring(0, idx);
+      var rest = loc.substring(idx + sep.length);
+      var restClean = rest.replace(/\[jec\]$/i, '').replace(/\[jec\]$/i, '');
+      if (restClean === first) return first;
+      pos = idx + 1;
+    }
+    // Also handle trailing [jec] without duplication
+    return loc.replace(/\[jec\]$/i, '');
   }
 
   function render() {
     var search = document.getElementById('pref-search').value.toLowerCase();
     var polo = document.getElementById('pref-polo').value;
     var classif = document.getElementById('pref-classif').value;
+    var tipo = document.getElementById('pref-tipo').value;
     var onlyNotes = document.getElementById('pref-has-note').checked;
 
     var filtered = allData.filter(function(p) {
+      if (tipo === '_manual' && p.nome.indexOf('\u26a0') === -1) return false;
+      if (tipo === '_auto' && p.nome.indexOf('\u26a0') !== -1) return false;
       if (polo === '_nenhum' && p.poloSelecionado) return false;
       if (polo && polo !== '_nenhum' && p.poloSelecionado !== polo) return false;
       if (classif && !(p.classificacao || []).some(function(c) { return c === classif; })) return false;
@@ -1179,7 +1191,7 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
       var note = allNotes[p.nome] || '';
       var rowBg = i % 2 === 0 ? '' : 'background:var(--md-code-bg-color);';
       html += '<tr style="border-bottom:1px solid var(--md-default-fg-color--lightest);' + rowBg + '">';
-      html += '<td style="padding:6px;font-weight:600;white-space:nowrap">' + highlight(p.nome, searchTerm) + '</td>';
+      html += '<td style="padding:6px;font-weight:600;max-width:220px;word-break:break-word">' + highlight(p.nome, searchTerm) + '</td>';
       html += '<td style="padding:6px;font-size:.76rem">' + highlight(p.modelo || '', searchTerm) + '</td>';
       html += '<td style="padding:6px;font-size:.76rem">' + highlight(p.evento || '', searchTerm) + '</td>';
       html += '<td style="padding:6px;text-align:center">' + poloBadge(p.poloSelecionado) + '</td>';
@@ -1240,7 +1252,7 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
 
     // Bind filters
     ['pref-search'].forEach(function(id) { document.getElementById(id).addEventListener('input', render); });
-    ['pref-polo','pref-classif'].forEach(function(id) { document.getElementById(id).addEventListener('change', render); });
+    ['pref-polo','pref-classif','pref-tipo'].forEach(function(id) { document.getElementById(id).addEventListener('change', render); });
     document.getElementById('pref-has-note').addEventListener('change', render);
 
     // Bind sort
