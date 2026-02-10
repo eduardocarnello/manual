@@ -1,0 +1,3931 @@
+{
+  "metadata": {
+    "dataExtracao": "2026-02-10T17:55:54.175Z",
+    "totalExtraidas": 215,
+    "modo": "todos"
+  },
+  "preferencias": [
+    {
+      "nome": "#🔴(𝐆)𝐃𝐞𝐬𝐩𝐚𝐜𝐡𝐨",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Genérico (M364718)  - 610000036017",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Réu 5 dias - Prazo - Réu 5 dias",
+      "classificacao": [
+        "Minuta - Genérica"
+      ],
+      "descricao": "Despacho",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔴(𝑭) 𝑫𝑬𝑺𝑬𝑹𝑻𝑶 𝑶 𝑹𝑬𝑪𝑼𝑹𝑺𝑶 𝑫𝑶 𝑹𝑬́𝑼",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Deserto o Recurso (M364718)  - 610000165358",
+      "evento": "Decisão/Despacho - Terminativa - Julgado deserto o recurso de Apelação (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "15",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "⏳ PRAZO - Agravo ⚡ - ⏳ PRAZO - Agravo ⚡",
+      "classificacao": [
+        "Decisão",
+        "Deserção"
+      ],
+      "descricao": "Decisão - Deserto o Recurso",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔴(A) Cadastro de Adv",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Cadastro de advogados - Genérico - AGUARDA PRAZO ABERTO (M364718)  - 610000036837",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Réu 5 dias - Prazo - Réu 5 dias",
+      "classificacao": [
+        "Minuta - Genérica",
+        "Minuta - Habilitação"
+      ],
+      "descricao": "Despacho - Habilitação Simples",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔴(A) Emb Declaração - Rejeita (réu - prazo 10)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Decisão - Embargos de Declaração - Não Acolhimento - Infringentes (M364718)  - 610000052111",
+      "evento": "Decisão/Despacho - Terminativa - Embargos de Declaração Não Acolhidos (15164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Decisão",
+        "Embargos de Declaração - Decisão"
+      ],
+      "descricao": "Decisão - Rejeita Embargos de Declaração - Com prazo de 10 dias",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔴(A) Emb Declaração - Rejeita (réu - prazo 15)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Decisão - Embargos de Declaração - Não Acolhimento - Infringentes (M364718)  - 610000052111",
+      "evento": "Decisão/Despacho - Terminativa - Embargos de Declaração Não Acolhidos (15164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "15",
+      "novoLocalizador": "⏳ PRAZO - Agravo ⚡ - ⏳ PRAZO - Agravo ⚡",
+      "classificacao": [
+        "Decisão",
+        "Embargos de Declaração - Decisão"
+      ],
+      "descricao": "Decisão - Rejeita Embargos de Declaração - Com prazo de 15 dias",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔴(A) Indefere Gratuidade + 48h para Preparo (réu)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Indefere Gratuidade no Recurso - Prazo de 48 horas para Recolher Preparo (M364718)  - 610000276485",
+      "evento": "Decisão/Despacho - Gratuidade da justiça não concedida (334)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "2",
+      "novoLocalizador": "Prazo - Réu 2 dias - Prazo - Réu 2 dias",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Indefere Gratuidade - Prazo de 48 horas para Preparo",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔴(A) Inicial - Contestar",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Recebe Inicial - Contestar (Portal) (M364718)  - 610000026229",
+      "evento": "Decisão/Despacho - Determinada a citação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a citação eletrônica",
+        "tipo": "Citação pelo DJE"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "15",
+      "novoLocalizador": "Prazo - Contestação (Portal) ⏳🛡️ - Prazo - Contestação (Portal) ⏳🛡️[jec]",
+      "classificacao": [
+        "Inicial - Recebimento"
+      ],
+      "descricao": "Recebe Inicial - Contestar",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔴(A) Intima p/ Contestar (Aud Infrutífera)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A)Conciliação Infrutífera - Intima para Contestar (M364718)  - 610000047881",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "15",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Contestação (Portal) ⏳🛡️ - Prazo - Contestação (Portal) ⏳🛡️[jec]",
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Despacho - Intimação para Contestar (Audiência Infrutífera)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔴(A) Intima para pagar em 15 dias",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Decisão - Intimação para Pagar - Cumprimento de Sentença (M364718)  - 610000074304",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "15",
+      "novoLocalizador": "Prazo - Pagamento 15 Dias (art. 523)⏳ - Prazo - Pagamento 15 Dias (art. 523)⏳[jec]",
+      "classificacao": [
+        "Cumprimento de Sentença - Inicial",
+        "Sem cumprimento"
+      ],
+      "descricao": "Determinada a Intimação da Executada para Pagamento",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔴(A) Recebe Recurso do Autor",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Recebe Recurso Inominado (M364718)  - 610000152001",
+      "evento": "Decisão/Despacho - Recebido o recurso de Apelação (394)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Contrarrazões - Prazo - Contrarrazões[jec]",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Decisão - Recebimento de Recurso Inominado",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(𝐆)𝐃𝐞𝐬𝐩𝐚𝐜𝐡𝐨",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Genérico (M364718)  - 610000036017",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Autor 5 dias - Prazo - Autor 5 dias [jec]",
+      "classificacao": [
+        "Minuta - Genérica",
+        "Sem cumprimento"
+      ],
+      "descricao": "Despacho - Intimação do Autor",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(𝑭) 𝑰𝑵𝑫𝑰𝑪𝑨𝑹 𝑬𝑵𝑫𝑬𝑹𝑬𝑪̧𝑶",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Indicar Endereço (M364718)  - 610000044005",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Indicar Endereço (citação) ⏳🏠 - Prazo - Indicar Endereço (citação) ⏳🏠[jec]",
+      "classificacao": [
+        "Despacho",
+        "Formulário avançado"
+      ],
+      "descricao": "Despacho - Indicação de Endereço (Formulário)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(𝑭) 𝑹𝑬𝑻𝑰𝑭𝑰𝑪𝑨𝑹 𝑪𝑨́𝑳𝑪𝑼𝑳𝑶",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Despacho - Retificar Cálculo (M364718)  - 610000269000",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "15",
+      "novoLocalizador": "⏳ PRAZO - Autor 15 dias - ⏳ PRAZO - Autor 15 dias",
+      "classificacao": [
+        "Minuta - Genérica",
+        "Sem cumprimento"
+      ],
+      "descricao": "Despacho - Intimação do Autor",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(𝑭) 𝑺𝑬𝑵𝑻 - 𝑨𝑹𝑻. 𝟒𝟖𝟓, 𝑰𝑽",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (F) Extinção - Art. 485, IV (M364718)  - 610000055927",
+      "evento": "Sentença - Extinto o processo por ausência de pressupostos processuais - tipo C (459)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Formulário avançado",
+        "Sentença"
+      ],
+      "descricao": "Sentença - Art. 485",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(𝑭) 𝑺𝑬𝑵𝑻 - 𝑨𝑹𝑻. 𝟓𝟑 (𝑫𝑬𝑽𝑬𝑫𝑶𝑹)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (F) Sent - Não Localizado o Devedor (Art. 53, §4º) (M364718)  - 610000216120",
+      "evento": "Sentença - Extinto o processo por devedor não encontrado - tipo C (11374)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise",
+        "F7 - F7"
+      ],
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Formulário avançado",
+        "Sentença"
+      ],
+      "descricao": "Devedor não Encontrado",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(𝑭) 𝑺𝑬𝑵𝑻 - 𝑰𝑵𝑨𝑫. 𝑺𝑼𝑴𝑨𝑹𝑰́𝑺𝑺𝑰𝑴𝑶",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (F) Extinção - Inadmissibilidade do Procedimento do JEC (M364718)  - 610000044850",
+      "evento": "Sentença - Extinto o processo por inadmissibilidade do procedimento sumaríssimo - tipo C (11377)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Inicial - Sentença"
+      ],
+      "descricao": "Sentença - Indeferida a petição inicial",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(𝑭)𝑫𝑬𝑺𝑬𝑹𝑻𝑶 𝑶 𝑹𝑬𝑪𝑼𝑹𝑺𝑶 𝑫𝑶 𝑨𝑼𝑻𝑶𝑹",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Deserto o Recurso (M364718)  - 610000165358",
+      "evento": "Decisão/Despacho - Terminativa - Julgado deserto o recurso de Apelação (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "15",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "⏳ PRAZO - Agravo ⚡ - ⏳ PRAZO - Agravo ⚡",
+      "classificacao": [
+        "Decisão",
+        "Deserção"
+      ],
+      "descricao": "Decisão - Deserto o Recurso",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Ato - Decurso p/ Pagamento Espontâneo - Prosseguimento",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Decurso do Prazo para Pagamento - Intimação para Prosseguimento (M364718)  - 610000159348",
+      "evento": "Ato ordinatório praticado (11383)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Indicar Bens ⏳🅱️ - Prazo - Indicar Bens ⏳🅱️[jec]",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato - Decurso do Pagamento e Indicar Bens",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Ato - Indicar Bens (Diligências Negativas)",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Diligência(s) Negativa(s) - Indicar Bens (M364718)  - 610000159127",
+      "evento": "Ato ordinatório praticado (11383)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Indicar Bens ⏳🅱️ - Prazo - Indicar Bens ⏳🅱️[jec]",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato - Indicar bens - Diligências Negativas",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Ato - Intima Quanto ao Depósito como Pagamento",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - (A) Ato - Intima Requerente/Exequente Quanto ao Depósito como Pagamento (M364718)  - 610000181564",
+      "evento": "Ato ordinatório praticado (11383)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Manifest sobre Pagamento (ext) ⏳🏦 - Prazo - Manifest sobre Pagamento (ext) ⏳🏦[jec]",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato - Intima Autor sobre Pagamento",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Ato - Réplica",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Intima para Réplica (M364718)  - 610000049780",
+      "evento": "Ato ordinatório praticado (11383)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "15",
+      "novoLocalizador": "Prazo - Réplica ⏳↩️ - Prazo - Réplica ⏳↩️[jec]",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato Ordinatório para Réplica",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Derradeira Oportunidade para Indicar Bens",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Indicar Bens ⏳🅱️ - Prazo - Indicar Bens ⏳🅱️[jec]",
+      "localizadoresSecundarios": [
+        "🚩 AUX - Derradeira Diligência 🛑 - 🚩 AUX - Derradeira Diligência 🛑"
+      ],
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Despacho - Indicar Bens - Derradeira oportunidade",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Determina Emenda",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Decisão - Emenda (M364718)  - 610000030924",
+      "evento": "Decisão/Despacho - Determinada a emenda à inicial (15085)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "15",
+      "novoLocalizador": "Prazo - Emenda ⏳🔁 - Prazo - Emenda ⏳🔁[jec]",
+      "classificacao": [
+        "Inicial - Emenda"
+      ],
+      "descricao": "Despacho - Determinada a Emenda à Inicial",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Emb Declaração - Rejeita (autor - prazo 10)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Decisão - Embargos de Declaração - Não Acolhimento - Infringentes (M364718)  - 610000052111",
+      "evento": "Decisão/Despacho - Terminativa - Embargos de Declaração Não Acolhidos (15164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Decisão",
+        "Embargos de Declaração - Decisão"
+      ],
+      "descricao": "Decisão - Rejeita Embargos de Declaração - Com prazo de 10 dias",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Emb Declaração - Rejeita (autor - prazo 15)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Decisão - Embargos de Declaração - Não Acolhimento - Infringentes (M364718)  - 610000052111",
+      "evento": "Decisão/Despacho - Terminativa - Embargos de Declaração Não Acolhidos (15164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "15",
+      "novoLocalizador": "⏳ PRAZO - Agravo ⚡ - ⏳ PRAZO - Agravo ⚡",
+      "classificacao": [
+        "Decisão",
+        "Embargos de Declaração - Decisão"
+      ],
+      "descricao": "Decisão - Rejeita Embargos de Declaração - Com prazo de 15 dias",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Extinção - Ausência de Bens (art. 53)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (A) Extinção - Ausência de Bens e Manifestação (art. 53, §4º, da Lei 9.099/95) (M364718)  - 610000076546",
+      "evento": "Sentença - Extinto o processo por inexistência de bens penhoráveis - tipo C (11375)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Extinção - Ausência de Bens",
+        "Sentença"
+      ],
+      "descricao": "Extinção - Art. 53",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Extinção - Devedor Não Encontrado (art. 53)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Devedor não Encontrado e Ausência de Manifestação - Art. 53, § 4º, da Lei 9.099 de 1995 (M364718)  - 610000037239",
+      "evento": "Sentença - Extinto o processo por devedor não encontrado - tipo C (11374)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Extinção - Devedor Não Encontrado",
+        "Sentença"
+      ],
+      "descricao": "Extinção - Art. 53",
+      "assinante": "PEDRO SIQUEIRA DE PRETTO - MAGISTRADO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Extinção - Não Indicado Endereço - Art. 485, IV",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (A) Extinção art. 485, IV - Inércia em Indicar Endereço (M364718)  - 610000055921",
+      "evento": "Sentença - Extinto o processo por ausência de pressupostos processuais - tipo C (459)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Sentença"
+      ],
+      "descricao": "Sentença - Ausência de Indicação de Endereço",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Indefere Gratuidade + 48h para Preparo (autor)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Indefere Gratuidade no Recurso - Prazo de 48 horas para Recolher Preparo (M364718)  - 610000276485",
+      "evento": "Decisão/Despacho - Gratuidade da justiça não concedida (334)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "2",
+      "novoLocalizador": "Prazo - Autor 2 dias - Prazo - Autor 2 dias",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Indefere Gratuidade - Prazo de 48 horas para Preparo",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Indefere Pesquisa de Endereço",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Indefere Pesquisa de Endereço (M364718)  - 610000044427",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Indicar Endereço (citação) ⏳🏠 - Prazo - Indicar Endereço (citação) ⏳🏠[jec]",
+      "classificacao": [
+        "Indeferimento",
+        "Sem cumprimento"
+      ],
+      "descricao": "Indeferimento de Pesquisa de Endereço",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Indicar Bens (Diligências Negativas)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Indicar Bens - Diligências Negativas (M364718)  - 610000118582",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Indicar Bens ⏳🅱️ - Prazo - Indicar Bens ⏳🅱️[jec]",
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Despacho - Indicar Bens",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Indicar Endereço",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Indicar Endereço para Citação (Conhecimento) - 1ª Negativa (M364718)  - 610000063941",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Indicar Endereço (citação) ⏳🏠 - Prazo - Indicar Endereço (citação) ⏳🏠[jec]",
+      "classificacao": [
+        "Minuta - Genérica",
+        "Sem cumprimento"
+      ],
+      "descricao": "Despacho - Intimação para Indicar Endereço",
+      "assinante": "PEDRO SIQUEIRA DE PRETTO - MAGISTRADO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Indicar Endereço + Cancela Aud",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Cancela Audiência (Requerido Não Citado) - Indicar Endereço (M364718)  - 610000095860",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Indicar Endereço (citação) ⏳🏠 - Prazo - Indicar Endereço (citação) ⏳🏠[jec]",
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Despacho - Indicar Endereço + Cancela Audiência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Manifestar sobre Depósito (Conhecimento)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Depósito como Pagamento no Processo de Conhecimento (M364718)  - 610000118519",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Manifest sobre Pagamento (ext) ⏳🏦 - Prazo - Manifest sobre Pagamento (ext) ⏳🏦[jec]",
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Despacho - Manifestar sobre Depósito (Conhecimento)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Recebe Recurso do Réu",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Recebe Recurso Inominado (M364718)  - 610000152001",
+      "evento": "Decisão/Despacho - Recebido o recurso de Apelação (394)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Contrarrazões - Prazo - Contrarrazões[jec]",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Decisão - Recebimento de Recurso Inominado",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) Réplica em 15 dias",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Manifestar sobre Contestação (M364718)  - 610000044000",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "15",
+      "novoLocalizador": "Prazo - Réplica ⏳↩️ - Prazo - Réplica ⏳↩️[jec]",
+      "classificacao": [
+        "Minuta - Genérica",
+        "Sem cumprimento"
+      ],
+      "descricao": "Despacho - Intimação para Réplica",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) SisbaJud Parcial - Formulário e Prosseguimento",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) SisbaJud Parcial e Decurso - Apresentar Formulário e Indicar Bens (M364718)  - 610000118726",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Indicar Bens ⏳🅱️ - Prazo - Indicar Bens ⏳🅱️[jec]",
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Despacho - SisbaJud Parcial - Formulário e Prosseguimento",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) SUSPENSÃO - Tema 1264 (Serasa Limpa Nome)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - SERASA LIMPA NOME - IRDR - Tema 1264 STJ (M364718)  - 610000041781",
+      "evento": "Decisão/Despacho - Processo Suspenso por Recurso Especial Repetitivo (11975)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Suspenso - IRDR e semelhantes ⏱️ - Suspenso - IRDR e semelhantes ⏱️[jec]",
+      "localizadoresSecundarios": [
+        "xTema 1264 - IRDR - Serasa Limpa Nome - xTema 1264 - IRDR - Serasa Limpa Nome [jec]"
+      ],
+      "classificacao": [
+        "Minuta - Suspensão (IRDR)"
+      ],
+      "descricao": "Suspensão - REspTema 1264 STJ",
+      "assinante": "PEDRO SIQUEIRA DE PRETTO - MAGISTRADO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(A) SUSPENSÃO - Tema 59 IRDR (Descontos)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - SUSPENSÃO - IRDR - Tema 59 (Dano Moral - Desconto Associações) (M364718)  - 610000039554",
+      "evento": "Decisão/Despacho - Processo Suspenso por Incidente de Resolução de Demandas Repetitivas (12098)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Suspenso - IRDR e semelhantes ⏱️ - Suspenso - IRDR e semelhantes ⏱️[jec]",
+      "localizadoresSecundarios": [
+        "xTema 59 - IRDR - Tema 59 - INSS - Desconto Indevido - Dano Moral[jec] - xTema 59 - IRDR - Tema 59 - INSS - Desconto Indevido - Dano Moral[jec]"
+      ],
+      "classificacao": [
+        "Minuta - Suspensão (IRDR)"
+      ],
+      "descricao": "Suspensão - Tema 59 IRDR",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(G) Gab - Improcedência (pub autor/réu revel)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado improcedente o pedido - tipo A (220)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Improcedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(G) Gab - Procedência (pub autor/réu revel)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado procedente o pedido - tipo A (219)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(G) Gab - Procedência em Parte (pub autor/réu revel)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado procedente em parte o pedido - tipo A (221)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🔵(G) Sent - Indefere Inicial",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Genérica (M364718)  - 610000035077",
+      "evento": "Sentença - Indeferida a petição inicial - tipo C (454)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Inicial - Sentença"
+      ],
+      "descricao": "Sentença - Indeferida a petição inicial",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(𝐆)𝐃𝐞𝐬𝐩𝐚𝐜𝐡𝐨",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Genérico (M364718)  - 610000036017",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Autor 5 dias - Prazo - Autor 5 dias [jec]",
+      "classificacao": [
+        "Minuta - Genérica",
+        "Sem cumprimento"
+      ],
+      "descricao": "Despacho - Intimação das Partes",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(A) Decurso Acordo - Art. 924, II",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (A) Decorrido Prazo para Cumprimento do Acordo sem Manifestação de Inadimplemento - Art. 924, II, do CPC (M364718)  - 610000302982",
+      "evento": "Sentença - Extinta a execução ou o cumprimento da sentença - tipo B (196)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "1",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Extinção - Pelo Pagamento (art. 924, II)",
+        "Sentença"
+      ],
+      "descricao": "Decorrido o Prazo do Acordo - Art. 924",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(A) Defere art. 916",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Deferido o Pedido de Parcelamento (art. 916, CPC) (M364718)  - 610000047646",
+      "evento": "Decisão/Despacho - Processo Suspenso ou Sobrestado por Convenção das Partes para Satisfação Voluntária da Obrigação em Execução ou Cumprimento de Sentença (277)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "5",
+      "novoLocalizador": "Suspenso - Ag. Acordo/Parcelamento ⏱️ - Suspenso - Ag. Acordo/Parcelamento ⏱️[jec]",
+      "localizadoresSecundarios": [
+        "xSusp - Art. 916 - xSusp - Art. 916[jec]"
+      ],
+      "classificacao": [
+        "Decisão",
+        "Parcelamento art. 916"
+      ],
+      "descricao": "Deferido o Parcelamento - Art. 916",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(A) Homologa Renúncia ao Prazo Recursal",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Homologa Renúncia ao Prazo Recursal (M364718)  - 610000049746",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "1",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Decisão - Homologação de Renúncia ao Prazo Recursal",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(A) Provas",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Especificar Provas (M364718)  - 610000044428",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Provas ⏳↔️ - Prazo - Provas ⏳↔️[jec]",
+      "classificacao": [
+        "Minuta - Genérica",
+        "Sem cumprimento"
+      ],
+      "descricao": "Despacho - Intimação de Provas",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(A) Rejeita Embargos à Execução Sem Garantia",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Embargos à Execução Rejeitados Liminarmente (M364718)  - 610000298029",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor e Réu (prazos diferentes)",
+      "prazoAutor": "5",
+      "prazoReu": "15",
+      "novoLocalizador": "Prazo - Indicar Bens ⏳🅱️ - Prazo - Indicar Bens ⏳🅱️[jec]",
+      "localizadoresSecundarios": [
+        "⏳ PRAZO - Agravo ⚡ - ⏳ PRAZO - Agravo ⚡"
+      ],
+      "classificacao": [
+        "Decisão",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Rejeita Embargos à Execução Sem Garantia",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(A) Réplica + Cadastro Adv Réu",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Manifestar sobre Contestação (M364718)  - 610000044000",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor e Réu (prazos diferentes)",
+      "prazoAutor": "15",
+      "prazoReu": "5",
+      "novoLocalizador": "Prazo - Réplica ⏳↩️ - Prazo - Réplica ⏳↩️[jec]",
+      "classificacao": [
+        "Minuta - Genérica",
+        "Sem cumprimento"
+      ],
+      "descricao": "Despacho - Intimação para Réplica",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(A) Sent - Desistência",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Desistência - art. 485, VIII, do CPC (M364718)  - 610000038348",
+      "evento": "Sentença - Extinto o processo por desistência - tipo C (463)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "1",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise",
+        "F7 - F7"
+      ],
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Extinção - Desistência"
+      ],
+      "descricao": "Extinção pela Desistência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(A) Sent - Homologa Acordo (Conhecimento)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - HOMOLOGAÇÃO DE ACORDO - Processo de Conhecimento (M364718)  - 610000043624",
+      "evento": "Sentença - Homologada a Transação - tipo A (466)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "1",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Homologação de Acordo",
+        "Sem cumprimento"
+      ],
+      "descricao": "Sentença - Homologação de Acordo (Conhecimento)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(A) Sent - Pagamento (art. 924) - TJ na data",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - EXTINÇÃO - Exequente informa o pagamento - TJ na data da sentença (M364718)  - 610000042789",
+      "evento": "Sentença - Extinta a execução ou o cumprimento da sentença - tipo B (196)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "1",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Extinção - Pelo Pagamento (art. 924, II)",
+        "Sem cumprimento"
+      ],
+      "descricao": "Sentença - Extinto pelo Pagamento (art. 924",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(A) SUSPENSÃO - Tema 1417 do STF (atraso/canc/alt voo)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - SUSPENSÃO - Tema 1417 do STF - Atraso, cancelamento ou alteração de voo por caso fortuito ou força maior (M364718)  - 610000262037",
+      "evento": "Decisão/Despacho - Processo Suspenso por Recurso Extraordinário com repercussão geral (265)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "5",
+      "novoLocalizador": "Suspenso - IRDR e semelhantes ⏱️ - Suspenso - IRDR e semelhantes ⏱️[jec]",
+      "localizadoresSecundarios": [
+        "xTema 1417 do STF - Atraso/canc/alt de voo por força maior ou fortuito externo - xTema 1417 do STF - Atraso/canc/alt de voo por força maior ou fortuito externo[jec]"
+      ],
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Determinada a Suspensão - Tema 1417 do STF",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(G) Gab - ED - Acolhimento",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Julgamento sobre Embargos de Declaração (M364718)  - 610000063341",
+      "evento": "Sentença - Terminativa - Embargos de Declaração Acolhidos - tipo 23 (198)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Embargos de Declaração - Sentença"
+      ],
+      "descricao": "Julgamento dos ED - Acolhimento",
+      "assinante": "PEDRO SIQUEIRA DE PRETTO - MAGISTRADO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(G) Gab - ED - Rejeita (prazo 10 dias)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Julgamento sobre Embargos de Declaração (M364718)  - 610000063341",
+      "evento": "Sentença - Terminativa - Embargos de Declaração Não-acolhidos - tipo 23 (200)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Embargos de Declaração - Sentença"
+      ],
+      "descricao": "Sentença - Rejeita Embargos de Declaração - Com prazo de 10 dias",
+      "assinante": "PEDRO SIQUEIRA DE PRETTO - MAGISTRADO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(G) Gab - Improcedência",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado improcedente o pedido - tipo A (220)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Improcedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(G) Gab - Procedência",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado procedente o pedido - tipo A (219)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#🟣(G) Gab - Procedência em Parte",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado procedente em parte o pedido - tipo A (221)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#◯(A) Decretada a Revelia - Sem Provas ↔️🤖",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Revelia - Ausência de Contestação - Sem Provas (M364718)  - 610000075627",
+      "evento": "Decisão/Despacho - Decretada a revelia (12307)",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "zAux - Revelia Sem Provas - Cls. Julgamento 🤖 - zAux - Revelia Sem Provas - Cls. Julgamento 🤖[jec]",
+      "classificacao": [
+        "Decisão",
+        "Revelia"
+      ],
+      "descricao": "Revelia - Sem Provas",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#◯(A) Defere SisbaJud + RenaJud (simples)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - SISBAJUD simples - Citação sem Pagamento - Embargos em Audiência (M364718)  - 610000036095",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "novoLocalizador": "🔭 PESQ - SisbaJud (Simples) 💸 - 🔭 PESQ - SisbaJud (Simples) 💸",
+      "classificacao": [
+        "Minuta - Penhora",
+        "Minuta - Sisbajud - simples"
+      ],
+      "descricao": "Decisão - SisbaJud Simples",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sigiloso (Interno Nível 2)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#◯(A) Reputa Válida Intimação + Prazo Interno 15",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Reputa Válida a Intimação - Art. 19, §2º, da Lei 9.099/95 (M364718)  - 610000271018",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "comportamentoLocalizador": "3",
+      "novoLocalizador": "Prazo Interno - 15 dias ⏱️↔️⚙️ - Prazo Interno - 15 dias ⏱️↔️⚙️[jec]",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Art. 19 da Lei 9.099/95",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "#◯(A) Revelia após Mdd de Constatação ↔️🤖",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Revelia Após Constatação (M364718)  - 610000217661",
+      "evento": "Decisão/Despacho - Decretada a revelia (12307)",
+      "novoLocalizador": "🤖 ATP - Ag. Prazo ➡️ Gabinete ⚖️ - 🤖 ATP - Ag. Prazo ➡️ Gabinete ⚖️",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Decreta Revelia",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚿ Transitar (selecionar data)",
+      "tipo": "movimentacao",
+      "evento": "Transitado em Julgado",
+      "novoLocalizador": "🔍 Conferir - Baixar 🗃️ - 🔍 Conferir - Baixar 🗃️"
+    },
+    {
+      "nome": "ⓒ🔴(𝐆)𝐃𝐞𝐬𝐩𝐚𝐜𝐡𝐨",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Genérico (M364718)  - 610000036017",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Réu 5 dias - Prazo - Réu 5 dias",
+      "classificacao": [
+        "Com Ato para Cumprir",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Despacho - Intimação das Partes",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🔴(A) Inicial - Contestar (carta e Portal)",
+      "tipo": "movimentacao",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL"
+    },
+    {
+      "nome": "ⓒ🔴(A) Intima p/ Contestar (Aud Infrutífera)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A)Conciliação Infrutífera - Intima para Contestar (M364718)  - 610000047881",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "15",
+      "novoLocalizador": "📋 Cumprir - Análise - 📋 Cumprir - Análise",
+      "localizadoresSecundarios": [
+        "Prazo - Contestação (Portal) ⏳🛡️ - Prazo - Contestação (Portal) ⏳🛡️[jec]"
+      ],
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Despacho - Intimação para Contestar (Audiência Infrutífera)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🔴(A) Provas",
+      "tipo": "movimentacao",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL"
+    },
+    {
+      "nome": "ⓒ🔴(G) Gab - Improcedência (autor sem adv)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado improcedente o pedido - tipo A (220)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Autor - Sentença - 📋 Cumprir - Intimar Autor - Sentença"
+      ],
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🔴(G) Gab - Procedência em Parte (autor sem adv)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado procedente em parte o pedido - tipo A (221)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Autor - Sentença - 📋 Cumprir - Intimar Autor - Sentença"
+      ],
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🔵(𝐆)𝐃𝐞𝐬𝐩𝐚𝐜𝐡𝐨",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Genérico (M364718)  - 610000036017",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Autor 5 dias - Prazo - Autor 5 dias [jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Análise - 📋 Cumprir - Análise"
+      ],
+      "classificacao": [
+        "Com Ato para Cumprir",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Despacho - Com Intimação do Autor",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🔵(A) Defere art. 916",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Deferido o Pedido de Parcelamento (art. 916, CPC) (M364718)  - 610000047646",
+      "evento": "Decisão/Despacho - Processo Suspenso ou Sobrestado por Convenção das Partes para Satisfação Voluntária da Obrigação em Execução ou Cumprimento de Sentença (277)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Suspenso - Ag. Acordo/Parcelamento ⏱️ - Suspenso - Ag. Acordo/Parcelamento ⏱️[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Executado - Deferido Art. 916 - 📋 Cumprir - Intimar Executado - Deferido Art. 916",
+        "xSusp - Art. 916 - xSusp - Art. 916[jec]"
+      ],
+      "classificacao": [
+        "Decisão",
+        "Parcelamento art. 916"
+      ],
+      "descricao": "Deferido o Parcelamento - Art. 916",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🔵(A) Sent - Extinta a Execução - art. 924, II, do CPC (Carta para o executado)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Sentença - Satisfação da Obrigação - Art. 924, II, do CPC (M814161)  - 610000133116",
+      "evento": "Sentença - Extinta a execução ou o cumprimento da sentença - tipo B (196)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Réu - Sentença - 📋 Cumprir - Intimar Réu - Sentença"
+      ],
+      "classificacao": [
+        "Sentença"
+      ],
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🔵(G) Gab - Improcedência (reqdo sem adv e ñ revel)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado improcedente o pedido - tipo A (220)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Réu - Sentença - 📋 Cumprir - Intimar Réu - Sentença"
+      ],
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Improcedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🔵(G) Gab - Proc em Parte (reqdo sem adv e ñ revel)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado procedente em parte o pedido - tipo A (221)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Réu - Sentença - 📋 Cumprir - Intimar Réu - Sentença"
+      ],
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🔵(G) Gab - Procedência (reqdo sem adv e ñ revel)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado procedente o pedido - tipo A (219)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Réu - Sentença - 📋 Cumprir - Intimar Réu - Sentença"
+      ],
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🔵(G) Inicial - Cancelamento da Distribuição - Erros",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Inicial - Determina o Cancelamento - Ação Distribuída com Erros no Sistema (M364718)  - 610000036928",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Autor 5 dias - Prazo - Autor 5 dias [jec]",
+      "localizadoresSecundarios": [
+        "🤖 ATP - Cumprir Após o Prazo - 🤖 ATP - Cumprir Após o Prazo"
+      ],
+      "classificacao": [
+        "Minuta - Cancelamento de Distribuição"
+      ],
+      "descricao": "Determina o Cancelamento da Distribuição - Erros",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🟣(𝐆)𝐃𝐞𝐬𝐩𝐚𝐜𝐡𝐨",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Genérico (M364718)  - 610000036017",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "5",
+      "novoLocalizador": "📋 Cumprir - Análise - 📋 Cumprir - Análise",
+      "localizadoresSecundarios": [
+        "Prazo - Autor 5 dias - Prazo - Autor 5 dias [jec]",
+        "Prazo - Réu 5 dias - Prazo - Réu 5 dias"
+      ],
+      "classificacao": [
+        "Com Ato para Cumprir",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Despacho - Intimação das Partes",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🟣(A) Decisão - Homologa Acordo - Execução",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Homologação de Acordo (Execução/Cumprimento de Sentença) (M364718)  - 610000077060",
+      "evento": "Decisão/Despacho - Homologado o Acordo em Execução ou em Cumprimento de Sentença (14099)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "1",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "📋 Cumprir - Anotar Suspensão⏱️ - 📋 Cumprir - Anotar Suspensão⏱️",
+      "localizadoresSecundarios": [
+        "Suspenso - Ag. Acordo/Parcelamento ⏱️ - Suspenso - Ag. Acordo/Parcelamento ⏱️[jec]"
+      ],
+      "classificacao": [
+        "Decisão",
+        "Homologação de Acordo"
+      ],
+      "descricao": "Decisão - Homologado o Acordo em Processo de Execução/Cumprimento de Sentença",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🟣(G) Gab - Improcedência (cumprir)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado improcedente o pedido - tipo A (220)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Análise - 📋 Cumprir - Análise"
+      ],
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Improcedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🟣(G) Gab - Procedência (cumprir)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado procedente o pedido - tipo A (219)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Análise - 📋 Cumprir - Análise"
+      ],
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ🟣(G) Gab - Procedência em Parte (cumprir)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado procedente em parte o pedido - tipo A (221)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Análise - 📋 Cumprir - Análise"
+      ],
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(𝐆)𝐃𝐞𝐬𝐩𝐚𝐜𝐡𝐨",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Genérico (M364718)  - 610000036017",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "novoLocalizador": "📋 Cumprir - Análise - 📋 Cumprir - Análise",
+      "classificacao": [
+        "Com Ato para Cumprir",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Despacho - Cumprimento",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(𝑭)  𝑨𝑻𝑶 - 𝑬𝑵𝑪𝑨𝑴𝑰𝑵𝑯𝑨 𝑷𝑨𝑹𝑨 𝑬𝑿𝑷𝑬𝑫𝑰𝑹 𝑴𝑳𝑬",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Ato - Encaminha para Expedição de MLE (M364718)  - 610000179359",
+      "evento": "Ato ordinatório praticado (11383)",
+      "novoLocalizador": "📋 Cumprir - Expedir MLE 💵💲 - 📋 Cumprir - Expedir MLE 💵💲",
+      "classificacao": [
+        "Ato Ordinatório",
+        "Formulário avançado"
+      ],
+      "descricao": "Ato Ordinatório - Encaminha para Expedição de MLE",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(𝑭) 𝘿𝙀𝙁𝙀𝙍𝙀 𝙎𝙄𝙎𝘽𝘼𝙅𝙐𝘿 (𝙋𝙀𝙉𝙃𝙊𝙍𝘼𝙎)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) DEFERE SISBAJUD (M364718)  - 610000247230",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "novoLocalizador": "🔭 PESQ - SisbaJud (Simples) 💸 - 🔭 PESQ - SisbaJud (Simples) 💸",
+      "classificacao": [
+        "Decisão",
+        "Formulário avançado",
+        "Minuta - Sisbajud - simples"
+      ],
+      "descricao": "Decisão - SisbaJud",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sigiloso (Interno Nível 2)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Ato - Intimar para Réplica",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Encaminha para Intimar o Autor para Réplica (com advertência para adv) (M364718)  - 610000062764",
+      "evento": "Ato ordinatório praticado (11383)",
+      "novoLocalizador": "📋 Cumprir - Intimar Réplica®️ - 📋 Cumprir - Intimar Réplica®️",
+      "classificacao": [
+        "Ato Ordinatório",
+        "Com Ato para Cumprir"
+      ],
+      "descricao": "Ato Ordinatório - Encaminha para Intimar para Réplica",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Citação para Contestar (por MDD)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão",
+      "evento": "Decisão/Despacho - Determinada a citação (15216)",
+      "novoLocalizador": "📋 Cumprir - Mdd Citação - Contestar 15 - 📋 Cumprir - Mdd Citação - Contestar 15",
+      "classificacao": [
+        "Com Ato para Cumprir",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Despacho - Citação em Novo Endereço (Contestar - por Mandado)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Citar em Novo Endereço (Contestar)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (CA) Citação para Contestar (Novo Endereço) (M364718)  - 610000044013",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "novoLocalizador": "📋 Cumprir - Carta Citação - Contestar ✉️ - 📋 Cumprir - Carta Citação - Contestar ✉️",
+      "classificacao": [
+        "Com Ato para Cumprir",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Despacho - Citação em Novo Endereço (Constestar)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Citar em Novo Endereço (Pagamento 3 Dias)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Citação para Pagar em 3 Dias (Novo Endereço) (M364718)  - 610000068603",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "novoLocalizador": "📋 Cumprir - ETE - Mandado Pagamento 3 Dias 💼 - 📋 Cumprir - ETE - Mandado Pagamento 3 Dias 💼",
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Citação no Novo Endereço",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Cumpra-se a Carta Precatória",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Cumpra-se (Carta Precatória) (M364718)  - 610000050440",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "novoLocalizador": "📋 Cumprir - Prec (cumpra-se) - 📋 Cumprir - Prec (cumpra-se)",
+      "classificacao": [
+        "Com Ato para Cumprir",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Despacho - Cumprimento CP",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Defere art. 916",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Deferido o Pedido de Parcelamento (art. 916, CPC) (M364718)  - 610000047646",
+      "evento": "Decisão/Despacho - Processo Suspenso ou Sobrestado por Convenção das Partes para Satisfação Voluntária da Obrigação em Execução ou Cumprimento de Sentença (277)",
+      "novoLocalizador": "📋 Cumprir - Intimar Exequente - Deferido Art. 916 - 📋 Cumprir - Intimar Exequente - Deferido Art. 916",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Exequente - Deferido Art. 916 - 📋 Cumprir - Intimar Exequente - Deferido Art. 916",
+        "Suspenso - Ag. Acordo/Parcelamento ⏱️ - Suspenso - Ag. Acordo/Parcelamento ⏱️[jec]",
+        "xSusp - Art. 916 - xSusp - Art. 916[jec]"
+      ],
+      "classificacao": [
+        "Decisão",
+        "Parcelamento art. 916"
+      ],
+      "descricao": "Deferido o Parcelamento - Art. 916",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Despacho-Mandado - Penhora, Avaliação e Intimação",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Despacho-Mandado - Penhora, Avaliação e Intimação (M364718)  - 610000067118",
+      "evento": "Decisão/Despacho - Determinada diligência (12648)",
+      "novoLocalizador": "📋 Cumprir - Mdd/Folha Rosto - Penhora 🎯 - 📋 Cumprir - Mdd/Folha Rosto - Penhora 🎯",
+      "classificacao": [
+        "Despacho",
+        "Minuta - Penhora"
+      ],
+      "descricao": "Despacho-mandado - Penhora",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Indicar Endereço",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Indicar Endereço (M364718)  - 610000044005",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Indicar Endereço (Conhecimento) - 📋 Cumprir - Intimar Autor - Indicar Endereço (Conhecimento)",
+      "classificacao": [
+        "Com Ato para Cumprir",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Despacho - Intimação para Indicar Endereço",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Indicar Endereço + Cancela Aud",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Cancela Audiência (Requerido Não Citado) - Indicar Endereço (M364718)  - 610000095860",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Indicar Endereço (Conhecimento) - 📋 Cumprir - Intimar Autor - Indicar Endereço (Conhecimento)",
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Despacho - Indicar Endereço + Cancela Audiência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Inicial - Contestar",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (CA) Decisão - Inicial - Citação para Contestar - Por Carta (M364718)  - 610000026580",
+      "evento": "Decisão/Despacho - Determinada a citação (11010)",
+      "novoLocalizador": "📋 Cumprir - Carta Citação - Contestar ✉️ - 📋 Cumprir - Carta Citação - Contestar ✉️",
+      "classificacao": [
+        "Inicial - Recebimento"
+      ],
+      "descricao": "Despacho - Recebe Inicial",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Inicial Exec - Pagar em 3 Dias",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Decisão - Inicial - Citação para Pagamento em 3 Dias - Por Mandado (M364718)  - 610000026950",
+      "evento": "Decisão/Despacho - Determinada a citação (11010)",
+      "novoLocalizador": "📋 Cumprir - ETE - Mandado Pagamento 3 Dias 💼 - 📋 Cumprir - ETE - Mandado Pagamento 3 Dias 💼",
+      "classificacao": [
+        "Minuta - Inicial ETE"
+      ],
+      "descricao": "(A) Decisão - Inicial - Citação para Pagamento em 3 Dias - Por Mandado",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Intima p/ Contestar (Aud Infrutífera)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A)Conciliação Infrutífera - Intima para Contestar (M364718)  - 610000047881",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "novoLocalizador": "📋 Cumprir - Análise - 📋 Cumprir - Análise",
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Despacho - Intimação para Contestar (Audiência Infrutífera)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Intima para Pagar em 15 dias",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (CA) Decisão - Intimação Pessoal para Pagar - Cumprimento de Sentença (M364718)  - 610000240852",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "novoLocalizador": "📋 Cumprir - Intimar Executado para Pagar 15 Dias (art. 523) - 📋 Cumprir - Intimar Executado para Pagar 15 Dias (art. 523)",
+      "classificacao": [
+        "Cumprimento de Sentença - Inicial",
+        "Decisão"
+      ],
+      "descricao": "Determinada a Intimação da Executada para Pagamento",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Recebe Recurso - Intimação Pessoal do Recorrido",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Recebe Recurso Inominado (M364718)  - 610000152001",
+      "evento": "Decisão/Despacho - Recebido o recurso de Apelação (394)",
+      "novoLocalizador": "Prazo - Contrarrazões - Prazo - Contrarrazões[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Análise - 📋 Cumprir - Análise"
+      ],
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Decisão - Recebimento de Recurso Inominado",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Réplica em 15 dias",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Manifestar sobre Contestação (M364718)  - 610000044000",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "novoLocalizador": "📋 Cumprir - Intimar Réplica®️ - 📋 Cumprir - Intimar Réplica®️",
+      "classificacao": [
+        "Minuta - Genérica",
+        "Sem cumprimento"
+      ],
+      "descricao": "Despacho - Intimação para Réplica",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) Sent - Exaurimento de Diligências - Ausência de Bens - Art. 53, §4º",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (A) Esgotamento de Diligência e Ausência de Bens - Art. 53, §4º, da Lei 9.099/95 (M364718)  - 610000136903",
+      "evento": "Sentença - Extinto o processo por inexistência de bens penhoráveis - tipo C (11375)",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Autor - Sentença - 📋 Cumprir - Intimar Autor - Sentença"
+      ],
+      "classificacao": [
+        "Extinção - Ausência de Bens"
+      ],
+      "descricao": "Extinção - Esgotamento",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(A) SisbaJud Parcial - Formulário e Prosseguimento",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) SisbaJud Parcial e Decurso - Apresentar Formulário e Indicar Bens (M364718)  - 610000118726",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Indicar Bens - 📋 Cumprir - Intimar Autor - Indicar Bens",
+      "classificacao": [
+        "Com Ato para Cumprir",
+        "Despacho"
+      ],
+      "descricao": "Despacho - SisbaJud Parcial - Formulário e Prosseguimento",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(F) Decisão-Ofício - Penhora Rosto dos Autos (envio automático - deve ser informado o e-mail)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Ofício - Decisão - Penhora no Rosto dos Autos (com envio automático por e-mail) (M364718)  - 610000281237",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "novoLocalizador": "⏳ PRAZO - Resposta Ofício 📨 - ⏳ PRAZO - Resposta Ofício 📨",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Executado - SisbaJud Positivo (Emb 15) - 📋 Cumprir - Intimar Executado - SisbaJud Positivo (Emb 15)"
+      ],
+      "classificacao": [
+        "Decisão",
+        "Ofício"
+      ],
+      "descricao": "Decisão-Ofício - Penhora no Rosto dos Autos",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(G) Diligência Inicial - RenaJud",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão",
+      "evento": "Decisão/Despacho - Determinada diligência (12648)",
+      "novoLocalizador": "📋 Cumprir - Análise - 📋 Cumprir - Análise",
+      "classificacao": [
+        "Minuta - Genérica"
+      ],
+      "descricao": "Despacho de Diligência - RenaJud",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(G) Gab - Improcedência (sem pub e sem revel)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado improcedente o pedido - tipo A (220)",
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Sentença - 📋 Cumprir - Intimar Autor - Sentença",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Réu - Sentença - 📋 Cumprir - Intimar Réu - Sentença"
+      ],
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Improcedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(G) Gab - Proc em Parte (sem pub e sem revel)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado procedente em parte o pedido - tipo A (221)",
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Sentença - 📋 Cumprir - Intimar Autor - Sentença",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Réu - Sentença - 📋 Cumprir - Intimar Réu - Sentença"
+      ],
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "ⓒ◯(G) Gab - Procedência (sem pub e sem revel)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Gabinete - Genérica/Geral (M364718)  - 610000045234",
+      "evento": "Sentença - Julgado procedente o pedido - tipo A (219)",
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Sentença - 📋 Cumprir - Intimar Autor - Sentença",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Réu - Sentença - 📋 Cumprir - Intimar Réu - Sentença"
+      ],
+      "classificacao": [
+        "Sentença - Mérito"
+      ],
+      "descricao": "Sentença de Procedência",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️🟣(A) Designa Audiência de Instrução e Julgamento",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Designa Audiência de Instrução Híbrida (M364718)  - 610000122856",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "5",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise",
+        "F7 - F7"
+      ],
+      "novoLocalizador": "📅 AUD - Instrução e Julgamento ⚔️ - 📅 AUD - Instrução e Julgamento ⚔️",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - URGENTE - Tutela/Urgente ❗🚨 - 📋 Cumprir - URGENTE - Tutela/Urgente ❗🚨"
+      ],
+      "classificacao": [
+        "Audiência de Instrução",
+        "Decisão"
+      ],
+      "descricao": "Designa Audiência de Instrução Híbrida",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝐆)𝐃𝐞𝐬𝐩𝐚𝐜𝐡𝐨",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Manifestar sobre Contestação (M364718)  - 610000044000",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "classificacao": [
+        "Preferência Base"
+      ],
+      "descricao": "Despacho - Base",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝑭) 𝑨𝑮𝑹𝑨𝑽𝑶 𝑰𝑵𝑻𝑬𝑹𝑷𝑶𝑺𝑻𝑶",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Agravo de Instrumento - Mantém Decisão e Aguarda (M364718)  - 610000214787",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Decisão - Agravo - Mantém Decisão",
+      "assinante": "PEDRO SIQUEIRA DE PRETTO - MAGISTRADO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝑭) 𝑫𝑬𝑭𝑬𝑹𝑬/𝑰𝑵𝑫𝑬𝑭𝑬𝑹𝑬 𝑷𝑬𝑵𝑯𝑶𝑹𝑨𝑺",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Deferimento de Penhoras (M364718)  - 610000221489",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "novoLocalizador": "🔍 Conferir - Análise - 🔍 Conferir - Análise",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Decisão - Pedido de Penhora",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝑭) 𝑫𝑬𝑺𝑩𝑳𝑶𝑸 𝑺𝑰𝑺𝑩𝑨𝑱𝑼𝑫 (𝑫𝑬𝑭𝑬𝑹𝑬)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Decisão - Defere Desbloqueio/Levantamento de Valores (M364718)  - 610000273467",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "novoLocalizador": "🔍 Conferir - Análise - 🔍 Conferir - Análise",
+      "classificacao": [
+        "Decisão",
+        "Defere Desbloqueio SisbaJud",
+        "Formulário avançado"
+      ],
+      "descricao": "Decisão - Acolhida a Impugnação à Penhora",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝑭) 𝑫𝑬𝑺𝑰𝑺𝑻𝑬̂𝑵𝑪𝑰𝑨 𝑷𝑨𝑹𝑪𝑰𝑨𝑳",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Desistência de Apenas Uma Parte (M364718)  - 610000210251",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "1",
+      "novoLocalizador": "📋 Cumprir - Análise - 📋 Cumprir - Análise",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Decisão - Extinção de Uma Parte Apenas",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝑭) 𝑬𝑿𝑷𝑬𝑫𝑬 𝑴𝑳𝑬",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Defere Expedição de MLE (M364718)  - 610000164642",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "novoLocalizador": "📋 Cumprir - Expedir MLE 💵💲 - 📋 Cumprir - Expedir MLE 💵💲",
+      "localizadoresSecundarios": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "classificacao": [
+        "Agendamento Manual",
+        "Decisão",
+        "Formulário avançado"
+      ],
+      "descricao": "Decisão - Expedir MLE",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝑭) 𝑵𝑶𝑽𝑨 𝑪𝑰𝑻𝑨𝑪̧𝑨̃𝑶",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Nova Tentativa de Citação (novo endereço etc) (M364718)  - 610000174617",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "novoLocalizador": "🔍 Conferir - Análise - 🔍 Conferir - Análise",
+      "classificacao": [
+        "Despacho",
+        "Formulário avançado"
+      ],
+      "descricao": "Despacho - Nova Citação",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝑭) 𝑷𝑹𝑶𝑷𝑶𝑺𝑻𝑨 𝑫𝑬 𝑨𝑪𝑶𝑹𝑫𝑶",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) Acordo ou Parcelamento - Intimação para Proposta/Contraproposta (M364718)  - 610000172571",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "novoLocalizador": "🔍 Conferir - Análise - 🔍 Conferir - Análise",
+      "localizadoresSecundarios": [
+        "Prazo - Manifestar sobre Acordo/Parcelamento ⏳ - Prazo - Manifestar sobre Acordo/Parcelamento ⏳[jec]"
+      ],
+      "classificacao": [
+        "Despacho",
+        "Formulário avançado"
+      ],
+      "descricao": "Despacho - Intimação sobre Proposta/Contraproposta de Acordo/Parcelamento",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝑭) 𝑺𝑬𝑵𝑻 - 𝑨𝑹𝑻. 𝟒𝟖𝟓, 𝑰𝑽",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (F) Extinção - Art. 485, IV (M364718)  - 610000055927",
+      "evento": "Sentença - Extinto o processo por ausência de pressupostos processuais - tipo C (459)",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "classificacao": [
+        "Formulário avançado",
+        "Sentença"
+      ],
+      "descricao": "Sentença - Art. 485",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝑭) 𝑺𝑬𝑵𝑻 - 𝑨𝑹𝑻. 𝟓𝟑 (𝑫𝑬𝑽𝑬𝑫𝑶𝑹)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (F) Sent - Não Localizado o Devedor (Art. 53, §4º) (M364718)  - 610000216120",
+      "evento": "Sentença - Extinto o processo por devedor não encontrado - tipo C (11374)",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise",
+        "F7 - F7"
+      ],
+      "novoLocalizador": "🔍 Conferir - Análise - 🔍 Conferir - Análise",
+      "classificacao": [
+        "Formulário avançado",
+        "Sentença"
+      ],
+      "descricao": "Devedor não Encontrado",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝑭) 𝑺𝑬𝑵𝑻 - 𝑨𝑹𝑻. 𝟗𝟐𝟒, 𝑰𝑰",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (F) Sent - Art. 924, II, do CPC (M364718)  - 610000175702",
+      "evento": "Sentença - Extinta a execução ou o cumprimento da sentença - tipo B (196)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "localizadoresSecundarios": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "classificacao": [
+        "Extinção - Pelo Pagamento (art. 924, II)",
+        "Formulário avançado",
+        "Sentença"
+      ],
+      "descricao": "Sentença - Art. 924",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(𝑭) 𝑺𝑰𝑺𝑩𝑨𝑱𝑼𝑫 𝑷𝑨𝑹𝑪𝑰𝑨𝑳",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (F) SisbaJud Parcial + Prosseguimento e Penhoras (M364718)  - 610000297863",
+      "evento": "Decisão/Despacho - Determinada a intimação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "novoLocalizador": "🔍 Conferir - Análise - 🔍 Conferir - Análise",
+      "classificacao": [
+        "Despacho",
+        "Formulário avançado"
+      ],
+      "descricao": "Despacho - SisbaJud Parcial - Formulário e Prosseguimento",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "⚠️⚠️(A) Recebe Embargos à Execução (c/ susp)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Recebe Embargos à Execução - Com Efeito Suspensivo (M364718)  - 610000258870",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "novoLocalizador": "Prazo - Manifestar sobre Embargos à Execução - Prazo - Manifestar sobre Embargos à Execução",
+      "localizadoresSecundarios": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Recebe Embargos à Execução com Efeito Suspensivo",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Ato - AR Ausente/Não Procurado - Encaminha para Expedição de Mdd (assinar ato)",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - AR Negativo - Ausente - Encaminha para Expedir Mdd (M364718)  - 610000048361",
+      "evento": "Ato ordinatório praticado (11383)",
+      "novoLocalizador": "📋 Cumprir - Análise - 📋 Cumprir - Análise",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato - Encaminha para Expedir Mdd (ausente/não procurado)",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta - Intima Autor - Indicar Endereço (Conhecimento)",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intima Autor - Indicar Endereço (Conhecimento) (M364718)  - 610000045983",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "Prazo - Indicar Endereço (citação) ⏳🏠 - Prazo - Indicar Endereço (citação) ⏳🏠[jec]",
+      "classificacao": [
+        "Carta - Autor"
+      ],
+      "descricao": "Carta - Intima Autor para Indicar Endereço",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta - Intima Autor - Indicar Endereço (Execução)",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intima Autor - Indicar Endereço (Execução) (M364718)  - 610000065744",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "Prazo - Indicar Endereço (citação) ⏳🏠 - Prazo - Indicar Endereço (citação) ⏳🏠[jec]",
+      "classificacao": [
+        "Carta - Autor"
+      ],
+      "descricao": "Carta - Intima Autor para Indicar Endereço",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta - Intima Autor - Réplica",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intima Autor - Réplica (M364718)  - 610000045962",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "Prazo - Réplica ⏳↩️ - Prazo - Réplica ⏳↩️[jec]",
+      "classificacao": [
+        "Carta - Autor"
+      ],
+      "descricao": "Carta - Intima Autor para Réplica",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta - Intima Autor sobre Pagamento (ext)",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intimação do Autor - Depósito como Pagamento (M364718)  - 610000046372",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "Prazo - Manifest sobre Pagamento (ext) ⏳🏦 - Prazo - Manifest sobre Pagamento (ext) ⏳🏦[jec]",
+      "classificacao": [
+        "Carta - Autor"
+      ],
+      "descricao": "Carta - Manifestar sobre Pagamento (com Extinção/Arquivamento)",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta - Intima Provas",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Geral - Indicar Provas (M364718)  - 610000046001",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "Prazo - Provas ⏳↔️ - Prazo - Provas ⏳↔️[jec]",
+      "classificacao": [
+        "Carta - Provas"
+      ],
+      "descricao": "Carta - Intimação Provas",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta - Intimação da Sentença",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Sentença - Geral (M364718)  - 610000042671",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Carta - Sentença"
+      ],
+      "descricao": "Cara de Intimação da Sentença",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta - Intimação do Autor - Emenda",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intima Autor - Emenda (M364718)  - 610000035876",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "Prazo - Emenda ⏳🔁 - Prazo - Emenda ⏳🔁[jec]",
+      "classificacao": [
+        "Carta - Autor"
+      ],
+      "descricao": "Carta - Intimação para Emenda",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta - Intimação do Executado - Indeferido Desbloq SisbaJud",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intimação de Indeferimento de Desbloqueio SisbaJud (M364718)  - 610000065005",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "⏳ PRAZO - Agravo ⚡ - ⏳ PRAZO - Agravo ⚡",
+      "classificacao": [
+        "Carta - Executado"
+      ],
+      "descricao": "Carta - Indeferido Desbloqueio",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta - Intimação do Executado para Audiência Presencial e Embargos",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intimação do Executado - Audiência de Conciliação PRESENCIAL (M364718)  - 610000128397",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "📅 AUD - Conciliação (Presencial) 🏛️ - 📅 AUD - Conciliação (Presencial) 🏛️",
+      "classificacao": [
+        "Carta - Executado"
+      ],
+      "descricao": "Carta de Intimação para o Executado (Audiência Presencial)",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta - Intimação para Pagar em 15 Dias (art. 523)",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Intimação para Pagamento - Art. 523, do CPC (M364718)  - 610000105996",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "Prazo - Pagamento 15 Dias (art. 523)⏳ - Prazo - Pagamento 15 Dias (art. 523)⏳[jec]",
+      "classificacao": [
+        "Carta - Executado"
+      ],
+      "descricao": "Carta de Intimação para Pagamento",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta - SisbaJud Positivo - Embargos 15 dias",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intimação de Penhora SisbaJud - Embargos 15 dias (M364718)  - 610000044432",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "Prazo - Embargos à Penhora - Prazo - Embargos à Penhora[jec]",
+      "classificacao": [
+        "Carta - Executado",
+        "Embargos à Penhora"
+      ],
+      "descricao": "Carta - Intimação do Executado para Embargos",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta Autor - Aud PRESENCIAL",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intimação do Autor - Audiência de Conciliação PRESENCIAL (M364718)  - 610000063823",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "📅 AUD - Conciliação (Presencial) 🏛️ - 📅 AUD - Conciliação (Presencial) 🏛️",
+      "classificacao": [
+        "Audiência - Presencial",
+        "Carta - Autor"
+      ],
+      "descricao": "Carta de Audiência Virtual",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta Autor - Aud VIRTUAL",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intimação Autor - Audiência de Conciliação VIRTUAL (M364718)  - 610000036718",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "📅 AUD - Conciliação (Virtual) 💻 - 📅 AUD - Conciliação (Virtual) 💻",
+      "classificacao": [
+        "Audiência - Virtual",
+        "Carta - Autor"
+      ],
+      "descricao": "Carta de Audiência Virtual",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Carta Citação Contestação",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Citação - Contestação - JEC (M364718)  - 610000025614",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "Prazo - Contestação (AR) ⏳🛡️ - Prazo - Contestação (AR) ⏳🛡️[jec]",
+      "classificacao": [
+        "Carta - Citação"
+      ],
+      "descricao": "Carta de Citação para Contestar em 15 Dias",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Certidão de Decurso - Prazo 48h para Documentos da Atermação",
+      "tipo": "movimentacao",
+      "modelo": "Certidão de cartório - (A) Decurso de Prazo para Juntada de Docs (Atermação) (M364718)  - 610000314600",
+      "evento": "Juntada de certidão (581)",
+      "comportamentoLocalizador": "3",
+      "novoLocalizador": "📥 Inicial - Análise 🔍 - 📥 Inicial - Análise 🔍",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Folha de Rosto - Genérica (precisa escolher localizador e prazo)",
+      "tipo": "movimentacao",
+      "modelo": "Mandado - CEMAN - Mandado CEMAN - Folha de Rosto - Geral (M364718)  - 610000031647",
+      "evento": "Expedição de mandado",
+      "novoLocalizador": "x☢️☢️☢️CUMPRIMENTO - NÃO USAR☢️☢️☢️ - x☢️☢️☢️CUMPRIMENTO - NÃO USAR☢️☢️☢️[jec]",
+      "classificacao": [
+        "Folha de Rosto (Genérica)"
+      ],
+      "descricao": "Folha de Rosto - Genérica",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Folha de Rosto - Penhora (Embargos 15 dias)",
+      "tipo": "movimentacao",
+      "modelo": "Mandado - CEMAN - Mandado CEMAN - Folha de Rosto - Geral (M364718)  - 610000031647",
+      "evento": "Expedição de mandado",
+      "novoLocalizador": "⏳ PRAZO - Mandado Penhora 💰 - ⏳ PRAZO - Mandado Penhora 💰",
+      "classificacao": [
+        "Folha de Rosto (Penhora)"
+      ],
+      "descricao": "Folha de Rosto - Para Penhora",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Folha de Rosto - Penhora (Embargos em Aud)",
+      "tipo": "movimentacao",
+      "modelo": "Mandado - CEMAN - Mandado CEMAN - Folha de Rosto - Geral (M364718)  - 610000031647",
+      "evento": "Expedição de mandado",
+      "novoLocalizador": "⏳ PRAZO - Mandado Penhora 💰 - ⏳ PRAZO - Mandado Penhora 💰",
+      "classificacao": [
+        "Folha de Rosto (Penhora)"
+      ],
+      "descricao": "Folha de Rosto - Para Penhora",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Mandado - Citação 15 Dias",
+      "tipo": "movimentacao",
+      "modelo": "Mandado - CEMAN - Citação para Contestar em 15 Dias (M364718)  - 610000044437",
+      "evento": "Expedição de mandado",
+      "novoLocalizador": "Prazo - Contestação (Mdd) ⏳🛡️ - Prazo - Contestação (Mdd) ⏳🛡️[jec]",
+      "classificacao": [
+        "Mandado - Citação"
+      ],
+      "descricao": "Mandado de Citação - Contestação 15",
+      "assinante": "HELTON FREIRE DO CARMO - CHEFE DE CARTÓRIO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Mdd - Citação Pagamento em 3 Dias",
+      "tipo": "movimentacao",
+      "modelo": "Mandado - CEMAN - Mandado CEMAN - Citação, Penhora e Avaliação - Título Executivo Extrajudicial - Sem Audiência Previamente Designada - Juizado - Importado (M364718)  - 610000027061",
+      "evento": "Expedição de mandado",
+      "novoLocalizador": "Prazo - Pagamento 3 dias (Mdd) ⏳💵 - Prazo - Pagamento 3 dias (Mdd) ⏳💵[jec]",
+      "descricao": "Mandado Citação para Pagamento 3 Dias",
+      "assinante": "HELTON FREIRE DO CARMO - CHEFE DE CARTÓRIO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(A) Mdd Penhora, Av e Int (s/ bens indicados)",
+      "tipo": "movimentacao",
+      "modelo": "Mandado - CEMAN - Penhora, Avaliação e Intimação - Genérico/Sem Indicação de Bens (M364718)  - 610000044436",
+      "evento": "Expedição de mandado",
+      "novoLocalizador": "⏳ PRAZO - Mandado Penhora 💰 - ⏳ PRAZO - Mandado Penhora 💰",
+      "classificacao": [
+        "Mandado Genérico",
+        "Penhora"
+      ],
+      "descricao": "Mandado de Penhora",
+      "assinante": "HELTON FREIRE DO CARMO - CHEFE DE CARTÓRIO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(aud virtual) #🟣(A) Inicial (Portal)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) (Portal) Decisão - Inicial - Citação e Intimação - Audiência de Conciliação - CEJUSC - Virtual (M364718)  - 610000028286",
+      "evento": "Decisão/Despacho - Determinada a citação (11010)",
+      "novoLocalizador": "📅 AUD - Conciliação (Virtual) 💻 - 📅 AUD - Conciliação (Virtual) 💻",
+      "classificacao": [
+        "Audiência - Virtual",
+        "Inicial - Recebimento"
+      ],
+      "descricao": "Recebida a Inicial - Audiência de Conciliação Virtuaç",
+      "assinante": "PEDRO SIQUEIRA DE PRETTO - MAGISTRADO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(aud virtual) ⓒ🔴(A) Inicial (Portal + cart autor)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) (Portal) Decisão - Inicial - Citação e Intimação - Audiência de Conciliação - CEJUSC - Virtual (M364718)  - 610000028286",
+      "evento": "Decisão/Despacho - Determinada a citação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a citação eletrônica",
+        "tipo": "Citação pelo DJE"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "5",
+      "novoLocalizador": "📅 AUD - Conciliação (Virtual) 💻 - 📅 AUD - Conciliação (Virtual) 💻",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Intimar Autor - Aud Virtual ✉️💻🚨 - 📋 Cumprir - Intimar Autor - Aud Virtual ✉️💻🚨"
+      ],
+      "classificacao": [
+        "Audiência - Virtual",
+        "Inicial - Recebimento"
+      ],
+      "descricao": "Recebida a Inicial - Audiência de Conciliação Virtual",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(aud virtual) ⓒ🔵(A) Inicial (Carta Reqdo)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Decisão - Inicial - Citação e Intimação - Audiência de Conciliação - CEJUSC - Virtual (M364718)  - 610000063637",
+      "evento": "Decisão/Despacho - Determinada a citação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "📋 Cumprir - Carta Citação - Aud Virtual ✉️💻🚨 - 📋 Cumprir - Carta Citação - Aud Virtual ✉️💻🚨",
+      "localizadoresSecundarios": [
+        "📅 AUD - Conciliação (Virtual) 💻 - 📅 AUD - Conciliação (Virtual) 💻"
+      ],
+      "classificacao": [
+        "Audiência - Virtual",
+        "Inicial - Recebimento"
+      ],
+      "descricao": "Recebida a Inicial - Audiência de Conciliação Virtuaç",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(aud virtual) ⓒ◯(A) Inicial (Carta ambos)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) (Portal) Decisão - Inicial - Citação e Intimação - Audiência de Conciliação - CEJUSC - Virtual (M364718)  - 610000028286",
+      "evento": "Decisão/Despacho - Determinada a citação (11010)",
+      "novoLocalizador": "📅 AUD - Conciliação (Virtual) 💻 - 📅 AUD - Conciliação (Virtual) 💻",
+      "localizadoresSecundarios": [
+        "📋 Cumprir - Carta Citação - Aud Virtual ✉️💻🚨 - 📋 Cumprir - Carta Citação - Aud Virtual ✉️💻🚨",
+        "📋 Cumprir - Intimar Autor - Aud Virtual ✉️💻🚨 - 📋 Cumprir - Intimar Autor - Aud Virtual ✉️💻🚨"
+      ],
+      "classificacao": [
+        "Audiência - Virtual",
+        "Inicial - Recebimento"
+      ],
+      "descricao": "Recebida a Inicial - Audiência de Conciliação Virtual",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(automatização - adv) Ato Ordinatório para Réplica (>1 réu)",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Intima para Réplica (Múltiplas Contestações) (M364718)  - 610000067060",
+      "evento": "Ato ordinatório praticado (11383)",
+      "novoLocalizador": "Prazo - Réplica ⏳↩️ - Prazo - Réplica ⏳↩️[jec]",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato - Réplica",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(automatização apenas) Ato Ordinatório - AR Negativo - Indicar Endereço para Citação",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Citação Negativa - Indicar Endereço do Réu (M364718)  - 610000041342",
+      "evento": "Ato ordinatório praticado (11383)",
+      "novoLocalizador": "Prazo - Indicar Endereço (citação) ⏳🏠 - Prazo - Indicar Endereço (citação) ⏳🏠[jec]",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Intima autor para indicar endereço",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(automatização apenas) Certidão de Encerramento de Prazo Automática",
+      "tipo": "movimentacao",
+      "modelo": "Certidão de cartório - (Automatização Apenas) Certidão - Encerramento de Prazo (M364718)  - 610000038178",
+      "evento": "Juntada de certidão - encerrado prazo (581)",
+      "comportamentoLocalizador": "3",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(automatização) Ato - Encaminha para Intimar Autor para Indicar Endereço (conhecimento)",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Citação Negativa - Encaminha para Intimar Autor para Indicar Endereço (Conhecimento) (M364718)  - 610000065079",
+      "evento": "Ato ordinatório praticado (11383)",
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Indicar Endereço (Conhecimento) - 📋 Cumprir - Intimar Autor - Indicar Endereço (Conhecimento)",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Encaminha para intimação do autor para indicar endereço",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(automatização) Ato - Retorno Colégio",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - (A) Ato - Retorno do Colégio (M364718)  - 610000279552",
+      "evento": "Ato ordinatório praticado - determinada baixa (11383)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "5",
+      "novoLocalizador": "Prazo Provisório - Pós TJ - Prazo Provisório - Pós TJ[jec]",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato - Retorno do Colégio",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(automatização) Ato Ordinatório - Expedição de CP",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Expedição de CP - Ag. Distribuição pela Parte (M364718)  - 610000062978",
+      "evento": "Ato ordinatório praticado (11383)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "zAux - Prazo envio CP pela parte[jec] - zAux - Prazo envio CP pela parte[jec]",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato Ordinatório - Ciência de CP expedida",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(automatização) Citação por MDD (recusado o AR)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão",
+      "evento": "Decisão/Despacho - Determinada a citação (15216)",
+      "novoLocalizador": "📋 Cumprir - Mdd Citação - Contestar 15 - 📋 Cumprir - Mdd Citação - Contestar 15",
+      "classificacao": [
+        "Carta Com Despacho/Decisão",
+        "Com Ato para Cumprir",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Despacho - Citação (Contestar - por Mandado)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(automatização) Reputa Válida Intimação + Prazo Interno 15",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Reputa Válida a Intimação - Art. 19, §2º, da Lei 9.099/95 (M364718)  - 610000271018",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "comportamentoLocalizador": "3",
+      "novoLocalizador": "Prazo Interno - 15 dias ⏱️↔️⚙️ - Prazo Interno - 15 dias ⏱️↔️⚙️[jec]",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Art. 19 da Lei 9.099/95",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(G) Carta - com despacho",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Genérica (Com Reprodução de Despacho/Decisão) (M364718)  - 610000041096",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "x☢️☢️☢️CUMPRIMENTO - NÃO USAR☢️☢️☢️ - x☢️☢️☢️CUMPRIMENTO - NÃO USAR☢️☢️☢️[jec]",
+      "classificacao": [
+        "Carta Com Despacho/Decisão"
+      ],
+      "descricao": "Carta Genérica",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(G) Folha de Rosto CP (com Aud)",
+      "tipo": "movimentacao",
+      "modelo": "Mandado - CEMAN - Folha de Rosto - Carta Precatória - CITAÇÃO AUDIÊNCIA (M364718)  - 610000038390",
+      "evento": "Expedição de mandado",
+      "novoLocalizador": "Prazo - Cumpra-se a CP⌛ - Prazo - Cumpra-se a CP⌛[jec]",
+      "descricao": "Folha de Rosto para CP",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(G) Folha de Rosto CP (sem aud)",
+      "tipo": "movimentacao",
+      "modelo": "Mandado - CEMAN - Folha de Rosto - Carta Precatória - SEM AUDIÊNCIA (M364718)  - 610000050453",
+      "evento": "Expedição de mandado",
+      "novoLocalizador": "Prazo - Cumpra-se a CP⌛ - Prazo - Cumpra-se a CP⌛[jec]",
+      "descricao": "Folha de Rosto para CP",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(G) Mandado de Constatação",
+      "tipo": "movimentacao",
+      "modelo": "Mandado - CEMAN - Constatação - Genérico (com teor do despacho) (M364718)  - 610000052062",
+      "evento": "Expedição de mandado",
+      "novoLocalizador": "⏳ PRAZO - Mandado Constatação 📋🤖 - ⏳ PRAZO - Mandado Constatação 📋🤖",
+      "classificacao": [
+        "Mandado Genérico"
+      ],
+      "descricao": "Mandado de Constatação",
+      "assinante": "HELTON FREIRE DO CARMO - CHEFE DE CARTÓRIO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(G) Mdd Intimação (c/ teor do desp)",
+      "tipo": "movimentacao",
+      "modelo": "Mandado - CEMAN - Intimação - Genérico (com teor do despacho) (M364718)  - 610000047762",
+      "evento": "Expedição de mandado",
+      "novoLocalizador": "x☢️☢️☢️CUMPRIMENTO - NÃO USAR☢️☢️☢️ - x☢️☢️☢️CUMPRIMENTO - NÃO USAR☢️☢️☢️[jec]",
+      "classificacao": [
+        "Mandado Genérico"
+      ],
+      "descricao": "Mandado - Com Despacho",
+      "assinante": "HELTON FREIRE DO CARMO - CHEFE DE CARTÓRIO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(G) Ofício de Tutela (por AR)",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Ofício - Tutela - Genérico (M364718)  - 610000034286",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "⏳ PRAZO - Resposta Ofício 📨 - ⏳ PRAZO - Resposta Ofício 📨",
+      "classificacao": [
+        "Ofício - Tutela (por AR)"
+      ],
+      "descricao": "Ofício de Tutela",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(não usar - regra 77 dia 26)",
+      "tipo": "movimentacao",
+      "evento": "Juntada de certidão (581)",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "descricao": "Certidão de Contingência - Erro na Regra 77",
+      "assinante": "Selecione o assinante da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(p automatização) Ato - AR ausente/não procurado - Encaminha para Expedir Mdd",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - AR Negativo - Ausente - Encaminha para Expedir Mdd (M364718)  - 610000048361",
+      "evento": "Ato ordinatório praticado (11383)",
+      "novoLocalizador": "📋 Cumprir - Análise - 📋 Cumprir - Análise",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato - Encaminha para Expedir Mdd (ausente/não procurado)",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(p automatização) Ato - CEP Genérico e Cancelamento de Carta",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - (A) Carta Não Enviada - CEP Genérico (M364718)  - 610000126591",
+      "evento": "Ato ordinatório praticado (11383)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "comportamentoLocalizador": "Remover localizadores selecionados",
+      "novoLocalizador": "Prazo - Indicar Endereço (citação) ⏳🏠 - Prazo - Indicar Endereço (citação) ⏳🏠[jec]",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato - CEP Genérico",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(p automatização) Ato - Ciência ao Réu",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - (A) Ciência de Petição/Documento (M364718)  - 610000075777",
+      "evento": "Ato ordinatório praticado (11383)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Réu",
+      "prazo": "10",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato Automático - Ciência ao Réu",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(p automatização) Ato - Petição do Requerido - Processo Baixado",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - (A) Ato - Petição ou Depósito em Processo Baixado (M364718)  - 610000097489",
+      "evento": "Ato ordinatório praticado (11383)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "1",
+      "comportamentoLocalizador": "3",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato Automático - Petição do Requerido no Processo Baixado",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(p automatização) Ato Ordinatório - Processo Baixado - Cumprimento de Sentença",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Ato - Processo Baixado - Cumprimento de Sentença (M364718)  - 610000096233",
+      "evento": "Ato ordinatório praticado (11383)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "1",
+      "comportamentoLocalizador": "3",
+      "novoLocalizador": "Prazo Provisório - Pós TJ - Prazo Provisório - Pós TJ[jec]",
+      "classificacao": [
+        "Ato Ordinatório (Automático)"
+      ],
+      "descricao": "Ato - Processo Baixado",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(p automatização) Dá Por Cumprida a Sentença - Depósito - Inércia do Credor",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Decisão - Dá por cumprida a Sentença com o Depósito Espontâneo - Ausência de Manifestação do Credor (M364718)  - 610000263770",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo Provisório - Pós TJ - Prazo Provisório - Pós TJ[jec]",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Dá por Cumprida a Sentença pelo Depósito Espontâneo - Ausência de Manifestação do Credor",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p automatização) Devolução de mandado (Marília - Ofício automático)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Ofício - (A) Cobra Devolução de Mandado (M364718)  - 610000198325",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "comportamentoLocalizador": "3",
+      "novoLocalizador": "Prazo Interno - 30 dias ⏱️↔️⚙️ - Prazo Interno - 30 dias ⏱️↔️⚙️[jec]",
+      "classificacao": [
+        "Despacho",
+        "Ofício"
+      ],
+      "descricao": "Despacho-ofício - Cobrança de Mandado",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p automatização) Provas - Ambos DJEN",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Especificar Provas (M364718)  - 610000044428",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Provas ⏳↔️ - Prazo - Provas ⏳↔️[jec]",
+      "classificacao": [
+        "Minuta - Genérica",
+        "Sem cumprimento"
+      ],
+      "descricao": "Despacho - Intimação de Provas",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir - sem adv) (A) Despacho - Execução - Indicar Endereço",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Citação Negativa - ETE - Indicar Endereço - 1ª Tentativa (M364718)  - 610000036057",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "📋 Cumprir - Intimar Exequente - Indicar Endereço (Execução) - 📋 Cumprir - Intimar Exequente - Indicar Endereço (Execução)",
+      "classificacao": [
+        "Minuta - Genérica",
+        "Minuta Automática"
+      ],
+      "descricao": "Despacho - Indicar Endereço para Citação - ETE (sem adv)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir - sem adv) Extinção - Não Localizado o Devedor - Art. 53, §4º, da Lei 9.099/95",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Devedor não Encontrado e Ausência de Manifestação - Art. 53, § 4º, da Lei 9.099 de 1995 (M364718)  - 610000037239",
+      "evento": "Sentença - Extinto o processo por devedor não encontrado - tipo C (11374)",
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Sentença - 📋 Cumprir - Intimar Autor - Sentença",
+      "classificacao": [
+        "Extinção - Devedor Não Encontrado",
+        "Intimação Pessoal (sem adv)"
+      ],
+      "descricao": "Setença - Art. 53",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir - sem adv) Sentença - Ausência de Indicação de Endereço - Art. 485, IV, do CPC",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (A) Extinção art. 485, IV - Inércia em Indicar Endereço (M364718)  - 610000055921",
+      "evento": "Sentença - Extinto o processo por ausência de pressupostos processuais - tipo C (459)",
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Provas - 📋 Cumprir - Intimar Autor - Provas",
+      "classificacao": [
+        "Sentença"
+      ],
+      "descricao": "Sentença - Ausência de Indicação de Endereço",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir) #(A) Despacho - Execução - Indicar Endereço para Citação",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Citação Negativa - ETE - Indicar Endereço - 1ª Tentativa (M364718)  - 610000036057",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Indicar Endereço (citação) ⏳🏠 - Prazo - Indicar Endereço (citação) ⏳🏠[jec]",
+      "classificacao": [
+        "Minuta - Inicial ETE"
+      ],
+      "descricao": "Despacho - Indicar Endereço para Citação - ETE",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir) (A) SISBAJUD - Citação sem Pagamento - Embargos em Audiência",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - SISBAJUD simples - Citação sem Pagamento - Embargos em Audiência (M364718)  - 610000036095",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "🔭 PESQ - SisbaJud (Simples) 💸 - 🔭 PESQ - SisbaJud (Simples) 💸",
+      "classificacao": [
+        "Minuta - Penhora",
+        "Minuta - Sisbajud - simples"
+      ],
+      "descricao": "Decisão - SisbaJud Simples",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sigiloso (Interno Nível 2)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir) Citação Negativa - Indicar Endereço (Conhecimento)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Indicar Endereço para Citação (Conhecimento) - 1ª Negativa (M364718)  - 610000063941",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Indicar Endereço (citação) ⏳🏠 - Prazo - Indicar Endereço (citação) ⏳🏠[jec]",
+      "classificacao": [
+        "Despacho",
+        "Minuta Automática"
+      ],
+      "descricao": "Despacho - Indicar Endereço para Citação - Conhecimento",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir) Extinção - Não Localizado o Devedor - Art. 53, §4º, da Lei 9.099/95",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Devedor não Encontrado e Ausência de Manifestação - Art. 53, § 4º, da Lei 9.099 de 1995 (M364718)  - 610000037239",
+      "evento": "Sentença - Extinto o processo por devedor não encontrado - tipo C (11374)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Extinção - Devedor Não Encontrado"
+      ],
+      "descricao": "Setença - Art. 53",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir) Indefere Pesquisa de Endereço",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Indefere Pesquisa de Endereço (M364718)  - 610000044427",
+      "evento": "Decisão/Despacho - Decisão interlocutória (12164)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Prazo - Indicar Endereço (citação) ⏳🏠 - Prazo - Indicar Endereço (citação) ⏳🏠[jec]",
+      "classificacao": [
+        "Indeferimento",
+        "Sem cumprimento"
+      ],
+      "descricao": "Indeferimento de Pesquisa de Endereço",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir) Revelia + Provas",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Revelia - Ausência de Contestação - Indicar Provas (M364718)  - 610000048848",
+      "evento": "Decisão/Despacho - Decretada a revelia (12307)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Provas ⏳↔️ - Prazo - Provas ⏳↔️[jec]",
+      "classificacao": [
+        "Decisão",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Decisão - Revelia e Intimação de Provas",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir) Revelia + Provas (sem adv)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Revelia - Ausência de Contestação - Indicar Provas (M364718)  - 610000048848",
+      "evento": "Decisão/Despacho - Decretada a revelia (12307)",
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Provas - 📋 Cumprir - Intimar Autor - Provas",
+      "classificacao": [
+        "Decisão",
+        "Minuta - Genérica"
+      ],
+      "descricao": "Decisão - Revelia e Intimação de Provas",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir) Revelia Após Constatação",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Revelia Após Constatação (M364718)  - 610000217661",
+      "evento": "Decisão/Despacho - Decretada a revelia (12307)",
+      "novoLocalizador": "🤖 ATP - Ag. Prazo ➡️ Gabinete ⚖️ - 🤖 ATP - Ag. Prazo ➡️ Gabinete ⚖️",
+      "classificacao": [
+        "Decisão"
+      ],
+      "descricao": "Decreta Revelia",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir) Sentença - Ausência de Indicação de Endereço - Art. 485, IV, do CPC",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (A) Extinção art. 485, IV - Inércia em Indicar Endereço (M364718)  - 610000055921",
+      "evento": "Sentença - Extinto o processo por ausência de pressupostos processuais - tipo C (459)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Sentença"
+      ],
+      "descricao": "Sentença - Ausência de Indicação de Endereço",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir) Sentença - Indefere Inicial por Falta de Emenda",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Indefere Inicial - Ausência de Emenda - Genérico (M364718)  - 610000032062",
+      "evento": "Sentença - Indeferida a petição inicial - tipo C (454)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Minuta Automática",
+        "Sentença"
+      ],
+      "descricao": "Sentença - Indeferimento da Petição Inicial",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p conferir) Sentença - Indefere Inicial por Falta de Emenda (sem adv)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - Indefere Inicial - Ausência de Emenda - Genérico (M364718)  - 610000032062",
+      "evento": "Sentença - Indeferida a petição inicial - tipo C (454)",
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Sentença - 📋 Cumprir - Intimar Autor - Sentença",
+      "classificacao": [
+        "Minuta Automática",
+        "Sentença"
+      ],
+      "descricao": "Sentença - Indeferimento da Petição Inicial",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p/ automatização) Extinção 485, IV - Endereço - Diversas Diligências Negativas (adv)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (A) Extinção - Art. 485, IV - Não localizado o requerido após diversas diligências (M364718)  - 610000055926",
+      "evento": "Sentença - Extinto o processo por ausência de pressupostos processuais - tipo C (459)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Sentença"
+      ],
+      "descricao": "Sentença - Extinção 485",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p/ automatização) Extinção 485, IV - Endereço - Diversas Diligências Negativas (jus postulandi)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (A) Extinção - Art. 485, IV - Não localizado o requerido após diversas diligências (M364718)  - 610000055926",
+      "evento": "Sentença - Extinto o processo por ausência de pressupostos processuais - tipo C (459)",
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Sentença - 📋 Cumprir - Intimar Autor - Sentença",
+      "classificacao": [
+        "Sentença"
+      ],
+      "descricao": "Sentença - Extinção 485",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p/ automatização) Sent - Art. 485, IV (inércia endereço)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (A) Extinção art. 485, IV - Inércia em Indicar Endereço (M364718)  - 610000055921",
+      "evento": "Sentença - Extinto o processo por ausência de pressupostos processuais - tipo C (459)",
+      "localizadoresRemover": [
+        "🔍 Conferir - Análise - 🔍 Conferir - Análise"
+      ],
+      "novoLocalizador": "📋 Cumprir - Intimar Autor - Sentença - 📋 Cumprir - Intimar Autor - Sentença",
+      "classificacao": [
+        "Sem cumprimento",
+        "Sentença"
+      ],
+      "descricao": "Extinção - Ausência de Pressupostos (endereço)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p/ automatização) Suspensão Tema 1417 STF",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - SUSPENSÃO - Tema 1417 do STF - Atraso, cancelamento ou alteração de voo por caso fortuito ou força maior (M364718)  - 610000262037",
+      "evento": "Decisão/Despacho - Processo Suspenso por Recurso Extraordinário com repercussão geral (265)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "5",
+      "novoLocalizador": "Suspenso - IRDR e semelhantes ⏱️ - Suspenso - IRDR e semelhantes ⏱️[jec]",
+      "localizadoresSecundarios": [
+        "xTema 1417 do STF - Atraso/canc/alt de voo por força maior ou fortuito externo - xTema 1417 do STF - Atraso/canc/alt de voo por força maior ou fortuito externo[jec]"
+      ],
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Determinada a Suspensão - Tema 1417 do STF",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p/ conferir - adv) Extinção - Ausência de Bens e Manifestação - Art. 53, §4º, da Lei 9.099/95",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - (A) Extinção - Ausência de Bens e Manifestação (art. 53, §4º, da Lei 9.099/95) (M364718)  - 610000076546",
+      "evento": "Sentença - Extinto o processo por inexistência de bens penhoráveis - tipo C (11375)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Extinção - Ausência de Bens",
+        "Sentença"
+      ],
+      "descricao": "Extinção - Art. 53",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p/ conferir) Ato - Réplica (com adv)",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Intima para Réplica (M364718)  - 610000049780",
+      "evento": "Ato ordinatório praticado (11383)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "15",
+      "novoLocalizador": "Prazo - Réplica ⏳↩️ - Prazo - Réplica ⏳↩️[jec]",
+      "classificacao": [
+        "Ato Ordinatório"
+      ],
+      "descricao": "Ato Ordinatório - Réplica",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p/ conferir) Ato - Réplica (s/ adv)",
+      "tipo": "movimentacao",
+      "modelo": "Ato Ordinatório - Encaminha para Intimar o Autor para Réplica (com advertência para adv) (M364718)  - 610000062764",
+      "evento": "Ato ordinatório praticado (11383)",
+      "novoLocalizador": "📋 Cumprir - Intimar Réplica®️ - 📋 Cumprir - Intimar Réplica®️",
+      "classificacao": [
+        "Ato Ordinatório",
+        "Com Ato para Cumprir"
+      ],
+      "descricao": "Ato Ordinatório - Encaminha para Intimar para Réplica",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(p/ conferir) Sent - Homologa Acordo (Conhecimento)",
+      "tipo": "movimentacao",
+      "modelo": "Sentença - HOMOLOGAÇÃO DE ACORDO - Processo de Conhecimento (M364718)  - 610000043624",
+      "evento": "Sentença - Homologada a Transação - tipo A (466)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica - Sentença",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "1",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Homologação de Acordo",
+        "Sem cumprimento"
+      ],
+      "descricao": "Sentença - Homologação de Acordo (Conhecimento)",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para conferir"
+    },
+    {
+      "nome": "(presencial) ⓒ🔵(A) Inicial (Carta Reqdo)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Decisão - Inicial - Citação e Intimação - Audiência de Conciliação - CEJUSC - Presencial (M364718)  - 610000063750",
+      "evento": "Decisão/Despacho - Determinada a citação (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "📋 Cumprir - Carta Citação - Aud Presencial ✉️🔶🚨 - 📋 Cumprir - Carta Citação - Aud Presencial ✉️🔶🚨",
+      "localizadoresSecundarios": [
+        "📅 AUD - Conciliação (Presencial) 🏛️ - 📅 AUD - Conciliação (Presencial) 🏛️"
+      ],
+      "classificacao": [
+        "Audiência - Presencial",
+        "Inicial - Recebimento"
+      ],
+      "descricao": "Recebida a Inicial - Audiência de Conciliação Presencial",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "(presencial) ⓒ◯(A) Inicial (Carta ambos)",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - (A) Decisão - Inicial - Citação e Intimação - Audiência de Conciliação - CEJUSC - Presencial (M364718)  - 610000063750",
+      "evento": "Decisão/Despacho - Determinada a citação (11010)",
+      "novoLocalizador": "📋 Cumprir - Carta Citação - Aud Presencial ✉️🔶🚨 - 📋 Cumprir - Carta Citação - Aud Presencial ✉️🔶🚨",
+      "localizadoresSecundarios": [
+        "📅 AUD - Conciliação (Presencial) 🏛️ - 📅 AUD - Conciliação (Presencial) 🏛️",
+        "📋 Cumprir - Intimar Autor - Aud Presencial✉️🔷🚨 - 📋 Cumprir - Intimar Autor - Aud Presencial✉️🔷🚨"
+      ],
+      "classificacao": [
+        "Audiência - Presencial",
+        "Inicial - Recebimento"
+      ],
+      "descricao": "Recebida a Inicial - Audiência de Conciliação Presencial",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Carta - Intimação do Autor de Tutela Indeferida",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intima Autor - Indeferimento de Tutela (M364718)  - 610000036455",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Carta - Intimação do Autor para Indicar Bens",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Intima Autor - Indicar Bens (M364718)  - 610000055872",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "Prazo - Indicar Bens ⏳🅱️ - Prazo - Indicar Bens ⏳🅱️[jec]",
+      "classificacao": [
+        "Carta - Autor"
+      ],
+      "descricao": "Carta de Intimação - Indicar Bens",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Carta Citação - Aud PRESENCIAL",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Citação - Audiência de Conciliação PRESENCIAL (M364718)  - 610000063811",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "📅 AUD - Conciliação (Presencial) 🏛️ - 📅 AUD - Conciliação (Presencial) 🏛️",
+      "classificacao": [
+        "Audiência - Presencial",
+        "Carta - Citação"
+      ],
+      "descricao": "Carta de Citação - Aud Presencial",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Carta Citação - Aud VIRTUAL",
+      "tipo": "movimentacao",
+      "modelo": "CARTA AR DIGITAL - Carta - Citação - Audiência de Conciliação VIRTUAL (M364718)  - 610000037909",
+      "evento": "Expedição de Carta pelo Correio",
+      "novoLocalizador": "📅 AUD - Conciliação (Virtual) 💻 - 📅 AUD - Conciliação (Virtual) 💻",
+      "classificacao": [
+        "Carta - Citação"
+      ],
+      "descricao": "Carta de Citação - Aud Virtual",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Certidão - Expedição de MLE",
+      "tipo": "movimentacao",
+      "modelo": "Certidão de cartório - (F) Expedição de MLE (M364718)  - 610000093646",
+      "evento": "Juntada de certidão (581)",
+      "comportamentoLocalizador": "3",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "classificacao": [
+        "Certidão - MLE"
+      ],
+      "descricao": "Certidão de Expedião de MLE",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Certidão - MLE",
+      "tipo": "movimentacao",
+      "modelo": "Certidão de cartório - (F) Expedição de MLE (M364718)  - 610000093646",
+      "evento": "Juntada de certidão (581)",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "classificacao": [
+        "Certidão - MLE"
+      ],
+      "descricao": "Certidão de Expedião de MLE",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Certidão de Crédito (não usar para habilitação de crédito em recuperação judicial)",
+      "tipo": "movimentacao",
+      "modelo": "Certidão - Certidão de Crédito - Geral (exceto recuperação judicial) (M364718)  - 610000246764",
+      "evento": "Juntada de certidão (581)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "classificacao": [
+        "Certidão"
+      ],
+      "descricao": "Certidão de Crédito (Geral)",
+      "assinante": "HELTON FREIRE DO CARMO - CHEFE DE CARTÓRIO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Certidão de Crédito (para Habilitação em Recuperação Judicial)",
+      "tipo": "movimentacao",
+      "modelo": "Certidão - Certidão de Crédito - Recuperação Judicial - Recomendação CNJ 109-2021 - JEC (M364718)  - 610000246808",
+      "evento": "Juntada de certidão (581)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "classificacao": [
+        "Certidão"
+      ],
+      "descricao": "Certidão de Crédito (Recuperação Judicial)",
+      "assinante": "HELTON FREIRE DO CARMO - CHEFE DE CARTÓRIO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Certidão de Intimação",
+      "tipo": "movimentacao",
+      "modelo": "Certidão de cartório",
+      "evento": "Juntada de certidão (581)",
+      "intimacaoCitacao": {
+        "descricao": "Intimado em Secretaria",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "10",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Rascunho"
+    },
+    {
+      "nome": "Certidão de Link",
+      "tipo": "movimentacao",
+      "modelo": "Certidão de cartório - Certidão - Link para pasta/documentos (M364718)  - 610000036482",
+      "evento": "Juntada de certidão (581)",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "classificacao": [
+        "Certidão - Link"
+      ],
+      "descricao": "Link para acesso a documentos",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Certidão de Link de Aud",
+      "tipo": "movimentacao",
+      "modelo": "Certidão de cartório - (A) Certidão - Link para Audiência (M364718)  - 610000030939",
+      "evento": "Juntada de certidão (581)",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "assinante": "Usuário criador da minuta",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "CP - Citação 15 dias",
+      "tipo": "movimentacao",
+      "modelo": "Carta Precatória - CP Citação - Contestar em 15 Dias (M364718)  - 610000093612",
+      "evento": "Expedição de Carta de Ordem/Precatória/Rogatória (60)",
+      "novoLocalizador": "zAux - Prazo envio CP pela parte[jec] - zAux - Prazo envio CP pela parte[jec]",
+      "classificacao": [
+        "Carta Precatória"
+      ],
+      "descricao": "Carta Precatória - Citação",
+      "assinante": "PEDRO SIQUEIRA DE PRETTO - MAGISTRADO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "CP - Citação, Penhora e Avaliação",
+      "tipo": "movimentacao",
+      "modelo": "Carta Precatória - Carta Precatória - Citação, Penhora e Avaliação - Título Executivo Extrajudicial - Cível - Importado (M364718)  - 610000062815",
+      "evento": "Expedição de Carta de Ordem/Precatória/Rogatória (60)",
+      "novoLocalizador": "zAux - Prazo envio CP pela parte[jec] - zAux - Prazo envio CP pela parte[jec]",
+      "classificacao": [
+        "Carta Precatória"
+      ],
+      "descricao": "Carta Precatória - Citação",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Mandado de Intimação da Sentença (escolher parte e colocar prazo)",
+      "tipo": "movimentacao",
+      "modelo": "Mandado - CEMAN - Intimação - Sentença (M364718)  - 610000171676",
+      "evento": "Expedição de mandado",
+      "novoLocalizador": "Prazo - Recurso ⏳🔼 - Prazo - Recurso ⏳🔼[jec]",
+      "classificacao": [
+        "Mandado Genérico"
+      ],
+      "descricao": "Mandado de Intimação - Sentença",
+      "assinante": "HELTON FREIRE DO CARMO - CHEFE DE CARTÓRIO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Migr+Int",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Ambos",
+      "prazo": "5",
+      "comportamentoLocalizador": "Remover localizadores selecionados",
+      "novoLocalizador": "Prazo - Indicar Bens ⏳🅱️ - Prazo - Indicar Bens ⏳🅱️[jec]",
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Despacho - Migração e Intimação para Prosseguimento",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Migr+Tema 1264",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão",
+      "evento": "Decisão/Despacho - Processo Suspenso por Recurso Especial Repetitivo (11975)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "novoLocalizador": "Suspenso - IRDR e semelhantes ⏱️ - Suspenso - IRDR e semelhantes ⏱️[jec]",
+      "localizadoresSecundarios": [
+        "xTema 1264 - IRDR - Serasa Limpa Nome - xTema 1264 - IRDR - Serasa Limpa Nome [jec]"
+      ],
+      "classificacao": [
+        "Minuta - Suspensão (IRDR)"
+      ],
+      "descricao": "Suspensão - REspTema 1264 STJ",
+      "assinante": "PEDRO SIQUEIRA DE PRETTO - MAGISTRADO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Migra+CumpSent",
+      "tipo": "movimentacao",
+      "modelo": "Despacho/Decisão - Despacho - Migração e Cumprimento de Sentença (M364718)  - 610000295515",
+      "evento": "Decisão/Despacho - Despacho (11010)",
+      "intimacaoCitacao": {
+        "descricao": "Expedida/certificada a intimação eletrônica",
+        "tipo": "DJEN"
+      },
+      "poloSelecionado": "Autor",
+      "prazo": "5",
+      "comportamentoLocalizador": "Remover localizadores selecionados",
+      "novoLocalizador": "Prazo Provisório - Pós TJ - Prazo Provisório - Pós TJ[jec]",
+      "classificacao": [
+        "Despacho"
+      ],
+      "descricao": "Despacho - Migração e Cumprimento de Sentença no eproc",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Ofício - Revoga Tutela - INSS",
+      "tipo": "movimentacao",
+      "modelo": "Ofício - Ofício Revogação Tutela - INSS (M364718)  - 610000235498",
+      "evento": "Expedição de ofício (60)",
+      "novoLocalizador": "📋 Cumprir - Enviar Ofício/E-mail - 📋 Cumprir - Enviar Ofício/E-mail",
+      "classificacao": [
+        "Ofício"
+      ],
+      "descricao": "Ofício - Revogação de Tutela (INSS)",
+      "assinante": "HELTON FREIRE DO CARMO - CHEFE DE CARTÓRIO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Ofício Genérico",
+      "tipo": "movimentacao",
+      "modelo": "Ofício - Genérico (M364718)  - 610000255448",
+      "evento": "Expedição de ofício (60)",
+      "comportamentoLocalizador": "3",
+      "novoLocalizador": "📋 Cumprir - Enviar Ofício/E-mail - 📋 Cumprir - Enviar Ofício/E-mail",
+      "classificacao": [
+        "Ofício"
+      ],
+      "descricao": "Ofício Genérico",
+      "assinante": "Magistrado atuante no juízo",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Ofício SCPC (Suspensão)",
+      "tipo": "movimentacao",
+      "modelo": "Ofício - Ofício - SCPC - Suspensão de Apontamento (POSTAGEM MANUAL) (M364718)  - 610000039225",
+      "evento": "Expedição de ofício (60)",
+      "novoLocalizador": "MANTER LOCALIZADOR ATUAL",
+      "classificacao": [
+        "Ofício - Suspensão Apontamento (SCPC)"
+      ],
+      "descricao": "Ofício - SCPC",
+      "assinante": "HELTON FREIRE DO CARMO - CHEFE DE CARTÓRIO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    },
+    {
+      "nome": "Termo de Penhora e Depósito (selec. destinatário)",
+      "tipo": "movimentacao",
+      "modelo": "Termo - Termo de Penhora e Depósito (M364718)  - 610000128452",
+      "evento": "Expedição de Termo/auto de Penhora (60)",
+      "comportamentoLocalizador": "3",
+      "novoLocalizador": "🔍 Conferir - Análise - 🔍 Conferir - Análise",
+      "classificacao": [
+        "Termo de Penhora"
+      ],
+      "descricao": "Termo de Penhora e Depósito",
+      "assinante": "HELTON FREIRE DO CARMO - CHEFE DE CARTÓRIO",
+      "nivelSigilo": "Sem Sigilo (Nível 0)",
+      "statusDestino": "Para assinar"
+    }
+  ]
+}
