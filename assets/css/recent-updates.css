@@ -1,0 +1,70 @@
+/* ============================================
+   Atualizações Recentes — timeline na homepage
+   ============================================ */
+
+.updates-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.updates-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 0;
+    position: relative;
+}
+
+.updates-item:not(:last-child) {
+    border-left: 2px solid var(--md-default-fg-color--lightest);
+    margin-left: 5px;
+    padding-left: 16px;
+    padding-bottom: 4px;
+}
+
+.updates-item:last-child {
+    margin-left: 5px;
+    padding-left: 16px;
+}
+
+.updates-dot {
+    position: absolute;
+    left: -2px;
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    background: var(--md-primary-fg-color);
+    border-radius: 50%;
+    border: 2px solid var(--md-code-bg-color, #fff);
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.updates-item:first-child .updates-dot {
+    width: 12px;
+    height: 12px;
+    left: -3px;
+    top: 11px;
+}
+
+.updates-content {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
+.updates-msg {
+    font-size: 0.82rem;
+    color: var(--md-default-fg-color);
+    word-break: break-word;
+}
+
+.updates-time {
+    font-size: 0.7rem;
+    color: var(--md-default-fg-color--light);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
