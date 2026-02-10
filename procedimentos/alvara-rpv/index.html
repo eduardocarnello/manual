@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="../../assets/css/auth.css">
     
+      <link rel="stylesheet" href="../../assets/css/checklist.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1146,7 +1148,7 @@
 
 
 
-<h1 id="alvara-rpv">💰 Alvará / RPV<a class="headerlink" href="#alvara-rpv" title="Permanent link">&para;</a></h1>
+<h1 id="alvara-rpv">💰 Alvará / <abbr title="Requisição de Pequeno Valor — pagamento até 60 salários mínimos contra a Fazenda Pública">RPV</abbr><a class="headerlink" href="#alvara-rpv" title="Permanent link">&para;</a></h1>
 <h2 id="quando-usar">Quando usar<a class="headerlink" href="#quando-usar" title="Permanent link">&para;</a></h2>
 <p>Quando há condenação ao pagamento de quantia e o credor precisa receber os valores.</p>
 <hr />
@@ -1166,7 +1168,7 @@
 <td>Imediato após expedição</td>
 </tr>
 <tr>
-<td><strong>RPV</strong> (Requisição de Pequeno Valor)</td>
+<td><strong><abbr title="Requisição de Pequeno Valor — pagamento até 60 salários mínimos contra a Fazenda Pública">RPV</abbr></strong> (Requisição de Pequeno Valor)</td>
 <td>Até 60 salários mínimos (Fazenda Pública)</td>
 <td>Até 60 dias</td>
 </tr>
@@ -1182,7 +1184,7 @@
 <ol>
 <li>Verificar se há depósito judicial disponível</li>
 <li>Verificar os dados bancários do beneficiário</li>
-<li>Preencher o alvará:<ul>
+<li>Preencher o <abbr title="Documento judicial que autoriza o levantamento de valores depositados">alvará</abbr>:<ul>
 <li>Beneficiário</li>
 <li>Valor</li>
 <li>Conta de depósito</li>
@@ -1193,9 +1195,9 @@
 <li>Lançar evento: <code>[PREENCHER]</code></li>
 </ol>
 <hr />
-<h2 id="rpv-passo-a-passo">RPV — Passo a passo<a class="headerlink" href="#rpv-passo-a-passo" title="Permanent link">&para;</a></h2>
+<h2 id="rpv-passo-a-passo"><abbr title="Requisição de Pequeno Valor — pagamento até 60 salários mínimos contra a Fazenda Pública">RPV</abbr> — Passo a passo<a class="headerlink" href="#rpv-passo-a-passo" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Verificar o trânsito em julgado</li>
+<li>Verificar o <abbr title="Quando não cabe mais recurso contra a decisão judicial">trânsito em julgado</abbr></li>
 <li>Conferir os cálculos (homologados ou não impugnados)</li>
 <li>Preencher a requisição no sistema</li>
 <li>Encaminhar para assinatura</li>
@@ -1203,14 +1205,14 @@
 </ol>
 <hr />
 <h2 id="checklist">Checklist<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[ ] Trânsito em julgado verificado</li>
-<li>[ ] Cálculos conferidos</li>
-<li>[ ] Dados bancários do beneficiário verificados</li>
-<li>[ ] Alvará/RPV expedido</li>
-<li>[ ] Assinatura do magistrado</li>
-<li>[ ] Evento lançado</li>
-<li>[ ] Prazo de levantamento controlado</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Trânsito em julgado verificado</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Cálculos conferidos</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Dados bancários do beneficiário verificados</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Alvará/<abbr title="Requisição de Pequeno Valor — pagamento até 60 salários mínimos contra a Fazenda Pública">RPV</abbr> expedido</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Assinatura do magistrado</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Evento lançado</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Prazo de levantamento controlado</li>
 </ul>
 <hr />
 <div class="admonition warning">
@@ -1272,12 +1274,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.tooltips", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../assets/js/auth.js"></script>
+      
+        <script src="../../assets/js/checklist.js"></script>
       
     
   </body>

@@ -1,0 +1,93 @@
+/* ============================================
+   Checklist interativo — progresso + animação
+   ============================================ */
+
+/* Barra de progresso */
+.checklist-progress {
+  background: var(--md-code-bg-color, #f5f5f5);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  border-left: 4px solid var(--md-primary-fg-color, #009688);
+}
+
+.checklist-progress .progress-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+.checklist-progress .progress-bar {
+  flex: 1;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 120px;
+}
+
+[data-md-color-scheme="slate"] .checklist-progress .progress-bar {
+  background: #3a3a4a;
+}
+
+.checklist-progress .progress-fill {
+  height: 100%;
+  background: var(--md-primary-fg-color, #009688);
+  border-radius: 5px;
+  transition: width 0.4s ease;
+  min-width: 0;
+}
+
+.checklist-progress.complete .progress-fill {
+  background: #4caf50;
+}
+
+.checklist-progress .progress-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+  white-space: nowrap;
+}
+
+.checklist-progress .progress-reset {
+  background: none;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: var(--md-default-fg-color--light);
+  transition: all 0.2s;
+}
+
+.checklist-progress .progress-reset:hover {
+  background: var(--md-primary-fg-color);
+  color: #fff;
+  border-color: var(--md-primary-fg-color);
+}
+
+/* Checkbox animado — override do Material tasklist */
+.task-list-indicator::before {
+  transition: all 0.2s ease !important;
+}
+
+.task-list-control input[type="checkbox"]:checked + .task-list-indicator::before {
+  animation: checkPop 0.3s ease;
+}
+
+@keyframes checkPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+/* Risco suave no texto quando marcado */
+.task-list-control input[type="checkbox"]:checked ~ span,
+.task-list-control input[type="checkbox"]:checked + .task-list-indicator + span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}

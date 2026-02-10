@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="../../assets/css/auth.css">
     
+      <link rel="stylesheet" href="../../assets/css/checklist.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1111,7 +1113,7 @@
 <li>Acessar a fila de <strong>Petições Iniciais</strong> no painel</li>
 <li>Abrir o processo e conferir:<ul>
 <li>Competência da vara</li>
-<li>Valor da causa (até 40 salários mínimos para JEC)</li>
+<li>Valor da causa (até 40 salários mínimos para <abbr title="Juizado Especial Cível">JEC</abbr>)</li>
 <li>Documentos essenciais anexados</li>
 </ul>
 </li>
@@ -1142,17 +1144,17 @@
 </table>
 <hr />
 <h2 id="checklist">Checklist<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[ ] Competência verificada</li>
-<li>[ ] Valor da causa compatível com JEC</li>
-<li>[ ] Documentos essenciais presentes</li>
-<li>[ ] Prevenção verificada</li>
-<li>[ ] Evento lançado</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Competência verificada</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Valor da causa compatível com <abbr title="Juizado Especial Cível">JEC</abbr></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Documentos essenciais presentes</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Prevenção verificada</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Evento lançado</li>
 </ul>
 <hr />
 <div class="admonition warning">
 <p class="admonition-title">Atenção</p>
-<p>No JEC, não há necessidade de advogado para causas até 20 salários mínimos. Verificar se a parte está assistida quando o valor ultrapassar esse limite.</p>
+<p>No <abbr title="Juizado Especial Cível">JEC</abbr>, não há necessidade de advogado para causas até 20 salários mínimos. Verificar se a parte está assistida quando o valor ultrapassar esse limite.</p>
 </div>
 <hr />
 <h2 id="observacoes">Observações<a class="headerlink" href="#observacoes" title="Permanent link">&para;</a></h2>
@@ -1209,12 +1211,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.tooltips", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../assets/js/auth.js"></script>
+      
+        <script src="../../assets/js/checklist.js"></script>
       
     
   </body>

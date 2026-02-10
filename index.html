@@ -55,6 +55,8 @@
     
       <link rel="stylesheet" href="assets/css/auth.css">
     
+      <link rel="stylesheet" href="assets/css/checklist.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -441,17 +443,6 @@
     <span class="md-ellipsis">
       
         📑 Seções
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#eproc-pro" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚡ Eproc Pro
       
     </span>
   </a>
@@ -1047,17 +1038,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#eproc-pro" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚡ Eproc Pro
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1075,51 +1055,59 @@
 
 
 
-<h1 id="manual-de-procedimentos-jec-marilia">📘 Manual de Procedimentos — JEC Marília<a class="headerlink" href="#manual-de-procedimentos-jec-marilia" title="Permanent link">&para;</a></h1>
+<h1 id="manual-de-procedimentos-jec-marilia">📘 Manual de Procedimentos — <abbr title="Juizado Especial Cível">JEC</abbr> Marília<a class="headerlink" href="#manual-de-procedimentos-jec-marilia" title="Permanent link">&para;</a></h1>
 <p>Bem-vindo ao manual de procedimentos da Secretaria do <strong>Juizado Especial Cível de Marília</strong>.</p>
-<p>Este guia foi criado para padronizar os procedimentos mais comuns realizados no sistema <strong>eproc</strong>, servindo como referência rápida para escreventes e servidores.</p>
+<p>Este guia foi criado para padronizar os procedimentos mais comuns realizados no sistema <strong><abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr></strong>, servindo como referência rápida para escreventes e servidores.</p>
 <hr />
 <h2 id="como-usar-este-manual">🚀 Como usar este manual<a class="headerlink" href="#como-usar-este-manual" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Use a <strong>barra de busca</strong> (canto superior) para encontrar qualquer procedimento</li>
+<li>Use a <strong>barra de busca</strong> (canto superior) para encontrar qualquer procedimento — ou pressione <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-k">K</kbd></span></li>
 <li>Navegue pelas <strong>abas</strong> no topo para acessar cada seção</li>
-<li>Cada procedimento contém: passo a passo, eventos utilizados e dicas importantes</li>
+<li>Marque os <strong>checklists</strong> ✅ em cada procedimento — o progresso é salvo automaticamente</li>
+<li>Passe o mouse sobre termos como <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr> ou <abbr title="Juizado Especial Cível">JEC</abbr> para ver definições rápidas</li>
 </ul>
 <hr />
 <h2 id="secoes">📑 Seções<a class="headerlink" href="#secoes" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Seção</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="procedimentos/">Procedimentos</a></td>
-<td>Passo a passo de cada tipo de movimentação</td>
-</tr>
-<tr>
-<td><a href="referencia-rapida/">Referência Rápida</a></td>
-<td>Tabela com situações comuns e eventos correspondentes</td>
-</tr>
-<tr>
-<td><a href="erros-comuns/">Erros Comuns</a></td>
-<td>Problemas frequentes e como resolver</td>
-</tr>
-<tr>
-<td><a href="faq/">FAQ</a></td>
-<td>Perguntas e respostas</td>
-</tr>
-<tr>
-<td><a href="contatos/">Contatos</a></td>
-<td>Contatos úteis</td>
-</tr>
-</tbody>
-</table>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2c-1.11 0-2 .89-2 2v16a2 2 0 0 0 2 2h4v-1.91L12.09 18H6v-2h8.09l2-2H6v-2h12.09L20 10.09V8l-6-6zm7 1.5L18.5 9H13zm7.15 9.5a.55.55 0 0 0-.4.16l-1.02 1.02 2.09 2.08 1.02-1.01c.21-.22.21-.58 0-.79l-1.3-1.3a.54.54 0 0 0-.39-.16m-2.01 1.77L12 20.92V23h2.08l6.15-6.15z"/></svg></span> <strong>Procedimentos</strong></p>
 <hr />
-<h2 id="eproc-pro">⚡ Eproc Pro<a class="headerlink" href="#eproc-pro" title="Permanent link">&para;</a></h2>
-<p>Este manual acompanha o <strong>Eproc Pro</strong>, script Tampermonkey que adiciona melhorias ao sistema eproc. Para instalar ou atualizar, procure o Diretor de Secretaria.</p>
+<p>Passo a passo completo de cada tipo de movimentação no <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr></p>
+<p><a href="procedimentos/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Acessar</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 15H6l7-14v8h5l-7 14z"/></svg></span> <strong>Referência Rápida</strong></p>
+<hr />
+<p>Tabela com situações comuns e os eventos correspondentes</p>
+<p><a href="referencia-rapida/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Consultar</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 12h-4v-2h4m0 6h-4v-2h4m6-6h-2.81a6 6 0 0 0-1.82-1.96L17 4.41 15.59 3l-2.17 2.17a6 6 0 0 0-2.83 0L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20z"/></svg></span> <strong>Erros Comuns</strong></p>
+<hr />
+<p>Problemas frequentes no <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr> e no <abbr title="Script Tampermonkey que adiciona melhorias ao sistema eproc">Eproc Pro</abbr>, com soluções</p>
+<p><a href="erros-comuns/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Resolver</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 15H6l-4 4V3a1 1 0 0 1 1-1h15a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1m5-6v14l-4-4H8a1 1 0 0 1-1-1v-1h14V8h1a1 1 0 0 1 1 1M8.19 4c-.87 0-1.57.2-2.11.59-.52.41-.78.98-.77 1.77l.01.03h1.93c.01-.3.1-.53.28-.69a1 1 0 0 1 .66-.23c.31 0 .57.1.75.28.18.19.26.45.26.75 0 .32-.07.59-.23.82-.14.23-.35.43-.61.59-.51.34-.86.64-1.05.91C7.11 9.08 7 9.5 7 10h2c0-.31.04-.56.13-.74s.26-.36.51-.52c.45-.24.82-.53 1.11-.93s.44-.81.44-1.31c0-.76-.27-1.37-.81-1.82C9.85 4.23 9.12 4 8.19 4M7 11v2h2v-2zm6 2h2v-2h-2zm0-9v6h2V4z"/></svg></span> <strong>FAQ</strong></p>
+<hr />
+<p>Perguntas e respostas sobre o dia a dia da Secretaria</p>
+<p><a href="faq/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver respostas</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25 1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"/></svg></span> <strong>Contatos</strong></p>
+<hr />
+<p>Telefones e contatos úteis da unidade e do tribunal</p>
+<p><a href="contatos/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver contatos</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z"/></svg></span> <strong><abbr title="Script Tampermonkey que adiciona melhorias ao sistema eproc">Eproc Pro</abbr></strong></p>
+<hr />
+<p>Script <abbr title="Extensão de navegador que permite executar scripts personalizados em páginas web">Tampermonkey</abbr> que adiciona melhorias ao sistema <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr></p>
+<p><a href="faq/#como-instalar-o-eproc-pro"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Saiba mais</a></p>
+</li>
+</ul>
+</div>
 <hr />
 <div class="admonition info">
 <p class="admonition-title">Última atualização</p>
@@ -1177,12 +1165,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.tooltips", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="assets/js/auth.js"></script>
+      
+        <script src="assets/js/checklist.js"></script>
       
     
   </body>

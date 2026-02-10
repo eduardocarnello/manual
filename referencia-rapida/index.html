@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="../assets/css/auth.css">
     
+      <link rel="stylesheet" href="../assets/css/checklist.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1042,7 +1044,7 @@
 <tr>
 <th>#</th>
 <th>Situação</th>
-<th>Evento no eproc</th>
+<th>Evento no <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr></th>
 <th>Observação</th>
 </tr>
 </thead>
@@ -1057,13 +1059,13 @@
 <td>2</td>
 <td>Citar por correio</td>
 <td><code>[PREENCHER]</code></td>
-<td>AR registrado</td>
+<td><abbr title="Aviso de Recebimento — comprovante de entrega de correspondência">AR</abbr> registrado</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Citar por oficial de justiça</td>
 <td><code>[PREENCHER]</code></td>
-<td>Após AR negativo</td>
+<td>Após <abbr title="Aviso de Recebimento — comprovante de entrega de correspondência">AR</abbr> negativo</td>
 </tr>
 <tr>
 <td>4</td>
@@ -1081,7 +1083,7 @@
 <td>6</td>
 <td>Intimar parte sem advogado</td>
 <td><code>[PREENCHER]</code></td>
-<td>Correio ou OJ</td>
+<td>Correio ou <abbr title="Oficial de Justiça">OJ</abbr></td>
 </tr>
 <tr>
 <td>7</td>
@@ -1151,19 +1153,19 @@
 </tr>
 <tr>
 <td>18</td>
-<td>Expedir alvará</td>
+<td>Expedir <abbr title="Documento judicial que autoriza o levantamento de valores depositados">alvará</abbr></td>
 <td><code>[PREENCHER]</code></td>
 <td>Conferir dados</td>
 </tr>
 <tr>
 <td>19</td>
-<td>Expedir RPV</td>
+<td>Expedir <abbr title="Requisição de Pequeno Valor — pagamento até 60 salários mínimos contra a Fazenda Pública">RPV</abbr></td>
 <td><code>[PREENCHER]</code></td>
 <td>Conferir cálculos</td>
 </tr>
 <tr>
 <td>20</td>
-<td>Expedir carta precatória</td>
+<td>Expedir carta <abbr title="Carta enviada de um juízo para outro para cumprimento de ato processual">precatória</abbr></td>
 <td><code>[PREENCHER]</code></td>
 <td>Preencher destino</td>
 </tr>
@@ -1175,7 +1177,7 @@
 </tr>
 <tr>
 <td>22</td>
-<td>Certificar trânsito em julgado</td>
+<td>Certificar <abbr title="Quando não cabe mais recurso contra a decisão judicial">trânsito em julgado</abbr></td>
 <td><code>[PREENCHER]</code></td>
 <td>Conferir prazos</td>
 </tr>
@@ -1250,12 +1252,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.tooltips", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../assets/js/auth.js"></script>
+      
+        <script src="../assets/js/checklist.js"></script>
       
     
   </body>

@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="../../assets/css/auth.css">
     
+      <link rel="stylesheet" href="../../assets/css/checklist.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1108,7 +1110,7 @@
 <hr />
 <h2 id="passo-a-passo">Passo a passo<a class="headerlink" href="#passo-a-passo" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Verificar trânsito em julgado</li>
+<li>Verificar <abbr title="Quando não cabe mais recurso contra a decisão judicial">trânsito em julgado</abbr></li>
 <li>Verificar se houve requerimento da parte credora</li>
 <li>Intimar o devedor para pagamento:</li>
 </ol>
@@ -1140,21 +1142,21 @@
 </table>
 <ol>
 <li>Se não houver pagamento, aplicar multa de 10% + honorários</li>
-<li>Prosseguir com atos executivos (penhora, etc.)</li>
+<li>Prosseguir com atos executivos (<abbr title="Ato de apreensão judicial de bens do devedor para garantir o pagamento da dívida">penhora</abbr>, etc.)</li>
 </ol>
 <hr />
 <h2 id="checklist">Checklist<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[ ] Trânsito em julgado verificado</li>
-<li>[ ] Requerimento da parte credora</li>
-<li>[ ] Intimação para pagamento expedida</li>
-<li>[ ] Prazo controlado</li>
-<li>[ ] Providências após inadimplemento</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Trânsito em julgado verificado</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Requerimento da parte credora</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Intimação para pagamento expedida</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Prazo controlado</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Providências após inadimplemento</li>
 </ul>
 <hr />
 <div class="admonition warning">
 <p class="admonition-title">Atenção</p>
-<p>No JEC, o cumprimento de sentença de obrigação de pagar tem rito diferenciado. Verificar se o valor é compatível com a competência do Juizado.</p>
+<p>No <abbr title="Juizado Especial Cível">JEC</abbr>, o cumprimento de sentença de obrigação de pagar tem rito diferenciado. Verificar se o valor é compatível com a competência do Juizado.</p>
 </div>
 <hr />
 <h2 id="observacoes">Observações<a class="headerlink" href="#observacoes" title="Permanent link">&para;</a></h2>
@@ -1211,12 +1213,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.tooltips", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../assets/js/auth.js"></script>
+      
+        <script src="../../assets/js/checklist.js"></script>
       
     
   </body>
