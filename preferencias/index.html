@@ -1035,9 +1035,6 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
     <option value="Réu">🔴 Réu</option>
     <option value="Ambos">🟣 Ambos</option>
   </select>
-  <select id="pref-assinante" style="padding:8px 10px;border:2px solid var(--md-default-fg-color--lightest);border-radius:8px;font-size:.85rem;background:var(--md-code-bg-color);color:var(--md-default-fg-color)">
-    <option value="">Todos os assinantes</option>
-  </select>
   <select id="pref-classif" style="padding:8px 10px;border:2px solid var(--md-default-fg-color--lightest);border-radius:8px;font-size:.85rem;background:var(--md-code-bg-color);color:var(--md-default-fg-color)">
     <option value="">Todas as classificações</option>
   </select>
@@ -1059,7 +1056,6 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
         <th data-sort="poloSelecionado" style="padding:8px 6px;text-align:center;white-space:nowrap">Polo ↕</th>
         <th data-sort="prazo" style="padding:8px 6px;text-align:center">Prazo ↕</th>
         <th data-sort="novoLocalizador" style="padding:8px 6px;text-align:left">Localizador ↕</th>
-        <th data-sort="assinante" style="padding:8px 6px;text-align:left">Assinante ↕</th>
         <th style="padding:8px 6px;text-align:left;min-width:160px">Observações</th>
       </tr>
     </thead>
@@ -1098,17 +1094,15 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
   function render() {
     var search = document.getElementById('pref-search').value.toLowerCase();
     var polo = document.getElementById('pref-polo').value;
-    var assinante = document.getElementById('pref-assinante').value;
     var classif = document.getElementById('pref-classif').value;
     var onlyNotes = document.getElementById('pref-has-note').checked;
 
     var filtered = allData.filter(function(p) {
       if (polo && p.poloSelecionado !== polo) return false;
-      if (assinante && p.assinante !== assinante) return false;
       if (classif && !(p.classificacao || []).some(function(c) { return c === classif; })) return false;
       if (onlyNotes && !allNotes[p.nome]) return false;
       if (search) {
-        var hay = [p.nome, p.descricao, p.evento, p.modelo, p.poloSelecionado, p.assinante, p.novoLocalizador, (p.classificacao||[]).join(' '), allNotes[p.nome] || ''].join(' ').toLowerCase();
+        var hay = [p.nome, p.descricao, p.evento, p.modelo, p.poloSelecionado, p.novoLocalizador, (p.classificacao||[]).join(' '), allNotes[p.nome] || ''].join(' ').toLowerCase();
         return hay.indexOf(search) !== -1;
       }
       return true;
@@ -1137,7 +1131,6 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
       html += '<td style="padding:6px;text-align:center">' + poloBadge(p.poloSelecionado) + '</td>';
       html += '<td style="padding:6px;text-align:center;font-weight:600">' + (p.prazo ? p.prazo + 'd' : '—') + '</td>';
       html += '<td style="padding:6px;font-size:.76rem;max-width:180px;overflow:hidden;text-overflow:ellipsis" title="' + (p.novoLocalizador||'').replace(/"/g,'&quot;') + '">' + highlight(cleanLocalizador(p.novoLocalizador), searchTerm) + '</td>';
-      html += '<td style="padding:6px;font-size:.76rem">' + (p.assinante || '—') + '</td>';
       if (note) {
         html += '<td style="padding:6px"><div style="background:#fff3cd;border-left:3px solid #ffc107;padding:4px 8px;border-radius:4px;font-size:.78rem;color:#856404">' + note.replace(/</g,'&lt;').replace(/\n/g,'<br>') + '</div></td>';
       } else {
@@ -1151,9 +1144,23 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
   }
 
   function init() {
+    // Resolve base URL so fetch works from any page depth
+    var base = (document.querySelector('meta[name="base"]') || {}).content || '';
+    if (!base) {
+      // Fallback: derive from canonical or location
+      var canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) {
+        base = canonical.href.replace(/\/[^\/]*$/, '/');
+      } else {
+        // Use site root based on known prefix
+        base = location.pathname.replace(/\/preferencias\/.*$/, '/').replace(/\/preferencias$/, '/');
+      }
+    }
+    if (base && !base.endsWith('/')) base += '/';
+
     Promise.all([
-      fetch('assets/data/preferencias.json').then(function(r) { return r.json(); }),
-      fetch('assets/data/notas.json').then(function(r) { return r.json(); }).catch(function() { return {}; })
+      fetch(base + 'assets/data/preferencias.json').then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }),
+      fetch(base + 'assets/data/notas.json').then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).catch(function() { return {}; })
     ]).then(function(results) {
       var prefJson = results[0];
       var notesJson = results[1];
@@ -1169,19 +1176,10 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
         document.getElementById('pref-meta-data').textContent = '📅 Extraídas em ' + d.toLocaleDateString('pt-BR') + ' às ' + d.toLocaleTimeString('pt-BR', {hour:'2-digit',minute:'2-digit'});
       }
 
-      // Populate assinante filter
-      var assinantes = {};
+      // Populate classification filter
       var classificacoes = {};
       allData.forEach(function(p) {
-        if (p.assinante) assinantes[p.assinante] = true;
         (p.classificacao || []).forEach(function(c) { classificacoes[c] = true; });
-      });
-
-      var selAss = document.getElementById('pref-assinante');
-      Object.keys(assinantes).sort().forEach(function(a) {
-        var opt = document.createElement('option');
-        opt.value = a; opt.textContent = a;
-        selAss.appendChild(opt);
       });
 
       var selClass = document.getElementById('pref-classif');
@@ -1193,12 +1191,12 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
 
       render();
     }).catch(function(err) {
-      document.getElementById('pref-body').innerHTML = '<tr><td colspan="8" style="padding:20px;text-align:center;color:#e53935">Erro ao carregar: ' + err.message + '</td></tr>';
+      document.getElementById('pref-body').innerHTML = '<tr><td colspan="7" style="padding:20px;text-align:center;color:#e53935">Erro ao carregar: ' + err.message + '</td></tr>';
     });
 
     // Bind filters
     ['pref-search'].forEach(function(id) { document.getElementById(id).addEventListener('input', render); });
-    ['pref-polo','pref-assinante','pref-classif'].forEach(function(id) { document.getElementById(id).addEventListener('change', render); });
+    ['pref-polo','pref-classif'].forEach(function(id) { document.getElementById(id).addEventListener('change', render); });
     document.getElementById('pref-has-note').addEventListener('change', render);
 
     // Bind sort
