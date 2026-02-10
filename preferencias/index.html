@@ -1086,9 +1086,10 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
     <option value="_manual">⚠️ Manual</option>
     <option value="_auto">🤖 Automático</option>
   </select>
-  <select id="pref-classif" style="padding:8px 10px;border:2px solid var(--md-default-fg-color--lightest);border-radius:8px;font-size:.85rem;background:var(--md-code-bg-color);color:var(--md-default-fg-color)">
-    <option value="">Todas as classificações</option>
-  </select>
+  <div id="pref-classif-wrap" style="position:relative;display:inline-block">
+    <button id="pref-classif-btn" type="button" style="padding:8px 10px;border:2px solid var(--md-default-fg-color--lightest);border-radius:8px;font-size:.85rem;background:var(--md-code-bg-color);color:var(--md-default-fg-color);cursor:pointer;white-space:nowrap">Classificações ▼</button>
+    <div id="pref-classif-menu" style="display:none;position:absolute;top:100%;left:0;z-index:100;background:var(--md-code-bg-color);border:2px solid var(--md-default-fg-color--lightest);border-radius:8px;padding:8px;min-width:220px;max-height:260px;overflow-y:auto;box-shadow:0 4px 12px rgba(0,0,0,.15)"></div>
+  </div>
   <label style="display:flex;align-items:center;gap:4px;font-size:.82rem;color:var(--md-default-fg-color--light);cursor:pointer">
     <input type="checkbox" id="pref-has-note" /> Só com observação
   </label>
@@ -1098,11 +1099,11 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
 
 <!-- Tabela -->
 <div style="overflow-x:auto">
-  <table id="pref-table" style="width:100%;font-size:.72rem;border-collapse:collapse">
+  <table id="pref-table" style="width:100%;font-size:.62rem;border-collapse:collapse">
     <thead>
       <tr style="background:var(--md-primary-fg-color);color:#fff;cursor:pointer;user-select:none">
         <th data-sort="nome" style="padding:6px 4px;text-align:left;width:280px">Nome ↕</th>
-        <th data-sort="modelo" style="padding:6px 4px;text-align:left;max-width:180px">Modelo ↕</th>
+        <th data-sort="modelo" style="padding:6px 4px;text-align:left;max-width:220px">Modelo ↕</th>
         <th data-sort="evento" style="padding:6px 4px;text-align:left;max-width:140px">Evento ↕</th>
         <th data-sort="poloSelecionado" style="padding:6px 4px;text-align:center">Polo ↕</th>
         <th data-sort="prazo" style="padding:6px 2px;text-align:center;white-space:nowrap">DJEN ↕</th>
@@ -1157,7 +1158,9 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
   function render() {
     var search = document.getElementById('pref-search').value.toLowerCase();
     var polo = document.getElementById('pref-polo').value;
-    var classif = document.getElementById('pref-classif').value;
+    var classifChecks = document.querySelectorAll('#pref-classif-menu input:checked');
+    var selectedClassifs = [];
+    classifChecks.forEach(function(cb) { selectedClassifs.push(cb.value); });
     var tipo = document.getElementById('pref-tipo').value;
     var onlyNotes = document.getElementById('pref-has-note').checked;
 
@@ -1166,7 +1169,7 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
       if (tipo === '_auto' && p.nome.indexOf('\u26a0') !== -1) return false;
       if (polo === '_nenhum' && p.poloSelecionado) return false;
       if (polo && polo !== '_nenhum' && p.poloSelecionado !== polo) return false;
-      if (classif && !(p.classificacao || []).some(function(c) { return c === classif; })) return false;
+      if (selectedClassifs.length > 0 && !(p.classificacao || []).some(function(c) { return selectedClassifs.indexOf(c) !== -1; })) return false;
       if (onlyNotes && !allNotes[p.nome]) return false;
       if (search) {
         var hay = [p.nome, p.descricao, p.evento, p.modelo, p.poloSelecionado, p.novoLocalizador, (p.classificacao||[]).join(' '), allNotes[p.nome] || ''].join(' ').toLowerCase();
@@ -1193,7 +1196,7 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
       var rowBg = i % 2 === 0 ? '' : 'background:var(--md-code-bg-color);';
       html += '<tr style="border-bottom:1px solid var(--md-default-fg-color--lightest);' + rowBg + '">';
       html += '<td style="padding:4px;font-weight:600;width:280px;word-break:break-word">' + highlight(p.nome, searchTerm) + '</td>';
-      html += '<td style="padding:4px;max-width:180px;word-break:break-word">' + highlight(p.modelo || '', searchTerm) + '</td>';
+      html += '<td style="padding:4px;max-width:220px;word-break:break-word">' + highlight(p.modelo || '', searchTerm) + '</td>';
       html += '<td style="padding:4px;max-width:140px;word-break:break-word">' + highlight(p.evento || '', searchTerm) + '</td>';
       html += '<td style="padding:4px;text-align:center;white-space:nowrap">' + poloBadge(p.poloSelecionado) + '</td>';
       html += '<td style="padding:4px;text-align:center;font-weight:600;white-space:nowrap">' + (p.prazo ? p.prazo + 'd' : '\u2014') + '</td>';
@@ -1233,17 +1236,45 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
         document.getElementById('pref-meta-data').textContent = '📅 Extraídas em ' + d.toLocaleDateString('pt-BR') + ' às ' + d.toLocaleTimeString('pt-BR', {hour:'2-digit',minute:'2-digit'});
       }
 
-      // Populate classification filter
+      // Populate classification multi-select
       var classificacoes = {};
       allData.forEach(function(p) {
         (p.classificacao || []).forEach(function(c) { classificacoes[c] = true; });
       });
 
-      var selClass = document.getElementById('pref-classif');
+      var classMenu = document.getElementById('pref-classif-menu');
+      var classHtml = '';
       Object.keys(classificacoes).sort().forEach(function(c) {
-        var opt = document.createElement('option');
-        opt.value = c; opt.textContent = c;
-        selClass.appendChild(opt);
+        classHtml += '<label style="display:block;padding:3px 4px;font-size:.82rem;cursor:pointer;white-space:nowrap"><input type="checkbox" value="' + c.replace(/"/g,'&quot;') + '" style="margin-right:6px" />' + c + '</label>';
+      });
+      classMenu.innerHTML = classHtml;
+
+      // Bind checkboxes to render
+      classMenu.querySelectorAll('input').forEach(function(cb) {
+        cb.addEventListener('change', function() {
+          // Update button label
+          var checked = classMenu.querySelectorAll('input:checked');
+          var btn = document.getElementById('pref-classif-btn');
+          if (checked.length === 0) {
+            btn.textContent = 'Classifica\u00e7\u00f5es \u25bc';
+          } else {
+            var names = [];
+            checked.forEach(function(x) { names.push(x.value); });
+            btn.textContent = names.join(', ') + ' \u25bc';
+          }
+          render();
+        });
+      });
+
+      // Toggle menu
+      document.getElementById('pref-classif-btn').addEventListener('click', function(e) {
+        e.stopPropagation();
+        classMenu.style.display = classMenu.style.display === 'none' ? 'block' : 'none';
+      });
+      document.addEventListener('click', function(e) {
+        if (!document.getElementById('pref-classif-wrap').contains(e.target)) {
+          classMenu.style.display = 'none';
+        }
       });
 
       render();
@@ -1253,7 +1284,7 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
 
     // Bind filters
     ['pref-search'].forEach(function(id) { document.getElementById(id).addEventListener('input', render); });
-    ['pref-polo','pref-classif','pref-tipo'].forEach(function(id) { document.getElementById(id).addEventListener('change', render); });
+    ['pref-polo','pref-tipo'].forEach(function(id) { document.getElementById(id).addEventListener('change', render); });
     document.getElementById('pref-has-note').addEventListener('change', render);
 
     // Bind sort
