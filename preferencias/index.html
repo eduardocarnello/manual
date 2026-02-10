@@ -75,7 +75,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -131,7 +131,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Alternar para tema escuro"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Alternar para tema escuro"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Alternar para tema escuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -141,7 +141,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Alternar para tema claro"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Alternar para tema claro"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Alternar para tema claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -1101,12 +1101,12 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
   <table id="pref-table" style="width:100%;font-size:.82rem;border-collapse:collapse">
     <thead>
       <tr style="background:var(--md-primary-fg-color);color:#fff;cursor:pointer;user-select:none">
-        <th data-sort="nome" style="padding:8px 6px;text-align:left;max-width:220px">Nome ↕</th>
+        <th data-sort="nome" style="padding:8px 6px;text-align:left;width:320px">Nome ↕</th>
         <th data-sort="modelo" style="padding:8px 6px;text-align:left">Modelo ↕</th>
         <th data-sort="evento" style="padding:8px 6px;text-align:left">Evento ↕</th>
-        <th data-sort="poloSelecionado" style="padding:8px 6px;text-align:center;white-space:nowrap">Polo ↕</th>
+        <th data-sort="poloSelecionado" style="padding:8px 6px;text-align:center">Polo ↕</th>
         <th data-sort="prazo" style="padding:8px 6px;text-align:center;white-space:nowrap">Prazo DJEN ↕</th>
-        <th data-sort="novoLocalizador" style="padding:8px 6px;text-align:left;min-width:200px">Localizador ↕</th>
+        <th data-sort="novoLocalizador" style="padding:8px 6px;text-align:left;max-width:200px">Localizador ↕</th>
         <th style="padding:8px 6px;text-align:left;min-width:160px">Observações</th>
       </tr>
     </thead>
@@ -1123,10 +1123,13 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
   var sortAsc = true;
 
   function poloBadge(polo) {
-    if (!polo) return '<span style="display:inline-block;width:16px;height:16px;border:2px solid #999;border-radius:50%" title="Sem intimação"></span>';
-    var colors = { 'Autor': '#1976d2', 'Réu': '#d32f2f', 'Ambos': '#7b1fa2', 'Autor e Réu (prazos diferentes)': '#7b1fa2' };
+    if (!polo) return '<span style="display:inline-block;width:14px;height:14px;border:2px solid #999;border-radius:50%" title="Sem intimação"></span>';
+    if (polo === 'Autor e Réu (prazos diferentes)') return '<span style="background:#e65100;color:#fff;padding:2px 6px;border-radius:10px;font-size:.7rem;white-space:nowrap" title="Autor e Réu (prazos diferentes)">prazos ≠</span>';
+    var colors = { 'Autor': '#1976d2', 'Réu': '#d32f2f', 'Ambos': '#7b1fa2' };
     var c = colors[polo] || '#666';
-    return '<span style="background:' + c + ';color:#fff;padding:2px 8px;border-radius:10px;font-size:.73rem;white-space:nowrap">' + polo + '</span>';
+    var labels = { 'Autor': '🔵', 'Réu': '🔴', 'Ambos': '🟣' };
+    var label = labels[polo] || polo;
+    return '<span style="background:' + c + ';color:#fff;padding:2px 6px;border-radius:10px;font-size:.7rem;white-space:nowrap">' + label + '</span>';
   }
 
   function highlight(text, term) {
@@ -1191,12 +1194,12 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
       var note = allNotes[p.nome] || '';
       var rowBg = i % 2 === 0 ? '' : 'background:var(--md-code-bg-color);';
       html += '<tr style="border-bottom:1px solid var(--md-default-fg-color--lightest);' + rowBg + '">';
-      html += '<td style="padding:6px;font-weight:600;max-width:220px;word-break:break-word">' + highlight(p.nome, searchTerm) + '</td>';
+      html += '<td style="padding:6px;font-weight:600;width:320px;word-break:break-word">' + highlight(p.nome, searchTerm) + '</td>';
       html += '<td style="padding:6px;font-size:.76rem">' + highlight(p.modelo || '', searchTerm) + '</td>';
       html += '<td style="padding:6px;font-size:.76rem">' + highlight(p.evento || '', searchTerm) + '</td>';
-      html += '<td style="padding:6px;text-align:center">' + poloBadge(p.poloSelecionado) + '</td>';
+      html += '<td style="padding:6px;text-align:center;white-space:nowrap">' + poloBadge(p.poloSelecionado) + '</td>';
       html += '<td style="padding:6px;text-align:center;font-weight:600;white-space:nowrap">' + (p.prazo ? p.prazo + 'd' : '—') + '</td>';
-      html += '<td style="padding:6px;font-size:.76rem;white-space:nowrap">' + highlight(cleanLocalizador(p.novoLocalizador), searchTerm) + '</td>';
+      html += '<td style="padding:6px;font-size:.76rem;max-width:200px;word-break:break-word">' + highlight(cleanLocalizador(p.novoLocalizador), searchTerm) + '</td>';
       if (note) {
         html += '<td style="padding:6px"><div style="background:#fff3cd;border-left:3px solid #ffc107;padding:4px 8px;border-radius:4px;font-size:.78rem;color:#856404">' + note.replace(/</g,'&lt;').replace(/\n/g,'<br>') + '</div></td>';
       } else {
