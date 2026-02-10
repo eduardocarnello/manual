@@ -1204,7 +1204,7 @@ direto no GitHub, altere o texto da preferência desejada, e faça commit. O sit
       html += '<td style="padding:2px 1px;text-align:center;width:38px;font-weight:600;white-space:nowrap">' + (p.prazo ? p.prazo + 'd' : '\u2014') + '</td>';
       html += '<td style="padding:4px;min-width:180px;word-break:break-word">' + highlight(cleanLocalizador(p.novoLocalizador), searchTerm) + '</td>';
       if (note) {
-        html += '<td style="padding:6px"><div style="background:#fff3cd;border-left:3px solid #ffc107;padding:4px 8px;border-radius:4px;font-size:.78rem;color:#856404">' + note.replace(/</g,'&lt;').replace(/\n/g,'<br>') + '</div></td>';
+        html += '<td style="padding:6px"><div style="background:#fff3cd;border-left:3px solid #ffc107;padding:4px 8px;border-radius:4px;color:#856404">' + note.replace(/</g,'&lt;').replace(/\n/g,'<br>') + '</div></td>';
       } else {
         html += '<td style="padding:6px;color:var(--md-default-fg-color--lightest);font-size:.76rem">—</td>';
       }
