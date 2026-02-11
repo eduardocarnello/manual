@@ -1,3 +1,8 @@
+/* === Esconder ícone do GitHub no header (manter edit buttons) === */
+.md-header .md-source {
+    display: none !important;
+}
+
 /* Auth overlay — proteção simples por senha */
 #auth-overlay {
     position: fixed;
