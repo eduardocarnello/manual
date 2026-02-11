@@ -1,13 +1,12 @@
 /**
- * Atualizações Recentes — busca commits da pasta docs/ via GitHub API.
+ * Atualizações Recentes — carrega updates.json local.
  * Exibe timeline na homepage automaticamente.
+ *
+ * Para adicionar uma atualização, edite docs/assets/data/updates.json:
+ *   [{ "msg": "Descrição", "date": "2025-02-11T16:00:00-03:00" }, ...]
  */
 (function () {
-    var REPO = "eduardocarnello/scripts";
-    var PATH = "docs";
     var MAX_ITEMS = 8;
-    var CACHE_KEY = "recent_updates";
-    var CACHE_TTL = 10 * 60 * 1000; // 10 minutos
 
     function formatDate(iso) {
         var d = new Date(iso);
@@ -34,62 +33,19 @@
         return formatDate(iso);
     }
 
-    function cleanMessage(msg) {
-        // Primeira linha apenas, sem prefixos convencionais de commit
-        var line = msg.split("\n")[0].trim();
-        // Remove prefixos tipo "docs:", "fix:", "feat:", "chore:" etc.
-        line = line.replace(/^(docs|fix|feat|chore|style|refactor|update|add|remove|delete)\s*[:!]\s*/i, "");
-        // Capitaliza primeira letra
-        if (line.length > 0) {
-            line = line.charAt(0).toUpperCase() + line.slice(1);
-        }
-        return line;
-    }
-
-    function getCached() {
-        try {
-            var raw = localStorage.getItem(CACHE_KEY);
-            if (!raw) return null;
-            var cache = JSON.parse(raw);
-            if (Date.now() - cache.ts > CACHE_TTL) return null;
-            return cache.data;
-        } catch (e) {
-            return null;
-        }
-    }
-
-    function setCache(data) {
-        try {
-            localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data: data }));
-        } catch (e) { /* quota */ }
-    }
-
-    function render(commits) {
+    function render(items) {
         var container = document.getElementById("recent-updates");
         if (!container) return;
 
-        if (!commits || commits.length === 0) {
+        if (!items || items.length === 0) {
             container.innerHTML = '<p style="font-size:.82rem;color:var(--md-default-fg-color--light)">Nenhuma atualização recente encontrada.</p>';
             return;
         }
 
-        var html = '<ul class="updates-list">';
-        // Deduplicate by message (same commit message = same logical change)
-        var seen = {};
-        var items = [];
-        commits.forEach(function (c) {
-            var msg = cleanMessage(c.commit.message);
-            if (!seen[msg]) {
-                seen[msg] = true;
-                items.push({
-                    msg: msg,
-                    date: c.commit.author.date,
-                    url: c.html_url,
-                    author: c.commit.author.name
-                });
-            }
-        });
+        // Ordenar por data decrescente
+        items.sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
 
+        var html = '<ul class="updates-list">';
         items.slice(0, MAX_ITEMS).forEach(function (item) {
             html += '<li class="updates-item">';
             html += '<span class="updates-dot"></span>';
@@ -99,7 +55,6 @@
             html += '</div>';
             html += '</li>';
         });
-
         html += '</ul>';
         container.innerHTML = html;
     }
@@ -108,24 +63,30 @@
         var container = document.getElementById("recent-updates");
         if (!container) return;
 
-        // Tentar cache primeiro
-        var cached = getCached();
-        if (cached) {
-            render(cached);
-            return;
-        }
-
-        // Loading state
         container.innerHTML = '<p style="font-size:.82rem;color:var(--md-default-fg-color--light)">Carregando atualizações…</p>';
 
-        var url = "https://api.github.com/repos/" + REPO + "/commits?path=" + PATH + "&per_page=" + (MAX_ITEMS + 5);
+        // Resolve base URL (funciona tanto em /manual/ quanto local)
+        var base = (document.querySelector('meta[name="base"]') || {}).content || "";
+        if (!base) {
+            // fallback: detectar a partir do link canonical ou script src
+            var scripts = document.querySelectorAll('script[src]');
+            for (var i = 0; i < scripts.length; i++) {
+                var idx = scripts[i].src.indexOf("assets/js/recent-updates.js");
+                if (idx !== -1) {
+                    base = scripts[i].src.substring(0, idx);
+                    break;
+                }
+            }
+        }
+        if (!base) base = "./";
+
+        var url = base + "assets/data/updates.json";
         fetch(url)
             .then(function (r) {
                 if (!r.ok) throw new Error(r.status);
                 return r.json();
             })
             .then(function (data) {
-                setCache(data);
                 render(data);
             })
             .catch(function () {
