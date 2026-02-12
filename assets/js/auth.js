@@ -9,9 +9,13 @@
     // SHA-256 da senha — altere conforme necessário
     var PASS_HASH = "2eb4959e89c44e97eb33d26bdbe054b5235cf9898a8d0f7827071affc2b9e07a";
     var STORAGE_KEY = "docs_auth";
+    var EXPIRY_KEY = "docs_auth_exp";
+    var TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 dias
 
-    // Se já autenticou nesta sessão, pular
-    if (sessionStorage.getItem(STORAGE_KEY) === PASS_HASH) return;
+    // Se já autenticou e não expirou, pular
+    var stored = localStorage.getItem(STORAGE_KEY);
+    var expiry = localStorage.getItem(EXPIRY_KEY);
+    if (stored === PASS_HASH && expiry && Date.now() < Number(expiry)) return;
 
     // Marcar body como bloqueado
     document.body.classList.add("auth-locked");
@@ -37,7 +41,8 @@
         var val = input.value;
         sha256(val).then(function (hash) {
             if (hash === PASS_HASH) {
-                sessionStorage.setItem(STORAGE_KEY, PASS_HASH);
+                localStorage.setItem(STORAGE_KEY, PASS_HASH);
+                localStorage.setItem(EXPIRY_KEY, String(Date.now() + TTL_MS));
                 document.body.classList.remove("auth-locked");
                 overlay.remove();
             } else {
