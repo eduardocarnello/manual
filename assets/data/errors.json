@@ -28,16 +28,16 @@
         "slug": "minuta-bloqueada",
         "url": "procedimentos/minuta-bloqueada/",
         "category": "Sistema eproc",
-        "causa": "Outra pessoa abriu a minuta para edição e não fechou, ou houve falha de conexão.",
-        "solucao": "Desbloquear a minuta e verificar se o conteúdo está correto antes de prosseguir."
+        "causa": "O editor de texto do eproc foi fechado fora dos botões de salvar (ex.: fechando a aba do navegador), bloqueando a minuta para todos.",
+        "solucao": "Desbloquear a minuta clicando no cadeado, conferir o conteúdo e colocar no status \"Para assinar\"."
     },
     {
         "title": "Minutas com status errado",
         "slug": "minutas-status-errado",
         "url": "procedimentos/minutas-status-errado/",
         "category": "Sistema eproc",
-        "causa": "Minutas ficaram com status de rascunho ou outro status incorreto por esquecimento ou falha.",
-        "solucao": "Verificar periodicamente as minutas pendentes e corrigir o status conforme necessário."
+        "causa": "A minuta ficou em Rascunho ou Para conferir ao invés de ser colocada no status \"Para assinar\" após a conclusão da edição.",
+        "solucao": "Conferir o conteúdo da minuta e, se estiver pronta, clicar no ícone de confirmação para mudar o status para \"Para assinar\"."
     },
     {
         "title": "Minuta não Gerou Intimação DJEN",
