@@ -1,0 +1,137 @@
+/* ==================================================
+   Erros Comuns — cards dinâmicos (erros-comuns.md)
+   ================================================== */
+
+.errors-category {
+    margin-bottom: 1.6rem;
+}
+
+.errors-category__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: .8rem;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--md-primary-fg-color);
+}
+
+/* ---------- Card (usa <details> para collapse nativo) ---------- */
+.error-card {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-left: 3px solid #e53935;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: var(--md-code-bg-color);
+    transition: box-shadow .15s;
+}
+
+.error-card[open] {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+
+.error-card__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+}
+
+.error-card__header::-webkit-details-marker {
+    display: none;
+}
+
+.error-card__header::before {
+    content: "▸";
+    font-size: .75rem;
+    color: var(--md-default-fg-color--light);
+    transition: transform .15s;
+    flex-shrink: 0;
+}
+
+.error-card[open]>.error-card__header::before {
+    transform: rotate(90deg);
+}
+
+.error-card__icon {
+    font-size: .85rem;
+    flex-shrink: 0;
+}
+
+.error-card__title {
+    font-size: .85rem;
+    font-weight: 600;
+    color: var(--md-default-fg-color);
+}
+
+.error-card__body {
+    padding: 0 16px 14px 40px;
+}
+
+.error-card__field {
+    margin: 4px 0;
+    font-size: .82rem;
+    color: var(--md-default-fg-color--light);
+    line-height: 1.5;
+}
+
+.error-card__field strong {
+    color: var(--md-default-fg-color);
+}
+
+/* ---------- Botão "Ver passo a passo" ---------- */
+.error-card__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+    padding: 5px 14px;
+    font-size: .78rem;
+    font-weight: 600;
+    background: var(--md-primary-fg-color);
+    color: #fff !important;
+    border-radius: 4px;
+    text-decoration: none !important;
+    transition: background .15s, transform .1s;
+}
+
+.error-card__btn:hover {
+    background: var(--md-accent-fg-color);
+    transform: translateY(-1px);
+}
+
+/* ---------- Dark mode ---------- */
+[data-md-color-scheme="slate"] .error-card {
+    border-left-color: #ef5350;
+}
+
+[data-md-color-scheme="slate"] .error-card__btn {
+    background: #5c6bc0;
+}
+
+[data-md-color-scheme="slate"] .error-card__btn:hover {
+    background: #7986cb;
+}
+
+/* ---------- Link sutil para Rotina Diária ---------- */
+.rotina-link {
+    display: inline-block;
+    margin-bottom: .6rem;
+    padding: 4px 10px;
+    font-size: .75rem;
+    color: var(--md-default-fg-color--light);
+    background: var(--md-code-bg-color);
+    border-radius: 4px;
+    border-left: 3px solid var(--md-primary-fg-color);
+}
+
+.rotina-link a {
+    color: var(--md-primary-fg-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.rotina-link a:hover {
+    text-decoration: underline;
+}

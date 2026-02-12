@@ -1,5 +1,53 @@
 [
   {
+    "msg": "Suspensão e Temas Repetitivos — alertas de seleção de tema",
+    "date": "2026-02-12T19:30:00-03:00"
+  },
+  {
+    "msg": "Suspensão atualizado — preferência com box dedicado",
+    "date": "2026-02-12T19:00:00-03:00"
+  },
+  {
+    "msg": "8 páginas individuais de Correção de Erros criadas",
+    "date": "2026-02-12T18:00:00-03:00"
+  },
+  {
+    "msg": "Erros Comuns integrado com Correção de Erros via errors.json",
+    "date": "2026-02-12T15:00:00-03:00"
+  },
+  {
+    "msg": "Página Correção de Erros criada com 9 erros documentados",
+    "date": "2026-02-12T15:00:00-03:00"
+  },
+  {
+    "msg": "Index de procedimentos atualizado com todos os itens do menu",
+    "date": "2026-02-12T14:30:00-03:00"
+  },
+  {
+    "msg": "Badges de Novo/Atualizado agora aparecem no sidebar e tabelas",
+    "date": "2026-02-12T14:30:00-03:00"
+  },
+  {
+    "msg": "Cadastro de Advogado atualizado com bug do eproc",
+    "date": "2026-02-12T12:00:00-03:00"
+  },
+  {
+    "msg": "20 procedimentos marcados como em construção",
+    "date": "2026-02-12T12:00:00-03:00"
+  },
+  {
+    "msg": "Procedimento Atermação reescrito com passo a passo completo",
+    "date": "2026-02-12T11:30:00-03:00"
+  },
+  {
+    "msg": "Procedimento IDPJ reescrito com passo a passo completo",
+    "date": "2026-02-12T11:00:00-03:00"
+  },
+  {
+    "msg": "Corrigidos nomes de campos no Cumprimento de Sentença (Balcão)",
+    "date": "2026-02-12T11:00:00-03:00"
+  },
+  {
     "msg": "Adicionados 22+ procedimentos novos ao manual",
     "date": "2025-02-11T16:00:00-03:00"
   },

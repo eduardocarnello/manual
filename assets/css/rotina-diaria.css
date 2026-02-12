@@ -42,6 +42,14 @@
 
 .rotina-items li {
     padding: 3px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rotina-items li::marker {
+    content: none;
 }
 
 .rotina-items label {
@@ -53,6 +61,25 @@
     color: var(--md-default-fg-color);
     transition: opacity 0.2s;
     user-select: none;
+}
+
+/* Link "veja como fazer" */
+.rotina-how {
+    font-size: 0.68rem;
+    color: var(--md-primary-fg-color);
+    opacity: 0;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+}
+
+.rotina-items li:hover .rotina-how {
+    opacity: 0.7;
+}
+
+.rotina-how:hover {
+    opacity: 1 !important;
+    text-decoration: underline;
 }
 
 .rotina-items input[type="checkbox"] {
@@ -79,15 +106,15 @@
 }
 
 .rotina-items input[type="checkbox"]:checked::after {
-    content: "✓";
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    animation: checkPop 0.3s ease;
+    top: 2px;
+    left: 5px;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
 
 .rotina-items input[type="checkbox"]:checked+span {

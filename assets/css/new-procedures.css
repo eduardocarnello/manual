@@ -2,6 +2,35 @@
    Novos Procedimentos — cards na homepage + badge nav
    ================================================== */
 
+/* ==================================================
+   Custom admonition: Preferência (azul escuro + ⚡)
+   ================================================== */
+:root {
+    --md-admonition-icon--preferencia: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 15H6l7-14v8h5l-7 14v-8z"/></svg>');
+}
+.md-typeset .admonition.preferencia,
+.md-typeset details.preferencia {
+    border-color: rgb(13, 71, 161);
+}
+.md-typeset .preferencia > .admonition-title,
+.md-typeset .preferencia > summary {
+    background-color: rgba(13, 71, 161, 0.1);
+}
+.md-typeset .preferencia > .admonition-title::before,
+.md-typeset .preferencia > summary::before {
+    background-color: rgb(13, 71, 161);
+    -webkit-mask-image: var(--md-admonition-icon--preferencia);
+            mask-image: var(--md-admonition-icon--preferencia);
+}
+[data-md-color-scheme="slate"] .md-typeset .preferencia > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .preferencia > summary {
+    background-color: rgba(66, 133, 244, 0.15);
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition.preferencia,
+[data-md-color-scheme="slate"] .md-typeset details.preferencia {
+    border-color: rgb(66, 133, 244);
+}
+
 /* ---------- Seção de cards ---------- */
 .new-procs-section {
     margin-bottom: 1.2rem;
@@ -26,10 +55,15 @@
 }
 
 @media (max-width: 900px) {
-    .new-procs-grid { grid-template-columns: repeat(2, 1fr); }
+    .new-procs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
 @media (max-width: 560px) {
-    .new-procs-grid { grid-template-columns: 1fr; }
+    .new-procs-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .new-proc-card {
@@ -48,7 +82,7 @@
 }
 
 .new-proc-card:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,.10);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .10);
     border-left-color: var(--md-accent-fg-color);
 }
 
@@ -139,6 +173,24 @@
     background: #4db6ac;
 }
 
+/* ---------- Badge "Em construção" no sidebar ---------- */
+.badge-construcao {
+    display: inline-block;
+    font-size: .6rem;
+    background: #f57c00;
+    padding: 0 3px;
+    border-radius: 3px;
+    margin-left: 5px;
+    vertical-align: middle;
+    line-height: 1.5;
+    flex-shrink: 0;
+}
+
+[data-md-color-scheme="slate"] .badge-construcao {
+    background: #ffb74d;
+    color: #333;
+}
+
 /* ---------- Card variantes por tipo ---------- */
 .new-proc-card--updated {
     border-left-color: #00897b;
@@ -148,7 +200,21 @@
     border-left-color: #4db6ac;
 }
 
+.new-proc-card--construction {
+    border-left-color: #f57c00;
+    opacity: .75;
+}
+
+.new-proc-card--construction:hover {
+    border-left-color: #ffb74d;
+    opacity: 1;
+}
+
 /* ---------- Header: título à esquerda, busca/tema à direita ---------- */
+.md-header__source {
+    display: none;
+}
+
 .md-header__inner {
     display: flex;
     align-items: center;
@@ -198,8 +264,7 @@
 
 /* Esconder badges na sidebar direita (TOC) */
 .md-sidebar--secondary .badge-novo,
-.md-sidebar--secondary .badge-atualizado {
+.md-sidebar--secondary .badge-atualizado,
+.md-sidebar--secondary .badge-construcao {
     display: none;
 }
-
-

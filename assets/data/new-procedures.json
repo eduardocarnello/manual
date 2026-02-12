@@ -1,312 +1,403 @@
 [
-  {
-    "title": "Remeter ao Colégio Recursal",
-    "url": "procedimentos/remessa-turma-recursal/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Sisbajud — Bloqueio de Valores",
-    "url": "procedimentos/sisbajud/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Peças Sigilosas",
-    "url": "procedimentos/pecas-sigilosas/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Juntada em Outros Processos",
-    "url": "procedimentos/juntada-outros-processos/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Preferências: O que são e como usar?",
-    "url": "procedimentos/preferencias-minutas/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Agendamento de Minutas (Detalhado)",
-    "url": "procedimentos/agendamento-minutas/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Verificações Obrigatórias (Minutas)",
-    "url": "procedimentos/verificacoes-minutas/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Cancelamento do Processo",
-    "url": "procedimentos/cancelamento-processo/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Cobrança de Custas",
-    "url": "procedimentos/cobranca-custas/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Solicitar Devolução do Mdd",
-    "url": "procedimentos/solicitar-devolucao-mdd/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Certidão de Militância",
-    "url": "procedimentos/certidao-militancia/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Redistribuição",
-    "url": "procedimentos/redistribuir/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Cartas Precatórias",
-    "url": "procedimentos/cartas-precatorias/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Ofícios",
-    "url": "procedimentos/oficios/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Mandados",
-    "url": "procedimentos/mandados/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Carta AR em Lote / Automática",
-    "url": "procedimentos/carta-ar-lote/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Cartas",
-    "url": "procedimentos/cartas/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Verificações Obrigatórias (Cumprimento)",
-    "url": "procedimentos/verificacoes-cumprimento/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Vinculação de Finais",
-    "url": "procedimentos/vinculacao-finais/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Redigindo e juntando pedidos",
-    "url": "procedimentos/redigindo-pedidos/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Juntando petições e documentos",
-    "url": "procedimentos/juntando-peticoes-balcao/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Desistência de devolução de AR",
-    "url": "procedimentos/desistencia-devolucao-ar/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Intimação pelo sistema",
-    "url": "procedimentos/intimacao-sistema/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Custas Processuais no JEC",
-    "url": "procedimentos/custas-jec/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Cancelamento de Cartas e Mandados",
-    "url": "procedimentos/cancelamento-cartas-mandados/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Temas Repetitivos",
-    "url": "procedimentos/temas-repetitivos/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Cadastro de Bens e Localizações",
-    "url": "procedimentos/cadastro-bens/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Chave de Acesso com Juntada Automática",
-    "url": "procedimentos/chave-acesso-juntada/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Chave (Senha) do Processo",
-    "url": "procedimentos/chave-processo/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Pedido Contraposto",
-    "url": "procedimentos/pedido-contraposto/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Alterar Informações (Classe, Competência, Assuntos)",
-    "url": "procedimentos/alterar-informacoes/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Alterar Sigilo do Processo",
-    "url": "procedimentos/alterar-sigilo/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Alterar Valor da Causa",
-    "url": "procedimentos/alterar-valor-causa/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Editando Informações",
-    "url": "procedimentos/editando-informacoes/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Usando Anotações",
-    "url": "procedimentos/usando-anotacoes/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Certidão Narratória (Objeto e Pé)",
-    "url": "procedimentos/certidao-narratoria/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Certidão simples",
-    "url": "procedimentos/certidao-simples/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Cadastro de Advogado",
-    "url": "procedimentos/cadastro-advogado/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Advogado não cadastrado",
-    "url": "procedimentos/advogado-nao-cadastrado/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Réu Revel",
-    "url": "procedimentos/reu-revel/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Baixa da Parte",
-    "url": "procedimentos/baixa-de-parte/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Cadastro de Partes e CEP",
-    "url": "procedimentos/cadastro-partes-cep/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Localizadores: Quando e como usar",
-    "url": "procedimentos/localizadores/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Movimentação x Localizadores x Status",
-    "url": "procedimentos/movimentacao-localizadores-status/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Encerrando Prazos",
-    "url": "procedimentos/encerrando-prazos/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Desarquivamento (Reativação)",
-    "url": "procedimentos/desarquivamento/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Transitar em Julgado",
-    "url": "procedimentos/transito-em-julgado/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Atermação",
-    "url": "procedimentos/atermacao/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "IDPJ",
-    "url": "procedimentos/idpj/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Marcando Audiências",
-    "url": "procedimentos/audiencia/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Verificação de Prevenção",
-    "url": "procedimentos/verificacao-prevencao/",
-    "date": "2026-02-11"
-  },
-  {
-    "title": "Cumprimento de Sentença (Tipo)",
-    "url": "procedimentos/cumprimento/",
-    "date": "2026-02-10"
-  },
-  {
-    "title": "Minutas e Agendamento",
-    "url": "procedimentos/minutas/",
-    "date": "2026-02-10"
-  },
-  {
-    "title": "Verificações e Minutas (Inicial)",
-    "url": "procedimentos/peticao-inicial/",
-    "date": "2026-02-10"
-  },
-  {
-    "title": "Juntando documentos",
-    "url": "procedimentos/juntada/",
-    "date": "2026-02-10"
-  },
-  {
-    "title": "Intimações",
-    "url": "procedimentos/intimacao/",
-    "date": "2026-02-10"
-  },
-  {
-    "title": "Citação",
-    "url": "procedimentos/citacao/",
-    "date": "2026-02-10"
-  },
-  {
-    "title": "Alvará / RPV",
-    "url": "procedimentos/alvara-rpv/",
-    "date": "2026-02-10"
-  },
-  {
-    "title": "Suspensão / Sobrestamento",
-    "url": "procedimentos/suspensao/",
-    "date": "2026-02-10"
-  },
-  {
-    "title": "Baixa de Processos",
-    "url": "procedimentos/arquivamento/",
-    "date": "2026-02-10"
-  },
-  {
-    "title": "Devolução / Redistribuição",
-    "url": "procedimentos/devolucao/",
-    "date": "2026-02-10"
-  },
-  {
-    "title": "Carta Precatória",
-    "url": "procedimentos/carta-precatoria/",
-    "date": "2026-02-10"
-  }
+    {
+        "title": "Temas Repetitivos",
+        "url": "procedimentos/temas-repetitivos/",
+        "date": "2026-02-12",
+        "type": "updated"
+    },
+    {
+        "title": "Suspensão / Sobrestamento",
+        "url": "procedimentos/suspensao/",
+        "date": "2026-02-12",
+        "type": "updated"
+    },
+    {
+        "title": "Correção de Erros",
+        "url": "procedimentos/correcao-erros/",
+        "date": "2026-02-12",
+        "type": "updated"
+    },
+    {
+        "title": "Situação incompatível",
+        "url": "procedimentos/situacao-incompativel/",
+        "date": "2026-02-12",
+        "type": "new"
+    },
+    {
+        "title": "Minutas Assinadas e não Anexadas",
+        "url": "procedimentos/minutas-assinadas-nao-anexadas/",
+        "date": "2026-02-12",
+        "type": "new"
+    },
+    {
+        "title": "Advogado não associado",
+        "url": "procedimentos/advogado-nao-associado/",
+        "date": "2026-02-12",
+        "type": "new"
+    },
+    {
+        "title": "Minuta Bloqueada",
+        "url": "procedimentos/minuta-bloqueada/",
+        "date": "2026-02-12",
+        "type": "new"
+    },
+    {
+        "title": "Minutas com status errado",
+        "url": "procedimentos/minutas-status-errado/",
+        "date": "2026-02-12",
+        "type": "construction"
+    },
+    {
+        "title": "Minuta sem Intimação DJEN",
+        "url": "procedimentos/minuta-sem-intimacao-djen/",
+        "date": "2026-02-12",
+        "type": "construction"
+    },
+    {
+        "title": "Localizador Suspenso sem Situação",
+        "url": "procedimentos/localizador-suspenso-sem-situacao/",
+        "date": "2026-02-12",
+        "type": "construction"
+    },
+    {
+        "title": "Minuta para Assinar",
+        "url": "procedimentos/minuta-para-assinar/",
+        "date": "2026-02-12",
+        "type": "construction"
+    },
+    {
+        "title": "Atermação",
+        "url": "procedimentos/atermacao/",
+        "date": "2026-02-12",
+        "type": "updated"
+    },
+    {
+        "title": "IDPJ",
+        "url": "procedimentos/idpj/",
+        "date": "2026-02-12",
+        "type": "updated"
+    },
+    {
+        "title": "Cumprimento de Sentença (Balcão)",
+        "url": "procedimentos/formacao-cumprimento-balcao/",
+        "date": "2026-02-12",
+        "type": "updated"
+    },
+    {
+        "title": "Remeter ao Colégio Recursal",
+        "url": "procedimentos/remessa-turma-recursal/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Sisbajud — Bloqueio de Valores",
+        "url": "procedimentos/sisbajud/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Peças Sigilosas",
+        "url": "procedimentos/pecas-sigilosas/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Juntada em Outros Processos",
+        "url": "procedimentos/juntada-outros-processos/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Preferências: O que são e como usar?",
+        "url": "procedimentos/preferencias-minutas/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Agendamento de Minutas (Detalhado)",
+        "url": "procedimentos/agendamento-minutas/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Verificações Obrigatórias (Minutas)",
+        "url": "procedimentos/verificacoes-minutas/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Cancelamento do Processo",
+        "url": "procedimentos/cancelamento-processo/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Cobrança de Custas",
+        "url": "procedimentos/cobranca-custas/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Solicitar Devolução do Mdd",
+        "url": "procedimentos/solicitar-devolucao-mdd/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Certidão de Militância",
+        "url": "procedimentos/certidao-militancia/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Redistribuição",
+        "url": "procedimentos/redistribuir/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Cartas Precatórias",
+        "url": "procedimentos/cartas-precatorias/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Ofícios",
+        "url": "procedimentos/oficios/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Mandados",
+        "url": "procedimentos/mandados/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Carta AR em Lote / Automática",
+        "url": "procedimentos/carta-ar-lote/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Cartas",
+        "url": "procedimentos/cartas/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Verificações Obrigatórias (Cumprimento)",
+        "url": "procedimentos/verificacoes-cumprimento/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Vinculação de Finais",
+        "url": "procedimentos/vinculacao-finais/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Redigindo e juntando pedidos",
+        "url": "procedimentos/redigindo-pedidos/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Juntando petições e documentos",
+        "url": "procedimentos/juntando-peticoes-balcao/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Intimação pelo sistema",
+        "url": "procedimentos/intimacao-sistema/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Custas Processuais no JEC",
+        "url": "procedimentos/custas-jec/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Cancelamento de Cartas e Mandados",
+        "url": "procedimentos/cancelamento-cartas-mandados/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Temas Repetitivos",
+        "url": "procedimentos/temas-repetitivos/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Cadastro de Bens e Localizações",
+        "url": "procedimentos/cadastro-bens/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Chave de Acesso com Juntada Automática",
+        "url": "procedimentos/chave-acesso-juntada/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Chave (Senha) do Processo",
+        "url": "procedimentos/chave-processo/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Pedido Contraposto",
+        "url": "procedimentos/pedido-contraposto/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Alterar Informações (Classe, Competência, Assuntos)",
+        "url": "procedimentos/alterar-informacoes/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Alterar Sigilo do Processo",
+        "url": "procedimentos/alterar-sigilo/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Alterar Valor da Causa",
+        "url": "procedimentos/alterar-valor-causa/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Editando Informações",
+        "url": "procedimentos/editando-informacoes/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Usando Anotações",
+        "url": "procedimentos/usando-anotacoes/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Certidão Narratória (Objeto e Pé)",
+        "url": "procedimentos/certidao-narratoria/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Certidão simples",
+        "url": "procedimentos/certidao-simples/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Cadastro de Advogado",
+        "url": "procedimentos/cadastro-advogado/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Réu Revel",
+        "url": "procedimentos/reu-revel/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Baixa da Parte",
+        "url": "procedimentos/baixa-de-parte/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Cadastro de Partes e CEP",
+        "url": "procedimentos/cadastro-partes-cep/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Localizadores: Quando e como usar",
+        "url": "procedimentos/localizadores/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Movimentação x Localizadores x Status",
+        "url": "procedimentos/movimentacao-localizadores-status/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Encerrando Prazos",
+        "url": "procedimentos/encerrando-prazos/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Desarquivamento (Reativação)",
+        "url": "procedimentos/desarquivamento/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Transitar em Julgado",
+        "url": "procedimentos/transito-em-julgado/",
+        "date": "2026-02-11",
+        "type": "construction"
+    },
+    {
+        "title": "Atermação",
+        "url": "procedimentos/atermacao/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "IDPJ",
+        "url": "procedimentos/idpj/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Marcando Audiências",
+        "url": "procedimentos/audiencia/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Verificação de Prevenção",
+        "url": "procedimentos/verificacao-prevencao/",
+        "date": "2026-02-11"
+    },
+    {
+        "title": "Cumprimento de Sentença (Tipo)",
+        "url": "procedimentos/cumprimento/",
+        "date": "2026-02-10"
+    },
+    {
+        "title": "Minutas e Agendamento",
+        "url": "procedimentos/minutas/",
+        "date": "2026-02-10",
+        "type": "construction"
+    },
+    {
+        "title": "Verificações e Minutas (Inicial)",
+        "url": "procedimentos/peticao-inicial/",
+        "date": "2026-02-10",
+        "type": "construction"
+    },
+    {
+        "title": "Juntando documentos",
+        "url": "procedimentos/juntada/",
+        "date": "2026-02-10",
+        "type": "construction"
+    },
+    {
+        "title": "Intimações",
+        "url": "procedimentos/intimacao/",
+        "date": "2026-02-10",
+        "type": "construction"
+    },
+    {
+        "title": "Citação",
+        "url": "procedimentos/citacao/",
+        "date": "2026-02-10",
+        "type": "construction"
+    },
+    {
+        "title": "Suspensão / Sobrestamento",
+        "url": "procedimentos/suspensao/",
+        "date": "2026-02-10"
+    },
+    {
+        "title": "Baixa de Processos",
+        "url": "procedimentos/arquivamento/",
+        "date": "2026-02-10"
+    },
+    {
+        "title": "Devolução / Redistribuição",
+        "url": "procedimentos/devolucao/",
+        "date": "2026-02-10",
+        "type": "construction"
+    },
+    {
+        "title": "Carta Precatória",
+        "url": "procedimentos/carta-precatoria/",
+        "date": "2026-02-10"
+    }
 ]

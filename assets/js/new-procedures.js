@@ -37,13 +37,16 @@
     }
 
     function getType(item) {
-        return item.type === "updated" ? "updated" : "new";
+        if (item.type === "updated") return "updated";
+        if (item.type === "construction") return "construction";
+        return "new";
     }
 
     function typeLabel(item) {
-        return getType(item) === "updated"
-            ? "✏️ Atualizado " + relativeLabel(item.date)
-            : "🆕 Adicionado " + relativeLabel(item.date);
+        var t = getType(item);
+        if (t === "construction") return "🚧 Em construção";
+        if (t === "updated") return "✏️ Atualizado " + relativeLabel(item.date);
+        return "🆕 Adicionado " + relativeLabel(item.date);
     }
 
     /* ---- Homepage: card grid com paginação ---- */
@@ -99,42 +102,66 @@
         buildPage(1);
     }
 
-    /* ---- Sidebar: badges "Novo" / "Atualizado" ---- */
+    /* ---- helpers: resolve slug de qualquer link ---- */
+    function getSlugFromLink(link) {
+        // link.href retorna a URL absoluta resolvida pelo browser,
+        // independente de o atributo ser relativo (../idpj/, idpj/, etc.)
+        try {
+            var fullUrl = link.href;
+            var match = fullUrl.match(/\/procedimentos\/([^/?#]+)/);
+            return match ? match[1].replace(/\/$/, "").replace(/\.md$/, "") : null;
+        } catch (e) {
+            return null;
+        }
+    }
+
+    function addBadge(el, type) {
+        if (el.querySelector('.badge-novo') || el.querySelector('.badge-atualizado') || el.querySelector('.badge-construcao')) return;
+        var badge = document.createElement('span');
+        if (type === "construction") {
+            badge.className = 'badge-construcao';
+            badge.textContent = '🚧';
+        } else if (type === "updated") {
+            badge.className = 'badge-atualizado';
+            badge.textContent = 'Atualizado';
+        } else {
+            badge.className = 'badge-novo';
+            badge.textContent = 'Novo';
+        }
+        el.appendChild(badge);
+    }
+
+    /* ---- Sidebar + conteúdo: badges "Novo" / "Atualizado" / "Em construção" ---- */
     function injectBadges(items) {
+        // Prioridade: "new" > "updated" > "construction"
+        var typePriority = { "new": 3, "updated": 2, "construction": 1 };
         var recentMap = {};
         items.forEach(function (p) {
             if (daysBetween(p.date) <= MAX_AGE_DAYS) {
                 var slug = p.url.replace(/^procedimentos\//, "").replace(/\/$/, "");
-                // Se já tem entrada (ex: "new" + "updated"), prioridade: "new" > "updated"
-                if (!recentMap[slug] || getType(p) === "new") {
-                    recentMap[slug] = getType(p);
+                var t = getType(p);
+                var prio = typePriority[t] || 0;
+                if (!recentMap[slug] || prio > (typePriority[recentMap[slug]] || 0)) {
+                    recentMap[slug] = t;
                 }
             }
         });
 
-        // Apenas sidebar esquerda (navegação), não a direita (TOC)
+        // 1. Sidebar esquerda (navegação) — não a direita (TOC)
         var navLinks = document.querySelectorAll('.md-sidebar--primary .md-nav__link[href]');
         navLinks.forEach(function (link) {
-            // Já tem badge? Não duplicar
-            if (link.querySelector('.badge-novo') || link.querySelector('.badge-atualizado')) return;
+            var slug = getSlugFromLink(link);
+            if (slug && recentMap[slug]) {
+                addBadge(link, recentMap[slug]);
+            }
+        });
 
-            var href = link.getAttribute('href');
-            if (!href) return;
-
-            var match = href.match(/procedimentos\/([^/?#]+)/);
-            if (!match) return;
-
-            var slug = match[1].replace(/\/$/, "").replace(/\.md$/, "");
-            if (recentMap[slug]) {
-                var badge = document.createElement('span');
-                if (recentMap[slug] === "updated") {
-                    badge.className = 'badge-atualizado';
-                    badge.textContent = 'Atualizado';
-                } else {
-                    badge.className = 'badge-novo';
-                    badge.textContent = 'Novo';
-                }
-                link.appendChild(badge);
+        // 2. Conteúdo: tabelas (ex: index de procedimentos)
+        var tableLinks = document.querySelectorAll('.md-content td a[href]');
+        tableLinks.forEach(function (link) {
+            var slug = getSlugFromLink(link);
+            if (slug && recentMap[slug]) {
+                addBadge(link, recentMap[slug]);
             }
         });
     }
