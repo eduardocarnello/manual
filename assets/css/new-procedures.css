@@ -8,24 +8,29 @@
 :root {
     --md-admonition-icon--preferencia: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 15H6l7-14v8h5l-7 14v-8z"/></svg>');
 }
+
 .md-typeset .admonition.preferencia,
 .md-typeset details.preferencia {
     border-color: rgb(13, 71, 161);
 }
-.md-typeset .preferencia > .admonition-title,
-.md-typeset .preferencia > summary {
+
+.md-typeset .preferencia>.admonition-title,
+.md-typeset .preferencia>summary {
     background-color: rgba(13, 71, 161, 0.1);
 }
-.md-typeset .preferencia > .admonition-title::before,
-.md-typeset .preferencia > summary::before {
+
+.md-typeset .preferencia>.admonition-title::before,
+.md-typeset .preferencia>summary::before {
     background-color: rgb(13, 71, 161);
     -webkit-mask-image: var(--md-admonition-icon--preferencia);
-            mask-image: var(--md-admonition-icon--preferencia);
+    mask-image: var(--md-admonition-icon--preferencia);
 }
-[data-md-color-scheme="slate"] .md-typeset .preferencia > .admonition-title,
-[data-md-color-scheme="slate"] .md-typeset .preferencia > summary {
+
+[data-md-color-scheme="slate"] .md-typeset .preferencia>.admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .preferencia>summary {
     background-color: rgba(66, 133, 244, 0.15);
 }
+
 [data-md-color-scheme="slate"] .md-typeset .admonition.preferencia,
 [data-md-color-scheme="slate"] .md-typeset details.preferencia {
     border-color: rgb(66, 133, 244);
