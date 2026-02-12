@@ -1,9 +1,6 @@
 /**
- * Atualizações Recentes — carrega updates.json local.
+ * Atualizações Recentes — busca do updates.json local.
  * Exibe timeline na homepage automaticamente.
- *
- * Para adicionar uma atualização, edite docs/assets/data/updates.json:
- *   [{ "msg": "Descrição", "date": "2025-02-11T16:00:00-03:00" }, ...]
  */
 (function () {
     var MAX_ITEMS = 8;
@@ -33,6 +30,13 @@
         return formatDate(iso);
     }
 
+    function getBaseUrl() {
+        return location.origin + location.pathname.replace(
+            /\/(preferencias|procedimentos|referencia-rapida|erros-comuns|faq|contatos)(\/.*)?$/,
+            "/"
+        );
+    }
+
     function render(items) {
         var container = document.getElementById("recent-updates");
         if (!container) return;
@@ -42,10 +46,8 @@
             return;
         }
 
-        // Ordenar por data decrescente
-        items.sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
-
         var html = '<ul class="updates-list">';
+
         items.slice(0, MAX_ITEMS).forEach(function (item) {
             html += '<li class="updates-item">';
             html += '<span class="updates-dot"></span>';
@@ -55,6 +57,7 @@
             html += '</div>';
             html += '</li>';
         });
+
         html += '</ul>';
         container.innerHTML = html;
     }
@@ -65,23 +68,8 @@
 
         container.innerHTML = '<p style="font-size:.82rem;color:var(--md-default-fg-color--light)">Carregando atualizações…</p>';
 
-        // Resolve base URL (funciona tanto em /manual/ quanto local)
-        var base = (document.querySelector('meta[name="base"]') || {}).content || "";
-        if (!base) {
-            // fallback: detectar a partir do link canonical ou script src
-            var scripts = document.querySelectorAll('script[src]');
-            for (var i = 0; i < scripts.length; i++) {
-                var idx = scripts[i].src.indexOf("assets/js/recent-updates.js");
-                if (idx !== -1) {
-                    base = scripts[i].src.substring(0, idx);
-                    break;
-                }
-            }
-        }
-        if (!base) base = "./";
-
-        var url = base + "assets/data/updates.json";
-        fetch(url)
+        var base = getBaseUrl();
+        fetch(base + "assets/data/updates.json")
             .then(function (r) {
                 if (!r.ok) throw new Error(r.status);
                 return r.json();

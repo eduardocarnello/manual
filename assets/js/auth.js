@@ -6,8 +6,8 @@
  * Gere um novo hash em: https://emn178.github.io/online-tools/sha256.html
  */
 (function () {
-    // SHA-256 da senha "jec2025" — altere conforme necessário
-    var PASS_HASH = "fb8dbcafa44401910ddd9318f42637b0df0e5cdd05b6407a64217b1c1a4ddb8c";
+    // SHA-256 da senha — altere conforme necessário
+    var PASS_HASH = "2eb4959e89c44e97eb33d26bdbe054b5235cf9898a8d0f7827071affc2b9e07a";
     var STORAGE_KEY = "docs_auth";
 
     // Se já autenticou nesta sessão, pular

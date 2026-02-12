@@ -90,7 +90,7 @@
     animation: checkPop 0.3s ease;
 }
 
-.rotina-items input[type="checkbox"]:checked + span {
+.rotina-items input[type="checkbox"]:checked+span {
     text-decoration: line-through;
     opacity: 0.5;
 }
