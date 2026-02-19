@@ -1,5 +1,11 @@
 [
     {
+        "title": "Localizadores do eproc",
+        "url": "localizadores/",
+        "date": "2026-02-19",
+        "type": "new"
+    },
+    {
         "title": "Temas Repetitivos",
         "url": "procedimentos/temas-repetitivos/",
         "date": "2026-02-12",
@@ -220,7 +226,8 @@
     {
         "title": "Cadastro de Bens e Localizações",
         "url": "procedimentos/cadastro-bens/",
-        "date": "2026-02-11"
+        "date": "2026-02-19",
+        "type": "updated"
     },
     {
         "title": "Chave de Acesso com Juntada Automática",
