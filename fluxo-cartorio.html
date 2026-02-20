@@ -457,38 +457,110 @@
         }
 
         /* === Auth overlay === */
-        #auth-overlay{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,.94);z-index:99999;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(8px)}
-        #auth-box{background:#1e293b;border-radius:14px;padding:44px 38px 34px;max-width:380px;width:90%;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,.5);border:1px solid #334155}
-        #auth-box h2{margin:0 0 8px;font-size:1.4rem;color:#f1f5f9}
-        #auth-box p{margin:0 0 20px;font-size:.9rem;color:#94a3b8}
-        #auth-input{width:100%;padding:11px 14px;border:2px solid #334155;border-radius:8px;font-size:1rem;box-sizing:border-box;outline:none;background:#0f172a;color:#e2e8f0;transition:border-color .2s}
-        #auth-input:focus{border-color:#3b82f6}
-        #auth-btn{margin-top:14px;width:100%;padding:11px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;font-weight:600;transition:background .2s}
-        #auth-btn:hover{background:#2563eb}
-        #auth-error{color:#ef4444;font-size:.85rem;margin-top:10px;display:none}
-        body.auth-locked #app{display:none!important}
+        #auth-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, .94);
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(8px)
+        }
+
+        #auth-box {
+            background: #1e293b;
+            border-radius: 14px;
+            padding: 44px 38px 34px;
+            max-width: 380px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, .5);
+            border: 1px solid #334155
+        }
+
+        #auth-box h2 {
+            margin: 0 0 8px;
+            font-size: 1.4rem;
+            color: #f1f5f9
+        }
+
+        #auth-box p {
+            margin: 0 0 20px;
+            font-size: .9rem;
+            color: #94a3b8
+        }
+
+        #auth-input {
+            width: 100%;
+            padding: 11px 14px;
+            border: 2px solid #334155;
+            border-radius: 8px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            outline: none;
+            background: #0f172a;
+            color: #e2e8f0;
+            transition: border-color .2s
+        }
+
+        #auth-input:focus {
+            border-color: #3b82f6
+        }
+
+        #auth-btn {
+            margin-top: 14px;
+            width: 100%;
+            padding: 11px;
+            background: #3b82f6;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background .2s
+        }
+
+        #auth-btn:hover {
+            background: #2563eb
+        }
+
+        #auth-error {
+            color: #ef4444;
+            font-size: .85rem;
+            margin-top: 10px;
+            display: none
+        }
+
+        body.auth-locked #app {
+            display: none !important
+        }
     </style>
 </head>
 
 <body>
     <!-- Auth gate — mesma senha do Manual MkDocs, mesma sessão localStorage -->
     <script>
-    (function(){
-        var PASS_HASH='2eb4959e89c44e97eb33d26bdbe054b5235cf9898a8d0f7827071affc2b9e07a';
-        var STORAGE_KEY='docs_auth';var EXPIRY_KEY='docs_auth_exp';var TTL=7*24*60*60*1000;
-        var s=localStorage.getItem(STORAGE_KEY),e=localStorage.getItem(EXPIRY_KEY);
-        if(s===PASS_HASH&&e&&Date.now()<Number(e))return;
-        document.body.classList.add('auth-locked');
-        var ov=document.createElement('div');ov.id='auth-overlay';
-        ov.innerHTML='<div id="auth-box"><h2>🔒 Área restrita</h2><p>Digite a senha de acesso</p><input id="auth-input" type="password" placeholder="Senha" autocomplete="off"/><button id="auth-btn">Entrar</button><div id="auth-error">Senha incorreta. Tente novamente.</div></div>';
-        document.body.appendChild(ov);
-        function sha256(m){var enc=new TextEncoder();return crypto.subtle.digest('SHA-256',enc.encode(m)).then(function(b){return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,'0')}).join('')})}
-        setTimeout(function(){
-            var inp=document.getElementById('auth-input'),btn=document.getElementById('auth-btn'),err=document.getElementById('auth-error');
-            function go(){sha256(inp.value).then(function(h){if(h===PASS_HASH){localStorage.setItem(STORAGE_KEY,PASS_HASH);localStorage.setItem(EXPIRY_KEY,String(Date.now()+TTL));document.body.classList.remove('auth-locked');ov.remove()}else{err.style.display='block';inp.value='';inp.focus()}})}
-            btn.addEventListener('click',go);inp.addEventListener('keydown',function(e){if(e.key==='Enter')go()});inp.focus();
-        },50);
-    })();
+        (function () {
+            var PASS_HASH = '2eb4959e89c44e97eb33d26bdbe054b5235cf9898a8d0f7827071affc2b9e07a';
+            var STORAGE_KEY = 'docs_auth'; var EXPIRY_KEY = 'docs_auth_exp'; var TTL = 7 * 24 * 60 * 60 * 1000;
+            var s = localStorage.getItem(STORAGE_KEY), e = localStorage.getItem(EXPIRY_KEY);
+            if (s === PASS_HASH && e && Date.now() < Number(e)) return;
+            document.body.classList.add('auth-locked');
+            var ov = document.createElement('div'); ov.id = 'auth-overlay';
+            ov.innerHTML = '<div id="auth-box"><h2>🔒 Área restrita</h2><p>Digite a senha de acesso</p><input id="auth-input" type="password" placeholder="Senha" autocomplete="off"/><button id="auth-btn">Entrar</button><div id="auth-error">Senha incorreta. Tente novamente.</div></div>';
+            document.body.appendChild(ov);
+            function sha256(m) { var enc = new TextEncoder(); return crypto.subtle.digest('SHA-256', enc.encode(m)).then(function (b) { return Array.from(new Uint8Array(b)).map(function (x) { return x.toString(16).padStart(2, '0') }).join('') }) }
+            setTimeout(function () {
+                var inp = document.getElementById('auth-input'), btn = document.getElementById('auth-btn'), err = document.getElementById('auth-error');
+                function go() { sha256(inp.value).then(function (h) { if (h === PASS_HASH) { localStorage.setItem(STORAGE_KEY, PASS_HASH); localStorage.setItem(EXPIRY_KEY, String(Date.now() + TTL)); document.body.classList.remove('auth-locked'); ov.remove() } else { err.style.display = 'block'; inp.value = ''; inp.focus() } }) }
+                btn.addEventListener('click', go); inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') go() }); inp.focus();
+            }, 50);
+        })();
     </script>
     <div id="app">
         <header>

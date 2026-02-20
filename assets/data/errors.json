@@ -13,7 +13,7 @@
         "url": "procedimentos/minutas-assinadas-nao-anexadas/",
         "category": "Sistema eproc",
         "causa": "A minuta foi assinada mas não foi anexada porque o agendamento não foi feito.",
-        "solucao": "Verificar minutas assinadas pendentes e realizar o agendamento e intimações manualmente."
+        "solucao": "Verificar minutas assinadas pendentes e realizar a anexação manualmente."
     },
     {
         "title": "Advogado não associado em processo sem sigilo",
