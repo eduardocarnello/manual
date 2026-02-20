@@ -164,12 +164,10 @@
             position: relative;
             background: var(--bg);
             overflow: hidden;
+            min-height: 0;
         }
 
         #graph {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
         }
@@ -729,7 +727,13 @@
             allEdges = new vis.DataSet(edgesVis);
 
             const container = document.getElementById('graph');
+            // Fix: set explicit pixel dimensions to prevent vis-network infinite resize loop
+            var area = document.getElementById('graph-area');
+            container.style.width = area.clientWidth + 'px';
+            container.style.height = area.clientHeight + 'px';
+
             const options = {
+                autoResize: false,
                 nodes: { borderWidth: 1.5, shadow: { enabled: true, size: 6, color: 'rgba(0,0,0,0.3)' } },
                 edges: { smooth: { type: 'curvedCW', roundness: 0.12 } },
                 physics: {
@@ -1144,6 +1148,23 @@
         try {
             if (typeof vis === 'undefined') throw new Error('vis-network não carregou — o CDN pode estar bloqueado pelo navegador');
             buildGraph(null);
+
+            // Manual resize handler (autoResize is off to prevent infinite loop)
+            var resizeTimer;
+            window.addEventListener('resize', function () {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function () {
+                    if (network) {
+                        var area = document.getElementById('graph-area');
+                        var g = document.getElementById('graph');
+                        g.style.width = area.clientWidth + 'px';
+                        g.style.height = area.clientHeight + 'px';
+                        network.setSize(area.clientWidth + 'px', area.clientHeight + 'px');
+                        network.redraw();
+                        network.fit();
+                    }
+                }, 200);
+            });
         } catch (err) {
             console.error('Erro na inicialização:', err);
             var ld = document.getElementById('loading');
