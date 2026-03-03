@@ -1,14 +1,8 @@
 [
     {
-        "title": "Condenação em Custas — Guia, Cobrança e Dívida Ativa",
-        "url": "procedimentos/condenacao-custas/",
-        "date": "2026-02-22",
-        "type": "new"
-    },
-    {
-        "title": "Localizadores do eproc",
-        "url": "localizadores/",
-        "date": "2026-02-19",
+        "title": "Intimação por WhatsApp",
+        "url": "procedimentos/intimacao-whatsapp/",
+        "date": "2026-03-03",
         "type": "new"
     },
     {
@@ -38,8 +32,8 @@
     {
         "title": "Minutas Assinadas e não Anexadas",
         "url": "procedimentos/minutas-assinadas-nao-anexadas/",
-        "date": "2026-02-13",
-        "type": "updated"
+        "date": "2026-02-12",
+        "type": "new"
     },
     {
         "title": "Advogado não associado",
@@ -232,8 +226,7 @@
     {
         "title": "Cadastro de Bens e Localizações",
         "url": "procedimentos/cadastro-bens/",
-        "date": "2026-02-19",
-        "type": "updated"
+        "date": "2026-02-11"
     },
     {
         "title": "Chave de Acesso com Juntada Automática",
