@@ -1,0 +1,576 @@
+/* ===== Eventos Judiciais Page Styles ===== */
+
+/* ---------- Stats cards ---------- */
+.ev-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px
+}
+
+.ev-stat-card {
+    flex: 1;
+    min-width: 120px;
+    padding: 16px 18px;
+    border-radius: 12px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .12)
+}
+
+.ev-stat-card::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .1)
+}
+
+.ev-stat-num {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.1;
+    display: block
+}
+
+.ev-stat-label {
+    font-size: .72rem;
+    opacity: .88;
+    margin-top: 2px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .5px
+}
+
+/* ---------- Filter bar ---------- */
+.ev-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+    align-items: center
+}
+
+.ev-search {
+    flex: 2;
+    min-width: 220px;
+    padding: 10px 14px;
+    border: 2px solid var(--md-default-fg-color--lightest);
+    border-radius: 10px;
+    font-size: .9rem;
+    background: var(--md-code-bg-color);
+    color: var(--md-default-fg-color);
+    outline: none;
+    transition: border-color .2s
+}
+
+.ev-search:focus {
+    border-color: var(--md-primary-fg-color)
+}
+
+.ev-select {
+    padding: 9px 12px;
+    border: 2px solid var(--md-default-fg-color--lightest);
+    border-radius: 10px;
+    font-size: .85rem;
+    background: var(--md-code-bg-color);
+    color: var(--md-default-fg-color);
+    cursor: pointer
+}
+
+.ev-check-label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: .82rem;
+    color: var(--md-default-fg-color--light);
+    cursor: pointer;
+    white-space: nowrap
+}
+
+/* ---------- Category chips ---------- */
+.ev-chips-wrap {
+    position: relative;
+    display: inline-block
+}
+
+.ev-chips-btn {
+    padding: 9px 12px;
+    border: 2px solid var(--md-default-fg-color--lightest);
+    border-radius: 10px;
+    font-size: .85rem;
+    background: var(--md-code-bg-color);
+    color: var(--md-default-fg-color);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color .2s
+}
+
+.ev-chips-btn:hover {
+    border-color: var(--md-primary-fg-color)
+}
+
+.ev-chips-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    z-index: 200;
+    background: var(--md-code-bg-color);
+    border: 2px solid var(--md-default-fg-color--lightest);
+    border-radius: 12px;
+    padding: 10px;
+    min-width: 280px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .18)
+}
+
+.ev-chips-menu.open {
+    display: block
+}
+
+.ev-chip-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 8px;
+    font-size: .82rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background .15s;
+    white-space: nowrap;
+    user-select: none
+}
+
+.ev-chip-item:hover {
+    background: var(--md-default-fg-color--lightest)
+}
+
+.ev-chip-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0
+}
+
+.ev-chip-count {
+    margin-left: auto;
+    font-size: .72rem;
+    opacity: .6;
+    font-weight: 600
+}
+
+/* ---------- Count bar ---------- */
+.ev-count {
+    font-size: .8rem;
+    color: var(--md-default-fg-color--light);
+    margin-bottom: 8px
+}
+
+/* ---------- Table ---------- */
+.ev-table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid var(--md-default-fg-color--lightest)
+}
+
+#ev-table {
+    width: 100%;
+    table-layout: auto;
+    font-size: .78rem;
+    border-collapse: collapse
+}
+
+#ev-table thead tr {
+    background: var(--md-primary-fg-color);
+    color: #fff;
+    cursor: pointer;
+    user-select: none
+}
+
+#ev-table th {
+    padding: 10px 8px;
+    text-align: left;
+    font-weight: 600;
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    white-space: nowrap
+}
+
+#ev-table th:hover {
+    background: rgba(255, 255, 255, .1)
+}
+
+#ev-table th.sorted-asc::after {
+    content: ' ▲';
+    font-size: .6rem
+}
+
+#ev-table th.sorted-desc::after {
+    content: ' ▼';
+    font-size: .6rem
+}
+
+#ev-table tbody tr {
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    cursor: pointer;
+    transition: background .15s
+}
+
+#ev-table tbody tr:nth-child(even) {
+    background: var(--md-code-bg-color)
+}
+
+#ev-table tbody tr:hover {
+    background: rgba(63, 81, 181, .07)
+}
+
+#ev-table td {
+    padding: 8px;
+    vertical-align: middle
+}
+
+/* Row variants */
+.ev-row-terminativo {
+    border-left: 3px solid #C62828 !important
+}
+
+/* Cell styles */
+.ev-codigo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .76rem;
+    color: var(--md-primary-fg-color)
+}
+
+.ev-codigo code {
+    background: var(--md-code-bg-color);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: .74rem
+}
+
+.ev-nome {
+    font-weight: 600;
+    word-break: break-word;
+    max-width: 360px
+}
+
+.ev-tipo-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: .66rem;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    letter-spacing: .2px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .2)
+}
+
+.ev-flags {
+    white-space: nowrap
+}
+
+.ev-flag-icon {
+    font-size: .8rem;
+    cursor: help
+}
+
+.ev-cnj-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: .68rem;
+    font-weight: 600;
+    background: #e8f5e9;
+    color: #2E7D32;
+    white-space: nowrap
+}
+
+.ev-no-cnj {
+    color: var(--md-default-fg-color--lightest);
+    font-size: .8rem
+}
+
+.ev-btn-ver {
+    background: none;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: .82rem;
+    cursor: pointer;
+    color: var(--md-primary-fg-color);
+    transition: all .15s;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center
+}
+
+.ev-btn-ver:hover {
+    background: var(--md-primary-fg-color);
+    color: #fff;
+    border-color: var(--md-primary-fg-color)
+}
+
+/* ---------- Modal ---------- */
+.ev-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, .55);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s ease
+}
+
+.ev-modal-backdrop.open {
+    opacity: 1;
+    pointer-events: auto
+}
+
+.ev-modal-card {
+    background: var(--md-default-bg-color, #fff);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 780px;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, .25);
+    transform: translateY(20px);
+    transition: transform .3s ease;
+    overflow: hidden
+}
+
+.ev-modal-backdrop.open .ev-modal-card {
+    transform: translateY(0)
+}
+
+.ev-modal-header {
+    padding: 20px 24px 16px;
+    position: relative
+}
+
+.ev-modal-header-bg {
+    position: absolute;
+    inset: 0;
+    opacity: .12;
+    border-radius: 16px 16px 0 0;
+    pointer-events: none
+}
+
+.ev-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: rgba(255, 255, 255, .2);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--md-default-fg-color);
+    transition: background .15s;
+    z-index: 1
+}
+
+.ev-modal-close:hover {
+    background: rgba(255, 255, 255, .4)
+}
+
+.ev-modal-cat {
+    margin-bottom: 8px
+}
+
+.ev-modal-nome {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.3;
+    color: var(--md-default-fg-color);
+    word-break: break-word
+}
+
+.ev-modal-codigo {
+    font-size: .82rem;
+    color: var(--md-default-fg-color--light);
+    margin-top: 4px;
+    font-family: 'JetBrains Mono', monospace
+}
+
+.ev-modal-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 24px;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest)
+}
+
+.ev-modal-meta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: .72rem;
+    font-weight: 600;
+    background: var(--md-code-bg-color)
+}
+
+.ev-modal-body {
+    padding: 16px 24px 20px;
+    overflow-y: auto;
+    flex: 1
+}
+
+.ev-modal-section {
+    margin-bottom: 16px
+}
+
+.ev-modal-section-title {
+    font-size: .78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    color: var(--md-default-fg-color--light);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+.ev-modal-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    border: 1px solid #e8e8e8;
+    font-size: .88rem;
+    line-height: 1.6;
+    color: #333
+}
+
+[data-md-color-scheme=slate] .ev-modal-content {
+    background: #fafafa;
+    border-color: #ddd;
+    color: #333
+}
+
+/* Config table in modal */
+.ev-config-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .85rem
+}
+
+.ev-config-table td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #eee
+}
+
+.ev-config-table td:first-child {
+    font-weight: 500;
+    color: #555;
+    width: 60%
+}
+
+.ev-config-sim {
+    color: #2E7D32;
+    font-weight: 600
+}
+
+.ev-config-nao {
+    color: #999;
+    font-weight: 400
+}
+
+/* CNJ content and glossary */
+.ev-cnj-content {
+    background: #f0f7f0 !important;
+    border-color: #c8e6c9 !important
+}
+
+.ev-glossario {
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: #e8f5e9;
+    border-radius: 8px;
+    border: 1px solid #a5d6a7;
+    font-size: .85rem;
+    line-height: 1.6
+}
+
+/* ---------- Zero state ---------- */
+.ev-zero {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--md-default-fg-color--light)
+}
+
+.ev-zero-emoji {
+    font-size: 3rem;
+    margin-bottom: 8px;
+    display: block
+}
+
+.ev-zero-text {
+    font-size: .9rem
+}
+
+.ev-zero-sub {
+    font-size: .78rem;
+    margin-top: 4px;
+    opacity: .7
+}
+
+/* ---------- Responsive ---------- */
+@media(max-width:768px) {
+    .ev-stats {
+        gap: 8px
+    }
+
+    .ev-stat-card {
+        min-width: 100px;
+        padding: 12px 14px
+    }
+
+    .ev-stat-num {
+        font-size: 1.4rem
+    }
+
+    .ev-modal-card {
+        max-height: 92vh;
+        border-radius: 12px
+    }
+
+    .ev-modal-header {
+        padding: 14px 16px 12px
+    }
+
+    .ev-modal-meta {
+        padding: 8px 16px
+    }
+
+    .ev-modal-body {
+        padding: 12px 16px 16px
+    }
+
+    .ev-nome {
+        max-width: 200px
+    }
+}
