@@ -3417,7 +3417,7 @@
 
 
 <style>
-.md-content{max-width:none}.md-main__inner{max-width:none}.md-content__inner{max-width:none;padding:0 16px}
+.md-content{max-width:none}.md-main__inner{max-width:none}.md-content__inner{max-width:none;padding:0 24px}.md-grid{max-width:none}.md-sidebar{display:none}.ev-table-wrap{width:100%;overflow-x:auto}#ev-table{width:100%;table-layout:fixed}#ev-table th:nth-child(1){width:80px}#ev-table th:nth-child(2){width:auto}#ev-table th:nth-child(3){width:140px}#ev-table th:nth-child(4){width:110px}#ev-table th:nth-child(5){width:90px}#ev-table th:nth-child(6){width:75px}#ev-table th:nth-child(7){width:40px}
 </style>
 
 <h1 id="eventos-judiciais-do-eproc">⚖️ Eventos Judiciais do <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr><a class="headerlink" href="#eventos-judiciais-do-eproc" title="Permanent link">&para;</a></h1>
@@ -3443,6 +3443,18 @@
     <span class="ev-stat-num" id="ev-s-terminativos">—</span>
     <span class="ev-stat-label">Terminativos</span>
   </div>
+  <div class="ev-stat-card" style="background:linear-gradient(135deg,#00695C,#26A69A)">
+    <span class="ev-stat-num" id="ev-s-serventia">—</span>
+    <span class="ev-stat-label">🏛️ Serventia</span>
+  </div>
+  <div class="ev-stat-card" style="background:linear-gradient(135deg,#4527A0,#7E57C2)">
+    <span class="ev-stat-num" id="ev-s-magistrado">—</span>
+    <span class="ev-stat-label">👨‍⚖️ Magistrado</span>
+  </div>
+  <div class="ev-stat-card" style="background:linear-gradient(135deg,#F57C00,#FFB74D)">
+    <span class="ev-stat-num" id="ev-s-misto">—</span>
+    <span class="ev-stat-label">🔀 Misto</span>
+  </div>
 </div>
 
 <p><span id="ev-meta-data" style="font-size:.78rem;color:var(--md-default-fg-color--light);display:block;margin-bottom:16px"></span></p>
@@ -3459,15 +3471,24 @@
   </div>
   <select id="ev-flags" class="ev-select">
     <option value="">Todos os eventos</option>
-    <option value="lancavel">✅ Lançáveis</option>
-    <option value="nao-lancavel">🚫 Não lançáveis</option>
-    <option value="terminativo">⛔ Terminativos</option>
-    <option value="magistrado">👨‍⚖️ Requer magistrado</option>
-    <option value="doc-obrigatorio">📎 Doc. obrigatório</option>
-    <option value="envia-email">📧 Envia e-mail</option>
-    <option value="com-cnj">📋 Com código CNJ</option>
-    <option value="sem-cnj">❌ Sem código CNJ</option>
-    <option value="altera-status">🔄 Altera status do processo</option>
+    <optgroup label="Quem lança">
+      <option value="serventia">🏛️ Serventia (cartório)</option>
+      <option value="magistrado">👨‍⚖️ Magistrado</option>
+      <option value="misto">🔀 Misto (serventia + magistrado)</option>
+      <option value="sistema">⚙️ Sistema</option>
+    </optgroup>
+    <optgroup label="Configurações">
+      <option value="lancavel">✅ Lançáveis</option>
+      <option value="nao-lancavel">🚫 Não lançáveis</option>
+      <option value="terminativo">⛔ Terminativos</option>
+      <option value="doc-obrigatorio">📎 Doc. obrigatório</option>
+      <option value="envia-email">📧 Envia e-mail</option>
+      <option value="altera-status">🔄 Altera status do processo</option>
+    </optgroup>
+    <optgroup label="CNJ">
+      <option value="com-cnj">📋 Com código CNJ</option>
+      <option value="sem-cnj">❌ Sem código CNJ</option>
+    </optgroup>
   </select>
   <label class="ev-check-label">
     <input type="checkbox" id="ev-has-glossario" /> Só com glossário CNJ
@@ -3485,10 +3506,11 @@
     <thead>
       <tr>
         <th data-col="codigoEproc" style="width:90px">Código</th>
-        <th data-col="nome" style="min-width:240px">Evento</th>
-        <th data-col="tipoEvento" style="width:160px">Tipo</th>
-        <th data-col="flags" style="width:100px">Config.</th>
-        <th data-col="cnj" style="width:100px">CNJ</th>
+        <th data-col="nome" style="min-width:220px">Evento</th>
+        <th data-col="tipoEvento" style="width:150px">Tipo</th>
+        <th data-col="quemLanca" style="width:110px">Quem lança</th>
+        <th data-col="flags" style="width:90px">Config.</th>
+        <th data-col="cnj" style="width:90px">CNJ</th>
         <th style="width:40px"></th>
       </tr>
     </thead>
@@ -3515,6 +3537,7 @@
 (function(){
   /* ─── State ─── */
   var allData=[], sortCol='codigoEproc', sortAsc=true, selectedTipos=[];
+  var base=location.origin+location.pathname.replace(/\/(eventos-judiciais|localizadores|preferencias|procedimentos|referencia-rapida|erros-comuns|faq|contatos)(\/.*)?$/,'/');
 
   /* ─── Tipo colors ─── */
   var TIPO_COLORS={
@@ -3542,6 +3565,13 @@
 
   /* ─── Helpers ─── */
   function esc(s){if(!s)return'';var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+  function cleanGlossary(html){
+    if(!html)return'';
+    var tmp=document.createElement('div');
+    tmp.innerHTML=html;
+    var text=tmp.textContent||tmp.innerText||'';
+    return text.replace(/\s+/g,' ').trim();
+  }
   function highlight(text,term){
     if(!term||!text)return esc(text)||'';
     var escaped=esc(text);
@@ -3558,6 +3588,30 @@
       if(p<1)requestAnimationFrame(frame);
     }
     requestAnimationFrame(frame);
+  }
+
+  /* ─── Quem lança (classificação por tipoEvento.nome) ─── */
+  var MAGISTRADO_TIPOS=new Set([
+    'Despacho','Despacho Diligencia','Despacho Terminativo',
+    'Embargos de Delaração','Embargos de Infringentes','Liminar',
+    'Sentença','Sentença em audiência',
+    'Sentenças tipo A','Sentenças tipo B','Sentenças tipo C',
+    'Sentenças tipo D','Sentenças tipo E',
+    'Execução penal provisória'
+  ]);
+  var CONCLUSAO_TIPOS=new Set([
+    'Conclusão p/ Despacho','Conclusão p/ Sentença',
+    'Retificação de Conclusão - Ag. despacho',
+    'Retificação de Conclusão - Ag. sentença'
+  ]);
+
+  function quemLanca(cfg,tipoNome){
+    if(!cfg)return{label:'—',class:'ev-ql-unknown'};
+    if(MAGISTRADO_TIPOS.has(tipoNome))return{label:'👨‍⚖️ Magistrado',class:'ev-ql-mag'};
+    if(CONCLUSAO_TIPOS.has(tipoNome))return{label:'🏛️ Serventia',class:'ev-ql-serv'};
+    if(cfg.pedeMagistrado&&!cfg.documentoObrigatorio)return{label:'🔀 Misto',class:'ev-ql-misto'};
+    if(cfg.lancavel)return{label:'🏛️ Serventia',class:'ev-ql-serv'};
+    return{label:'⚙️ Sistema',class:'ev-ql-sis'};
   }
 
   /* ─── Flag icons ─── */
@@ -3588,7 +3642,10 @@
           case 'lancavel': if(!ev.configuracoes.lancavel)return false; break;
           case 'nao-lancavel': if(ev.configuracoes.lancavel)return false; break;
           case 'terminativo': if(!ev.nome||ev.nome.toLowerCase().indexOf('terminativ')===-1)return false; break;
-          case 'magistrado': if(!ev.configuracoes.pedeMagistrado)return false; break;
+          case 'magistrado': if(quemLanca(ev.configuracoes,ev.tipoEvento.nome).class!=='ev-ql-mag')return false; break;
+          case 'serventia': if(quemLanca(ev.configuracoes,ev.tipoEvento.nome).class!=='ev-ql-serv')return false; break;
+          case 'misto': if(quemLanca(ev.configuracoes,ev.tipoEvento.nome).class!=='ev-ql-misto')return false; break;
+          case 'sistema': if(quemLanca(ev.configuracoes,ev.tipoEvento.nome).class!=='ev-ql-sis')return false; break;
           case 'doc-obrigatorio': if(!ev.configuracoes.documentoObrigatorio)return false; break;
           case 'envia-email': if(!ev.configuracoes.enviaEmailProcuradores)return false; break;
           case 'com-cnj': if(!ev.tabelaUnificadaCnj)return false; break;
@@ -3612,6 +3669,12 @@
       } else if(sortCol==='tipoEvento'){
         va=(a.tipoEvento.nome||'').toLowerCase();
         vb=(b.tipoEvento.nome||'').toLowerCase();
+      } else if(sortCol==='quemLanca'){
+        var qa=quemLanca(a.configuracoes,a.tipoEvento.nome).class;
+        var qb=quemLanca(b.configuracoes,b.tipoEvento.nome).class;
+        var order={'ev-ql-serv':'a','ev-ql-mag':'b','ev-ql-misto':'c','ev-ql-sis':'d','ev-ql-unknown':'e'};
+        va=order[qa]||'z';
+        vb=order[qb]||'z';
       } else if(sortCol==='cnj'){
         va=a.tabelaUnificadaCnj?a.tabelaUnificadaCnj.codigoEproc||'':'zzz';
         vb=b.tabelaUnificadaCnj?b.tabelaUnificadaCnj.codigoEproc||'':'zzz';
@@ -3635,15 +3698,17 @@
     var html='';
 
     if(filtered.length===0){
-      html='<tr><td colspan="6"><div class="ev-zero"><span class="ev-zero-emoji">🔍</span><div class="ev-zero-text">Nenhum evento encontrado</div><div class="ev-zero-sub">Tente ajustar os filtros ou a busca</div></div></td></tr>';
+      html='<tr><td colspan="7"><div class="ev-zero"><span class="ev-zero-emoji">🔍</span><div class="ev-zero-text">Nenhum evento encontrado</div><div class="ev-zero-sub">Tente ajustar os filtros ou a busca</div></div></td></tr>';
     } else {
       filtered.forEach(function(ev){
         var color=tipoColor(ev.tipoEvento.nome);
         var isTerminativo=ev.nome&&ev.nome.toLowerCase().indexOf('terminativ')>-1;
+        var ql=quemLanca(ev.configuracoes,ev.tipoEvento.nome);
         html+='<tr data-id="'+esc(ev.id)+'"'+(isTerminativo?' class="ev-row-terminativo"':'')+'>';
         html+='<td class="ev-codigo"><code>'+esc(ev.codigoEproc)+'</code></td>';
         html+='<td class="ev-nome">'+highlight(ev.nome,searchTerm)+'</td>';
         html+='<td><span class="ev-tipo-badge" style="background:'+color+'">'+esc(ev.tipoEvento.nome)+'</span></td>';
+        html+='<td><span class="ev-ql-badge '+ql.class+'">'+ql.label+'</span></td>';
         html+='<td class="ev-flags">'+flagIcons(ev.configuracoes)+'</td>';
         html+='<td>'+(ev.tabelaUnificadaCnj?'<span class="ev-cnj-badge">'+esc(ev.tabelaUnificadaCnj.codigoEproc||'✓')+'</span>':'<span class="ev-no-cnj">—</span>')+'</td>';
         html+='<td><button class="ev-btn-ver" title="Ver detalhes">👁</button></td>';
@@ -3684,6 +3749,8 @@
 
     // Meta pills
     var metaHtml='';
+    var qlModal=quemLanca(ev.configuracoes,ev.tipoEvento.nome);
+    metaHtml+='<span class="ev-modal-meta-pill '+qlModal.class+'">'+qlModal.label+'</span>';
     if(ev.configuracoes.lancavel)metaHtml+='<span class="ev-modal-meta-pill">✅ Lançável</span>';
     else metaHtml+='<span class="ev-modal-meta-pill" style="background:#ffebee;color:#c62828">🚫 Não lançável</span>';
     if(ev.configuracoes.pedeMagistrado)metaHtml+='<span class="ev-modal-meta-pill">👨‍⚖️ Requer magistrado</span>';
@@ -3723,7 +3790,7 @@
       if(cnj.codigoCnj)bodyHtml+='<strong>Código CNJ:</strong> <code>'+esc(cnj.codigoCnj)+'</code><br>';
       if(cnj.nomeCnj)bodyHtml+='<strong>Movimento CNJ:</strong> '+esc(cnj.nomeCnj)+'<br>';
       if(cnj.glossario){
-        bodyHtml+='<div class="ev-glossario"><strong>📖 Glossário:</strong><br>'+esc(cnj.glossario)+'</div>';
+        bodyHtml+='<div class="ev-glossario"><strong>📖 Glossário:</strong><br>'+esc(cleanGlossary(cnj.glossario))+'</div>';
       }
       bodyHtml+='</div></div>';
     }
@@ -3779,10 +3846,15 @@
 
   /* ─── Init ─── */
   function init(){
-    fetch('assets/data/eventos_judiciais.json')
+    fetch(base+'assets/data/eventos_judiciais.json')
       .then(function(r){return r.json()})
       .then(function(data){
         allData=data.eventos||[];
+
+        // Clean searchText (decode HTML entities from glossário)
+        allData.forEach(function(ev){
+          if(ev.searchText)ev.searchText=cleanGlossary(ev.searchText).toLowerCase();
+        });
 
         // Stats
         animateNumber(document.getElementById('ev-s-total'),data.totalEventos||allData.length);
@@ -3790,6 +3862,18 @@
         animateNumber(document.getElementById('ev-s-lancaveis'),data.totalLancaveis||0);
         animateNumber(document.getElementById('ev-s-cnj'),data.totalComCnj||0);
         animateNumber(document.getElementById('ev-s-terminativos'),data.totalTerminativos||0);
+
+        // Serventia / Magistrado / Misto stats
+        var serventiaCount=0,magistradoCount=0,mistoCount=0;
+        allData.forEach(function(ev){
+          var ql=quemLanca(ev.configuracoes,ev.tipoEvento.nome);
+          if(ql.class==='ev-ql-mag')magistradoCount++;
+          else if(ql.class==='ev-ql-misto')mistoCount++;
+          else if(ql.class==='ev-ql-serv')serventiaCount++;
+        });
+        animateNumber(document.getElementById('ev-s-serventia'),serventiaCount);
+        animateNumber(document.getElementById('ev-s-magistrado'),magistradoCount);
+        animateNumber(document.getElementById('ev-s-misto'),mistoCount);
 
         // Meta
         if(data.exportDate){
