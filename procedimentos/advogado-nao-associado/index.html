@@ -3483,6 +3483,15 @@
 <h1 id="advogado-nao-associado-em-processo-sem-sigilo">🔧 Advogado não associado em processo sem sigilo<a class="headerlink" href="#advogado-nao-associado-em-processo-sem-sigilo" title="Permanent link">&para;</a></h1>
 <p><strong>Causa:</strong> Bug do <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr> — advogado juntou procuração corretamente mas não foi associado automaticamente (nome aparece em cinza).</p>
 <p><strong>Solução:</strong> Cadastrar o advogado manualmente, da mesma forma que nos processos sigilosos.</p>
+<div class="admonition info">
+<p class="admonition-title">Processo migrado do SAJ com advogado Não validado — não é bug</p>
+<p>Nos processos migrados do SAJ, o status <strong>"Não validado"</strong> indica que o advogado está vinculado à parte, mas <strong>não possui cadastro ou perfil ativo</strong> no <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr> (Infoeproc nº 101):</p>
+<ul>
+<li><strong>Sem cadastro no <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr></strong> → o próprio advogado acessa a página do <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr> e faz o seu credenciamento</li>
+<li><strong>Com cadastro</strong> → a unidade ativa o perfil: após conferir a procuração, o usuário com perfil <strong>Chefe de Cartório</strong> acessa o menu lateral → <strong>Cadastro de Usuários</strong>, informa a OAB em <strong>"Informe a sigla do Usuário"</strong>, clica em <strong>Consultar</strong> e marca <strong>"Listar Inativos"</strong>; na coluna <strong>Ações</strong>, aciona o ícone <strong>CNA</strong> e, na tela <strong>Cadastro Nacional de Advogados</strong>, clica em <strong>"Atualizar situação"</strong>. O cadastro passa à situação <strong>"Normal"</strong></li>
+</ul>
+<p>Em caso de urgência ou prazo em aberto, o advogado pode pedir a conferência e validação da procuração pelo <strong>Balcão Virtual</strong>.</p>
+</div>
 <hr />
 <h2 id="passo-a-passo">Passo a passo<a class="headerlink" href="#passo-a-passo" title="Permanent link">&para;</a></h2>
 <ol>

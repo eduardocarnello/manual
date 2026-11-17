@@ -3775,7 +3775,7 @@
 <ol>
 <li><strong>Status da carta</strong> → o cancelamento de envio aos Correios só é possível enquanto a carta estiver com status <strong>"Aguardando envio para Correios"</strong>; após "Enviada para Correios", não é mais possível cancelar</li>
 <li><strong>Cancelar evento ≠ cancelar envio</strong> → o cancelamento do evento ou o desentranhamento do documento <strong>não</strong> cancela o envio da carta aos Correios, se já recebida por eles</li>
-<li><strong>Mandado na Central</strong> → após cancelar o mandado, solicite ao Oficial de Justiça que o <strong>devolva sem cumprimento</strong> (não certificar, apenas devolver)</li>
+<li><strong>Mandado na Central</strong> → após cancelar o mandado, solicite ao Oficial de Justiça que o <strong>devolva sem cumprimento</strong> pelo botão próprio de devolução (não certificar como cumprido)</li>
 <li><strong>Guia de recolhimento</strong> → o item de recolhimento vinculado a uma Carta <abbr title="Aviso de Recebimento — comprovante de entrega de correspondência">AR</abbr> só pode ser reaproveitado se ela for cancelada com status "Aguardando envio"</li>
 </ol>
 </div>
@@ -3831,7 +3831,7 @@
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Perfil necessário</p>
-<p>O cancelamento do mandado deve ser feito por servidor com perfil de <strong>Gestor</strong> na unidade que emitiu o documento.</p>
+<p>O cancelamento do mandado pode ser feito por usuário com perfil <strong>Chefe de Cartório</strong> ou <strong>Servidor Unidade Judicial Avançado</strong> (Infoeproc nº 120). O botão <strong>Cancelar Movimentação</strong> também aparece para o perfil <strong>Magistrado</strong> (Infoeproc nº 51).</p>
 </div>
 <h3 id="passo-2-localizar-e-desativar">Passo 2 — Localizar e desativar<a class="headerlink" href="#passo-2-localizar-e-desativar" title="Permanent link">&para;</a></h3>
 <ol>
@@ -3847,12 +3847,21 @@
 <h3 id="passo-4-comunicar-o-oficial-de-justica">Passo 4 — Comunicar o Oficial de Justiça<a class="headerlink" href="#passo-4-comunicar-o-oficial-de-justica" title="Permanent link">&para;</a></h3>
 <p>Após o cancelamento, o mandado <strong>ainda permanece disponível</strong> para o Oficial de Justiça. É necessário:</p>
 <ol>
-<li>Solicitar ao <abbr title="Oficial de Justiça">OJ</abbr> que <strong>devolva sem cumprimento</strong> (clicando no ícone de seta girando no sentido anti-horário)</li>
-<li>Comunicar via <strong>mensagem na minuta</strong> e, adicionalmente, via <strong>e-mail à CEMAN e ao <abbr title="Oficial de Justiça">OJ</abbr></strong></li>
+<li>
+<p>Solicitar ao <abbr title="Oficial de Justiça">OJ</abbr> que <strong>devolva sem cumprimento</strong> pelo botão próprio, por uma das duas vias (Infoeproc nº 177):</p>
+<ul>
+<li>na tela <strong>Gestão de Mandados</strong>, ícone <strong>"Devolver sem cumprimento"</strong> (seta em sentido anti-horário); ou</li>
+<li>na tela <strong>Certificar Mandado</strong>, botão <strong>"Devolver Mandado sem cumprimento"</strong></li>
+</ul>
+<p>Nas duas, o <abbr title="Oficial de Justiça">OJ</abbr> informa a justificativa no campo <strong>"Motivos"</strong> e aciona <strong>Devolver</strong>.
+2. Comunicar via <strong>mensagem na minuta</strong> e, adicionalmente, via <strong>e-mail à CEMAN e ao <abbr title="Oficial de Justiça">OJ</abbr></strong>
+3. Depois da devolução, conferir na capa o evento <strong>"Juntada de mandado não cumprido"</strong> (com a justificativa do <abbr title="Oficial de Justiça">OJ</abbr>) e o localizador de sistema <strong>MAND SEM CUMPRIMENTO</strong> (Infoeproc nº 177)</p>
+</li>
 </ol>
 <div class="admonition danger">
-<p class="admonition-title">Não certificar a devolução!</p>
-<p>O Oficial de Justiça <strong>NÃO deve certificar</strong> a devolução sem cumprimento — deve apenas clicar no ícone de devolução. Certificar impacta:</p>
+<p class="admonition-title">Devolver só pelo botão próprio — não certificar como cumprido!</p>
+<p>A devolução sem cumprimento deve ser feita <strong>exclusivamente</strong> pelo botão próprio. Por outra forma, o item de recolhimento vinculado fica indisponível para reaproveitamento em outro mandado e, como a informação vai automaticamente à Controladoria Digital de Mandados, pode gerar ressarcimento indevido ao <abbr title="Oficial de Justiça">OJ</abbr>, salvo correção manual pela CEMAN (Infoeproc nº 177).</p>
+<p>Na tela de devolução, juntar certidão (<strong>Nova certidão</strong> ou <strong>Adicionar arquivo</strong>) é <strong>facultativo</strong>, a critério do <abbr title="Oficial de Justiça">OJ</abbr> (Infoeproc nº 177). O que não se faz é certificar o mandado pelo fluxo normal em vez de devolvê-lo, o que impacta:</p>
 <ul>
 <li>O rastreamento automático de mandados cumpridos</li>
 <li>A vinculação de diligências pagas</li>
@@ -3879,8 +3888,9 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Evento do mandado localizado</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Documento desativado (ícone lixeira)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Evento automático de cancelamento gerado</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <abbr title="Oficial de Justiça">OJ</abbr> comunicado para devolução sem cumprimento (sem certificar)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <abbr title="Oficial de Justiça">OJ</abbr> comunicado para devolução sem cumprimento pelo botão próprio (sem certificar como cumprido)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> E-mail enviado à CEMAN e ao <abbr title="Oficial de Justiça">OJ</abbr></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Evento "Juntada de mandado não cumprido" e localizador MAND SEM CUMPRIMENTO conferidos na capa</li>
 </ul>
 
 

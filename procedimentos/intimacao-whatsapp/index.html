@@ -3893,6 +3893,10 @@
 <h2 id="quando-usar">Quando usar<a class="headerlink" href="#quando-usar" title="Permanent link">&para;</a></h2>
 <p>Quando a parte <strong>pediu para ser intimada por WhatsApp</strong> e existe essa informação registrada no processo (lembrete verde e/ou formulário de autorização nos autos).</p>
 <p>A intimação por WhatsApp é feita por meio do <strong>Sistema de Intimações Judiciais – SIJ</strong> do <abbr title="Tribunal de Justiça do Estado de São Paulo">TJSP</abbr> e substitui o envio por carta ou oficial de justiça para a parte que optou por esse meio.</p>
+<div class="admonition note">
+<p class="admonition-title">Envio pelo próprio <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr> (Infoeproc nº 121)</p>
+<p>O Infoeproc nº 121 descreve a intimação por WhatsApp feita <strong>dentro do <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr></strong> (não trata do SIJ), para os Juizados: botão <strong>Intimar</strong> → evento "Expedida/Certificada a Intimação Eletrônica - Aplicativo de mensagem (WhatsApp)". Nesse fluxo o sistema põe na capa os localizadores <code>AGUARDANDO_INTIMACAO_ELETRONICA_WHATSAPP</code> e, depois, <code>ENVIADO_INTIMACAO_ELETRONICA_WHATSAPP</code> (ou <code>ERRO_INTIMACAO_ELETRONICA_WhatsApp</code>, se o envio falhar), e o prazo abre sozinho 1 dia útil depois que o status passa a "Entregue". Esta página ainda descreve o envio pelo SIJ; confirme com a chefia qual fluxo a unidade usa.</p>
+</div>
 <div class="admonition info">
 <p class="admonition-title">Quem pode solicitar</p>
 <p>A parte pode solicitar a intimação por WhatsApp em dois momentos:</p>
@@ -4011,6 +4015,10 @@
 </li>
 <li>Quando o status estiver como <strong>"Entregue"</strong>, clique no botão <strong>"Baixar"</strong> para fazer o download do comprovante</li>
 </ol>
+<div class="admonition warning">
+<p class="admonition-title">Status parado em 'Enviado' por 1 dia → refazer por outro meio</p>
+<p>Regra do Infoeproc nº 121 para o envio <strong>pelo <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr></strong> (o Infoeproc não trata do SIJ): se o celular do destinatário estiver sem sinal ou sem internet, a mensagem não é entregue e o status fica <strong>permanentemente</strong> como "Enviado"; se, passado <strong>1 dia</strong> do envio, o status não mudar, a unidade deve <strong>refazer a intimação por outro meio</strong> — e-mail, ligação telefônica, carta ou mandado.</p>
+</div>
 <div class="admonition info">
 <p class="admonition-title">Por que 'Entregue' e não 'Lido'?</p>
 <p>O <abbr title="Tribunal de Justiça do Estado de São Paulo">TJSP</abbr> optou por não utilizar a confirmação de leitura, pois os usuários podem ter desabilitado esse recurso no WhatsApp. A <strong>confirmação de entrega</strong> é suficiente como comprovação da intimação.</p>
@@ -4117,7 +4125,10 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Documento de intimação (PDF) preparado</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> SIJ acessado e dados preenchidos (telefone, nome, CPF, nº processo)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Arquivo PDF anexado no SIJ</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Intimação enviada e status confirmado como <strong>"Entregue"</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Intimação enviada e status confirmado como <strong>"Entregue"</strong><ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Se após 1 dia do envio o status seguir "Enviado", intimação refeita por outro meio (regra do Infoeproc nº 121 para o envio pelo <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr>)</li>
+</ul>
+</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Comprovante de entrega baixado</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Comprovante juntado nos autos do <abbr title="Sistema processual eletrônico do Poder Judiciário">eproc</abbr></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Movimentação lançada pelo botão vermelho <strong>Intimar</strong>:<ul class="task-list">
